@@ -1,0 +1,46 @@
+// Text styles for labels
+$ct-text-color: rgba(198, 198, 198,1) !default;
+
+// Grid styles
+$ct-grid-color: rgba(79,81, 86, 1) !default;
+$ct-grid-dasharray: none !default;
+$ct-grid-width: 1px !default;
+$ct-grid-background-fill: none !default;
+
+$ct-series-colors: (
+  #256c5e,
+  #24ff94,
+  #256c5e,
+  #24ff94,
+  #256c5e,
+  #24ff94,
+  #256c5e,
+  #24ff94,
+  #256c5e,
+  #24ff94,
+  #256c5e,
+  #24ff94,
+  #256c5e,
+  #24ff94,
+  #256c5e
+) !default;
+
+.ct-series-a .ct-bar {
+  /* Colour of your bars */
+  stroke: inherit;
+  /* The width of your bars */
+  stroke-width: 36px;
+  /* Yes! Dashed bars! */
+  stroke-dasharray: 0;
+  /* Maybe you like round corners on your bars? */
+  // stroke-linecap: round;
+}
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+  stroke: blue;
+}
+
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+  stroke: green;
+}

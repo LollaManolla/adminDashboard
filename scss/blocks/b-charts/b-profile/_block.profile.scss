@@ -1,0 +1,50 @@
+//-------------------------
+//-------------------BLOCK PROFILE has chart
+//-------------------------
+.b-profile {
+  background-color: $night;
+  float: left;
+  width: 348px;
+  min-height: 380px;
+  padding-bottom: 2.9rem;
+  margin-right: 1.3rem;
+  .b-title {
+    background-color: $charcoal;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 1.8rem;
+    padding-top: 2rem;
+    text-align: center;
+  }
+  &__legend {
+    color: $silver;
+    float: right;
+    font-size: 14px;
+    line-height: 1.9;
+    padding-right: 1.7rem;
+    padding-top: 1.3rem;
+    span {
+      padding-right: 1rem;
+    }
+    .reviews {
+      color: $keppel;
+    }
+    .approved {
+      color:$spring;
+    }
+  }
+  .ct-profile {
+    clear: both;
+    float: left;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+    .ct-label {
+      font-size: 13px;
+    }
+  }
+
+
+}

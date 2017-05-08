@@ -1,0 +1,37 @@
+//-------------------------
+//-------------------SIDEBAR
+//-------------------------
+.b-sidebar {
+  height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   width: 203px;
+  background-color: $nero;
+
+  z-index: 2;
+  &__inner {
+    background-color: $nero;
+      border-right: solid 1px $zambezi;
+     bottom: 0;
+     height: 100%;
+     position: fixed;
+     width: 202px;
+  }
+  .fontelloIcon {
+    color: $silver;
+    padding-left: 1.3rem;
+    padding-right: 1rem;
+    &--user {
+      padding-left: 0.8rem;
+      padding-right: 0;
+    }
+  }
+
+  @import
+  "block.search",
+  "block.menu";
+
+}

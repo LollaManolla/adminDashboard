@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin Login</title>
+  <meta name="description" content="Admin Login page">
+  <link rel="stylesheet" href="_common/css/styles.css">
+</head>
+
+<body>
+  <div class="wrapper-main">
+<!--page login-->
+    <div class="page-login">
+      <div class="page-login-wrapper" >
+        <h1 class="page-login__title">Dashboard</h1>
+        <div class="page-login-content">
+          <div class="page-login__b-logo">
+            <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
+          </div>
+          <div class="page-login-form">
+            <p class="note-welcome">Sign into your account</p>
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" required autofocus >
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" required autofocus>
+              </div>
+              <p  class="note-message"><a href="javascript:void(0)">Forgot password?</a></p>
+              <label class="control-label">
+                <input name="remember" type="checkbox">Keep me sign in
+              </label>
+              <input value="Sign in" class="c-btn c-btn-primary" type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

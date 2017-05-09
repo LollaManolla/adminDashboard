@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin Dashboard</title>
+  <meta name="description" content="Admin Dashborad page">
+  <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="_common/css/styles.css">
+</head>
+
+<body class="fullPageScroll">
+  <div class="wrapper-main">
+
+    <!--header-->
+    <header class="b-header">
+      <div class="b-header__inner">
+        <h1 class="page-title">Dashboard</h1>
+        <div class="b-header__user">
+          <div  class="b-header__user-data">
+            <p class="b-header__user-name">Anna Kurnikova</p>
+            <p class="b-header__user-role">Admin</p>
+          </div>
+          <div class="b-header__user-avatar">
+            <img src="./_common/images/avatar-1.jpg" alt="Anna Kurnikova profile image">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--main content-->
+    <main class="wrapper-content">
+      <!--block orders-->
+      <div class="b-orders">
+        <h2 class="b-title">Orders</h2>
+        <div class="b-orders__legend">
+          <p><span class="fontelloIcon circle orders">&#xf111;</span>Orders</p>
+          <p><span class="fontelloIcon circle delivered">&#xf111;</span>Delivered</p>
+        </div>
+        <div class="ct-chart ct-bar ct-orders"></div>
+      </div>
+
+      <!--block admin user group-->
+      <div class="b-list-admins">
+        <h2 class="b-title">Admin user group</h2>
+        <ul class="b-list-wrapper scrollAdmins">
+          <li>
+            <div class="b-list-admins__avatar">
+              <img src="./_common/images/avatar-2.jpg" alt="Christopher Walken">
+              <p class="job-title">Menager</p>
+            </div>
+            <div class="b-list-admins__content">
+              <p class="info">
+                <span class="name">Christopher Walken</span>
+                <span class="action">just posted an image</span>
+              </p>
+              <p class="status"><span class="inactive">Last seen today at 15:33</span></p>
+            </div>
+          </li>
+          <li>
+            <div class="b-list-admins__avatar">
+              <img src="./_common/images/avatar-3.jpg" alt="Mila Kunis">
+              <p class="job-title">Reviewer</p>
+            </div>
+            <div class="b-list-admins__content">
+              <p class="info">
+                <span class="name">Mila Kunis</span>
+                <span class="action">commented a post</span>
+              </p>
+              <p class="status"><span class="inactive">Last seen yesterday at 12:46</span></p>
+            </div>
+          </li>
+          <li>
+            <div class="b-list-admins__avatar">
+              <img src="./_common/images/avatar-4.jpg" alt="Amélie Poulain">
+              <p class="job-title">Menager</p>
+            </div>
+            <div class="b-list-admins__content">
+              <p class="info">
+                <span class="name">Amélie Poulain</span>
+                <span class="action">commented a post</span>
+              </p>
+              <p class="status"><span class="active">Active</span></p>
+            </div>
+          </li>
+          <li>
+            <div class="b-list-admins__avatar">
+              <img src="./_common/images/avatar-5.jpg" alt="Craig David">
+              <p class="job-title">Reviewer</p>
+            </div>
+            <div class="b-list-admins__content">
+              <p class="info">
+                <span class="name">Craig David</span>
+                <span class="action">just posted an image</span>
+              </p>
+              <p class="status"><span class="inactive">Last seen today at 17:52</span></p>
+            </div>
+          </li>
+          <li>
+            <div class="b-list-admins__avatar">
+              <img src="./_common/images/avatar-2.jpg" alt="Christopher Walken">
+              <p class="job-title">Menager</p>
+            </div>
+            <div class="b-list-admins__content">
+              <p class="info">
+                <span class="name">Christopher Walken</span>
+                <span class="action">just posted an image</span>
+              </p>
+              <p class="status"><span class="inactive">Last seen today at 15:33</span></p>
+            </div>
+          </li>
+          <li>
+            <div class="b-list-admins__avatar">
+              <img src="./_common/images/avatar-3.jpg" alt="Mila Kunis">
+              <p class="job-title">Reviewer</p>
+            </div>
+            <div class="b-list-admins__content">
+              <p class="info">
+                <span class="name">Mila Kunis</span>
+                <span class="action">commented a post</span>
+              </p>
+              <p class="status"><span class="inactive">Last seen yesterday at 12:46</span></p>
+            </div>
+          </li>
+          <li>
+            <div class="b-list-admins__avatar">
+              <img src="./_common/images/avatar-4.jpg" alt="Amélie Poulain">
+              <p class="job-title">Menager</p>
+            </div>
+            <div class="b-list-admins__content">
+              <p class="info">
+                <span class="name">Amélie Poulain</span>
+                <span class="action">commented a post</span>
+              </p>
+              <p class="status"><span class="active">Active</span></p>
+            </div>
+          </li>
+          <li>
+            <div class="b-list-admins__avatar">
+              <img src="./_common/images/avatar-5.jpg" alt="Craig David">
+              <p class="job-title">Reviewer</p>
+            </div>
+            <div class="b-list-admins__content">
+              <p class="info">
+                <span class="name">Craig David</span>
+                <span class="action">just posted an image</span>
+              </p>
+              <p class="status"><span class="inactive">Last seen today at 17:52</span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!--block sales report-->
+      <div class="b-chart-sales">
+        <h2 class="b-title">Sales report</h2>
+        <div class="c-dropdown">
+          <span class="c-dropdown__title">Show:</span>
+          <select>
+            <option value="1">Year</option>
+            <option value="2">Another option</option>
+            <option value="3">A disabled option</option>
+            <option value="4">Potato</option>
+          </select>
+        </div>
+        <div class="ct-chart ct-bar  ct-sales-report"></div>
+      </div>
+
+      <!--block with 3 columns-->
+      <div class="wrapper-col3">
+        <div class="b-profile">
+          <h2 class="b-title">Profile reviews</h2>
+          <div class="b-profile__legend">
+            <p><span class="fontelloIcon circle reviews">&#xf111;</span>Profile reviews</p>
+            <p><span class="fontelloIcon circle approved">&#xf111;</span>Profile approved</p>
+          </div>
+          <div class="ct-chart ct-bar ct-profile"></div>
+        </div>
+        <div class="b-products">
+          <h2 class="b-title">Products</h2>
+          <div class="b-products__legend">
+            <p><span class="fontelloIcon circle products">&#xf111;</span>All products</p>
+            <p><span class="fontelloIcon circle reviewed">&#xf111;</span>Reviewed products</p>
+          </div>
+          <div class="ct-chart ct-bar ct-products"></div>
+        </div>
+        <div class="w-calendar">
+          <div class="b-calendar b-calendar--homepage"></div>
+        </div>
+      </div>
+
+      <!--block visits-->
+      <div class="b-visits">
+        <h2 class="b-title">Visits</h2>
+        <div class="c-dropdown">
+          <span class="c-dropdown__title">Show:</span>
+          <select>
+            <option value="1">PM</option>
+            <option value="2">Another option</option>
+            <option value="3">A disabled option</option>
+            <option value="4">Potato</option>
+          </select>
+        </div>
+        <div class="ct-chart ct-bar ct-visits"></div>
+      </div>
+    </main>
+
+    <!--sidebar-->
+    <div class="b-sidebar">
+      <div class="b-sidebar__inner">
+        <div class="b-logo">
+          <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
+        </div>
+        <div class="b-search">
+          <form action="javascript:void(0)">
+            <input type="submit"  value="&#xe800;" class="b-search__submit" />
+            <input type="search" class="b-search__input">
+          </form>
+        </div>
+        <!--sidebar menu-->
+        <ul class="b-menu">
+          <li class="active"><a href="javascript:void(0)"><i class="fontelloIcon gauge">&#xe802;</i>Dashboard</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon basket">&#xe803;</i>Products<span class="notification"><span class="number">7</span></span></a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon tag">&#xe809;</i>Sales</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user"><span class="number">5</span></span><i class="fontelloIcon right-open-mini fontelloIcon--user">&#xe80c;</i></a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon calendar">&#xe805;</i>Calendar</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon bullhorn">&#xe80a;</i>Promotions</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon group">&#xe808;</i>Community </a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon thumbs-up">&#xe806;</i>Referrals</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon cog">&#xe807;</i>Settings</a></li>
+          <li class="last"><a href="javascript:void(0)"><i class="fontelloIcon power">&#xe80b;</i>Log out</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/chartist.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/simple-event-calendar.js"></script>
+    <script src="js/adminDashboard.js"></script>
+  </body>
+  </html>

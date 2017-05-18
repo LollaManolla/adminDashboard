@@ -1182,19 +1182,16 @@ html, body {
     margin-top: 2.1rem; }
     .b-chart-sales .c-dropdown__title {
       margin-right: 0.8rem; }
-  .b-chart-sales .ct-series-b .ct-point,
-  .b-chart-sales .ct-series-b .ct-line,
-  .b-chart-sales .ct-series-b .ct-bar,
-  .b-chart-sales .ct-series-b .ct-slice-donut {
-    stroke: #256c5e; }
 
-.b-orders {
+.b-orders,
+.b-sales {
   background-color: #2D2D2D;
   float: left;
   height: 498px;
   margin-right: 1.1rem;
   width: 717px; }
-  .b-orders .b-title {
+  .b-orders .b-title,
+  .b-sales .b-title {
     background-color: #434343;
     display: block;
     font-size: 20px;
@@ -1203,26 +1200,39 @@ html, body {
     padding-bottom: 1.9rem;
     padding-left: 2.5rem;
     padding-top: 1.8rem; }
-  .b-orders__legend {
+  .b-orders__legend,
+  .b-sales__legend {
     color: #c6c6c6;
     float: right;
     font-size: 14px;
     line-height: 1.9;
     padding-right: 1.5rem;
     padding-top: 0.9rem; }
-    .b-orders__legend span {
+    .b-orders__legend span,
+    .b-sales__legend span {
       padding-right: 1rem; }
-    .b-orders__legend .orders {
+    .b-orders__legend .orders,
+    .b-orders__legend .sales,
+    .b-sales__legend .orders,
+    .b-sales__legend .sales {
       color: #5ca395; }
-    .b-orders__legend .delivered {
+    .b-orders__legend .delivered,
+    .b-orders__legend .income,
+    .b-sales__legend .delivered,
+    .b-sales__legend .income {
       color: #24FF94; }
-  .b-orders .ct-orders {
+  .b-orders .ct-orders,
+  .b-sales .ct-orders {
     clear: both;
     float: left; }
-  .b-orders .ct-label.ct-horizontal.ct-end {
+  .b-orders .ct-label.ct-horizontal.ct-end,
+  .b-sales .ct-label.ct-horizontal.ct-end {
     text-align: center;
     font-size: 14px;
     display: inline-block; }
+
+.b-sales__legend {
+  padding-top: 2.1rem; }
 
 .b-profile {
   background-color: #2D2D2D;
@@ -1572,18 +1582,16 @@ html, body {
   .b-table--new-users .row-6 {
     width: 126px; }
   .b-table--admin-assistant .row-1 {
-    width: 170px; }
+    width: 200px; }
   .b-table--admin-assistant .row-2 {
-    width: 168px; }
+    width: 170px; }
   .b-table--admin-assistant .row-3 {
-    width: 202px; }
+    width: 210px; }
   .b-table--admin-assistant .row-4 {
-    width: 147px; }
+    width: 195px; }
   .b-table--admin-assistant .row-5 {
-    width: 88px; }
-  .b-table--admin-assistant .row-6 {
     width: 120px; }
-  .b-table--admin-assistant .row-7 {
+  .b-table--admin-assistant .row-6 {
     width: 140px; }
   .b-table--admin-assistant .user-role {
     display: table-cell;
@@ -1591,12 +1599,16 @@ html, body {
     overflow: visible; }
     .b-table--admin-assistant .user-role .c-dropdown {
       float: left; }
+      .b-table--admin-assistant .user-role .c-dropdown .nice-select.open .list {
+        min-width: 159px; }
   .b-table--admin-assistant .b-table__footer {
     text-align: right; }
     .b-table--admin-assistant .b-table__footer .c-btn {
       display: inline-block;
       margin: 3rem 1rem 0rem 0;
       padding: 0 1.2rem; }
+  .b-table--admin-assistant .user-contact {
+    text-align: right; }
   .b-table--discount-list th, .b-table--discount-list td {
     border: solid 1px #5A5A5A;
     text-transform: none;
@@ -1615,11 +1627,11 @@ html, body {
   .b-table--discount-list .row-3 {
     width: 170px; }
   .b-table--discount-list .row-4 {
-    width: 170px; }
+    width: 305px; }
   .b-table--discount-list .row-5 {
-    width: 170px; }
+    width: 110px; }
   .b-table--discount-list .row-6 {
-    width: 170px; }
+    width: 110px; }
   .b-table--discount-list .b-table__header th {
     font-size: 17px;
     font-weight: bold; }
@@ -2206,7 +2218,8 @@ input.c-btn,
       padding: 0.8rem; }
     .c-modal .form .form-group.modal-message-for {
       border-bottom: solid 1px #818181;
-      margin-bottom: 0.8rem; }
+      margin-bottom: 0.8rem;
+      text-align: left; }
       .c-modal .form .form-group.modal-message-for label {
         display: inline-block; }
       .c-modal .form .form-group.modal-message-for input {
@@ -2951,6 +2964,11 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 33px;
   line-height: 32px; }
 
+.sweet-alert {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
 @media print {
   *,
   *:before,
@@ -3002,3 +3020,5 @@ http://www.sanbeiji.com/archives/953 */
   h2,
   h3 {
     page-break-after: avoid; } }
+
+/*# sourceMappingURL=styles.css.map */

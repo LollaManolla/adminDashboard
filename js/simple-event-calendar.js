@@ -1,8 +1,8 @@
 'use strict';
 $.fn.simpleEventCalendar = function(args){
 	var df = {
-		'monthLabels': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dev'],
-		'dayLabels': ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+		'monthLabels': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+		'dayLabels': ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun'],
 		'prevLabel': '&#xe80f;',
 		'nextLabel': '&#xe80e;',
 		'events': []
@@ -41,7 +41,7 @@ $.fn.simpleEventCalendar = function(args){
 
 		// days
 		var firstDay = new Date(this.year, this.month, 1);
-		// console.log('first day of month:' + firstDay.getDay());
+		 console.log('first day of month:' + firstDay.getDay());
 
 		var start = -(firstDay.getDay());
 		var maxrows = Math.ceil(endDates[this.month]/7);

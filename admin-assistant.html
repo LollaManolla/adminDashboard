@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin Assistant</title>
+  <meta name="description" content="Admin Assistant">
+  <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="_common/css/styles.css">
+</head>
+
+<body class="fullPageScroll">
+  <div class="wrapper-main">
+
+    <!--header-->
+    <header class="b-header">
+      <div class="b-header__inner">
+        <h1 class="page-title">Users</h1>
+        <div class="b-header__user">
+          <div  class="b-header__user-data">
+            <p class="b-header__user-name">Anna Kurnikova</p>
+            <p class="b-header__user-role">Admin</p>
+          </div>
+          <div class="b-header__user-avatar">
+            <img src="./_common/images/avatar-1.jpg" alt="Anna Kurnikova profile image">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--main content-->
+    <main class="wrapper-content">
+      <div class="wrapper-content-inner full-width">
+        <div class="page-admin-assistant">
+          <h2 class="page-admin-assistant__title">Admin Assistant</h2>
+          <table class="b-table b-table--admin-assistant">
+            <thead class="b-table__header">
+              <tr>
+                <th class="row-1">User name</th>
+                <th class="row-2">Date joined</th>
+                <th class="row-3">Role</th>
+                <th class="row-4"></th>
+                <th class="row-5"></th>
+                <th class="row-6"></th>
+              </tr>
+            </thead>
+            <tbody class="b-table__body">
+              <tr>
+                <td class="user-name">revans</td>
+                <td class="user-joined">May 5, 2017</td>
+                <td class="user-role">
+                  <div class="c-dropdown">
+                    <select>
+                      <option value="1">Artist</option>
+                      <option value="2">Singer</option>
+                      <option value="3">Dancer</option>
+                      <option value="4">Painter</option>
+                    </select>
+                  </div>
+                </td>
+
+                <td class="user-contact">
+                    <a href="javascript:void(0)" class="c-modal-open"><i class="fontelloIcon paper-plane">&#xe811;</i></a>
+                    <!--show div to contact user-->
+                    <div class="c-modal c-modal--form">
+                        <div class="c-modal-inner c-modal--form-inner">
+                            <span class="c-modal__btn-close">x</span>
+                            <div class="form">
+                                <div class="form-group modal-message-for">
+                                    <label for="name">Message for:</label><input class="form-control" type="text" value="name will be here">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="form-group-input">
+                                        <input class="form-control" type="text" name="email" placeholder="wallebarkman@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Message</label>
+                                    <div class="form-group-input">
+                                        <textarea name="message"></textarea>
+                                    </div>
+                                </div>
+                                <input value="Send" class="c-btn c-btn-primary-lighter " type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary-lighter ">Block</a></td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a></td>
+              </tr>
+              <tr>
+                <td class="user-name">scollins</td>
+                <td class="user-joined">May 7, 2017</td>
+                <td class="user-role">
+                  <div class="c-dropdown">
+                    <select>
+                      <option value="1">Menager</option>
+                      <option value="2">Singer</option>
+                      <option value="3">Dancer</option>
+                      <option value="4">Painter</option>
+                    </select>
+                  </div>
+                </td>
+
+                <td class="user-contact">
+                    <a href="javascript:void(0)" class="c-modal-open"><i class="fontelloIcon paper-plane">&#xe811;</i></a>
+                    <!--show div to contact user-->
+                    <div class="c-modal c-modal--form">
+                        <div class="c-modal-inner c-modal--form-inner">
+                            <span class="c-modal__btn-close">x</span>
+                            <div class="form">
+                                <div class="form-group modal-message-for">
+                                    <label for="name">Message for:</label><input class="form-control" type="text" value="name will be here">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="form-group-input">
+                                        <input class="form-control" type="text" name="email" placeholder="wallebarkman@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Message</label>
+                                    <div class="form-group-input">
+                                        <textarea name="message"></textarea>
+                                    </div>
+                                </div>
+                                <input value="Send" class="c-btn c-btn-primary-lighter " type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary-lighter ">Block</a></td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a></td>
+              </tr>
+              <tr>
+                <td class="user-name">rgarner</td>
+                <td class="user-joined">May 7, 2017</td>
+                <td class="user-role">
+                  <div class="c-dropdown">
+                    <select>
+                      <option value="1">Reviewer</option>
+                      <option value="2">Singer</option>
+                      <option value="3">Dancer</option>
+                      <option value="4">Painter</option>
+                    </select>
+                  </div>
+                </td>
+
+                <td class="user-contact">
+                    <a href="javascript:void(0)" class="c-modal-open"><i class="fontelloIcon paper-plane">&#xe811;</i></a>
+                    <!--show div to contact user-->
+                    <div class="c-modal c-modal--form">
+                        <div class="c-modal-inner c-modal--form-inner">
+                            <span class="c-modal__btn-close">x</span>
+                            <div class="form">
+                                <div class="form-group modal-message-for">
+                                    <label for="name">Message for:</label><input class="form-control" type="text" value="name will be here">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="form-group-input">
+                                        <input class="form-control" type="text" name="email" placeholder="wallebarkman@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Message</label>
+                                    <div class="form-group-input">
+                                        <textarea name="message"></textarea>
+                                    </div>
+                                </div>
+                                <input value="Send" class="c-btn c-btn-primary-lighter " type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary-lighter ">Block</a></td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a></td>
+              </tr>
+              <tr>
+                <td class="user-name">mblount</td>
+                <td class="user-joined">May 12, 2017</td>
+                <td class="user-role">
+                  <div class="c-dropdown">
+                    <select>
+                      <option value="1">Reviewer</option>
+                      <option value="2">Singer</option>
+                      <option value="3">Dancer</option>
+                      <option value="4">Painter</option>
+                    </select>
+                  </div>
+                </td>
+
+                <td class="user-contact">
+                    <a href="javascript:void(0)" class="c-modal-open"><i class="fontelloIcon paper-plane">&#xe811;</i></a>
+                    <!--show div to contact user-->
+                    <div class="c-modal c-modal--form">
+                        <div class="c-modal-inner c-modal--form-inner">
+                            <span class="c-modal__btn-close">x</span>
+                            <div class="form">
+                                <div class="form-group modal-message-for">
+                                    <label for="name">Message for:</label><input class="form-control" type="text" value="name will be here">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="form-group-input">
+                                        <input class="form-control" type="text" name="email" placeholder="wallebarkman@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Message</label>
+                                    <div class="form-group-input">
+                                        <textarea name="message"></textarea>
+                                    </div>
+                                </div>
+                                <input value="Send" class="c-btn c-btn-primary-lighter " type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary-lighter ">Block</a></td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a></td>
+              </tr>
+              <tr>
+                <td class="user-name">vividkana</td>
+                <td class="user-joined">May 18, 2017</td>
+                <td class="user-role">
+                  <div class="c-dropdown">
+                    <select>
+                      <option value="1">Menager</option>
+                      <option value="2">Singer</option>
+                      <option value="3">Dancer</option>
+                      <option value="4">Painter</option>
+                    </select>
+                  </div>
+                </td>
+
+                <td class="user-contact">
+                    <a href="javascript:void(0)" class="c-modal-open"><i class="fontelloIcon paper-plane">&#xe811;</i></a>
+                    <!--show div to contact user-->
+                    <div class="c-modal c-modal--form">
+                        <div class="c-modal-inner c-modal--form-inner">
+                            <span class="c-modal__btn-close">x</span>
+                            <div class="form">
+                                <div class="form-group modal-message-for">
+                                    <label for="name">Message for:</label><input class="form-control" type="text" value="name will be here">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="form-group-input">
+                                        <input class="form-control" type="text" name="email" placeholder="wallebarkman@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Message</label>
+                                    <div class="form-group-input">
+                                        <textarea name="message"></textarea>
+                                    </div>
+                                </div>
+                                <input value="Send" class="c-btn c-btn-primary-lighter " type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary-lighter ">Block</a></td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a></td>
+              </tr>
+              <tr class="rejected">
+                <td class="user-name">edmannen</td>
+                <td class="user-joined">May 19, 2017</td>
+                <td class="user-role">
+                  <div class="c-dropdown">
+                    <select>
+                      <option value="1">Menager</option>
+                      <option value="2">Singer</option>
+                      <option value="3">Dancer</option>
+                      <option value="4">Painter</option>
+                    </select>
+                  </div>
+                </td>
+
+                <td class="user-contact">
+                    <a href="javascript:void(0)" class="c-modal-open"><i class="fontelloIcon paper-plane">&#xe811;</i></a>
+                    <!--show div to contact user-->
+                    <div class="c-modal c-modal--form">
+                        <div class="c-modal-inner c-modal--form-inner">
+                            <span class="c-modal__btn-close">x</span>
+                            <div class="form">
+                                <div class="form-group modal-message-for">
+                                    <label for="name">Message for:</label><input class="form-control" type="text" value="name will be here">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="form-group-input">
+                                        <input class="form-control" type="text" name="email" placeholder="wallebarkman@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Message</label>
+                                    <div class="form-group-input">
+                                        <textarea name="message"></textarea>
+                                    </div>
+                                </div>
+                                <input value="Send" class="c-btn c-btn-primary-lighter " type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary-lighter ">Unblock</a></td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a></td>
+              </tr>
+              <tr>
+                <td class="user-name">snipezz</td>
+                <td class="user-joined">May 22, 2017</td>
+                <td class="user-role">
+                  <div class="c-dropdown">
+                    <select>
+                      <option value="1">Menager</option>
+                      <option value="2">Singer</option>
+                      <option value="3">Dancer</option>
+                      <option value="4">Painter</option>
+                    </select>
+                  </div>
+                </td>
+
+                <td class="user-contact">
+                    <a href="javascript:void(0)" class="c-modal-open"><i class="fontelloIcon paper-plane">&#xe811;</i></a>
+                    <!--show div to contact user-->
+                    <div class="c-modal c-modal--form">
+                        <div class="c-modal-inner c-modal--form-inner">
+                            <span class="c-modal__btn-close">x</span>
+                            <div class="form">
+                                <div class="form-group modal-message-for">
+                                    <label for="name">Message for:</label><input class="form-control" type="text" value="name will be here">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <div class="form-group-input">
+                                        <input class="form-control" type="text" name="email" placeholder="wallebarkman@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Message</label>
+                                    <div class="form-group-input">
+                                        <textarea name="message"></textarea>
+                                    </div>
+                                </div>
+                                <input value="Send" class="c-btn c-btn-primary-lighter " type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary-lighter ">Block</a></td>
+                <td class="user-btn"><a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a></td>
+              </tr>
+
+            </tbody>
+            <tfoot class="b-table__footer">
+              <tr>
+                <td colspan="7"><a href="javascript:void(0)" class="c-btn c-btn-primary-lighter">Save changes</a></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!--sidebar-->
+    <div class="b-sidebar">
+      <div class="b-sidebar__inner">
+        <div class="b-logo">
+          <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
+        </div>
+        <!--sidebar menu-->
+        <ul class="b-menu">
+          <li><a href="javascript:void(0)"><i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Link 1</a></li>
+              <li><a href="javascript:void(0)">Link 2</a></li>
+              <li><a href="javascript:void(0)">Link 3</a></li>
+              <li><a href="javascript:void(0)">Link 4</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Product 1</a></li>
+              <li><a href="javascript:void(0)">Product 2</a></li>
+              <li><a href="javascript:void(0)">Product 3</a></li>
+              <li><a href="javascript:void(0)">Product 4</a></li>
+              <li><a href="javascript:void(0)">Product 5</a></li>
+              <li><a href="javascript:void(0)">Product 6</a></li>
+              <li><a href="javascript:void(0)">Product 7</a></li>
+              <li><a href="javascript:void(0)">Product 8</a></li>
+              <li><a href="javascript:void(0)">Product 9</a></li>
+              <li><a href="javascript:void(0)">Product 10</a></li>
+            </ul>
+          </li>
+            <li><a href="javascript:void(0)"><i class="fontelloIcon tag">&#xe80b;</i>Sales</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Link 1</a></li>
+              <li><a href="javascript:void(0)">Link 2</a></li>
+            </ul>
+          </li>
+          <li><a class="active" href="javascript:void(0)"><i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user"><span class="number">5</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Add new assistant</a></li>
+              <li><a class="active" href="javascript:void(0)">Admin assistants</a></li>
+              <li><a href="javascript:void(0)">New users</a></li>
+              <li><a href="javascript:void(0)">Reviewed users</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon calendar">&#xe807;</i>Events</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Discount list</a></li>
+              <li><a href="javascript:void(0)">Create new discount</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon cog">&#xe809;</i>Settings</a></li>
+          <li class="last"><a href="javascript:void(0)"><i class="fontelloIcon power">&#xe80d;</i>Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/accordionMenu.js"></script>
+  <script src="js/userContactModal.js"></script>
+  <script src="js/adminAssistant.js"></script>
+</body>
+</html>

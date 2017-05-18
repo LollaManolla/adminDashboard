@@ -50,7 +50,7 @@ new Chartist.Bar('.ct-sales-report', {
     [120000, 110000, 100000, 9000, 80000, 70000, 60000, 50000, 40000, 30000, 20000, 10000]
   ]
 }, {
-  stackBars: false,
+  stackBars: true,
   axisX: {
     showGrid: false
   },

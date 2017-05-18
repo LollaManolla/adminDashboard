@@ -1,0 +1,2 @@
+$(document).ready(function() {
+  $(".c-modal-open").click(function(e) {    if (!$(this).next().is(':visible')) {      $('.c-modal.c-modal--form').hide();      $(this).next('.c-modal.c-modal--form').slideDown();    }  });  $(".c-modal__btn-close").click(function() {    $('.c-modal.c-modal--form').slideUp();  });});

@@ -3,8 +3,8 @@ $.fn.simpleEventCalendar = function(args){
 	var df = {
 		'monthLabels': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dev'],
 		'dayLabels': ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-		'prevLabel': '&#xe80d;',
-		'nextLabel': '&#xe80c;',
+		'prevLabel': '&#xe80f;',
+		'nextLabel': '&#xe80e;',
 		'events': []
 	}
 

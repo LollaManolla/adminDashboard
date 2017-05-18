@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 
 //functions to call and set charts
-// please reffer to Chartist.js for more info
+// please reffer to https://gionkunz.github.io/chartist-js/ for more info
 
 //chart orders
 new Chartist.Line('.ct-orders', {

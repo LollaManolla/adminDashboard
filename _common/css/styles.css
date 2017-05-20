@@ -405,7 +405,7 @@ html, body {
       position: relative;
       top: -0.7rem;
       vertical-align: middle; }
-      .b-header__user-avatar img {
+      .b-header__user-avatar div {
         border-radius: 2rem; }
     .b-header__user-name {
       font-size: 16px;
@@ -1359,14 +1359,16 @@ html, body {
     padding-left: 1rem;
     vertical-align: middle;
     width: 68px; }
-    .b-list-admins__avatar img {
-      background-color: #748092;
+    .b-list-admins__avatar div {
       border-radius: 2rem;
-      height: 54px;
+      border-color: #748092;
+      border-style: solid;
       padding: 0.12rem;
-      width: 54px;
       display: block;
-      margin-bottom: 0.62rem; }
+      margin-bottom: 0.62rem;
+      border-width: 2px;
+      width: 54px;
+      height: 54px; }
     .b-list-admins__avatar .job-title {
       font-size: 12px;
       color: #5ca395;
@@ -1443,10 +1445,11 @@ html, body {
   .b-list-events .event-author-avatar {
     display: inline-block;
     vertical-align: middle;
-    width: 43px;
     margin-right: 0.55rem; }
-    .b-list-events .event-author-avatar img {
-      border-radius: 2rem; }
+    .b-list-events .event-author-avatar div {
+      border-radius: 2rem;
+      width: 43px;
+      height: 43px; }
   .b-list-events .info {
     display: inline-block;
     vertical-align: middle;
@@ -1480,7 +1483,6 @@ html, body {
       text-transform: none;
       color: #fff; }
   .b-list-events .c-btn {
-    display: inline-block;
     margin-top: 1.3rem;
     margin-bottom: 0.3rem; }
 
@@ -1513,7 +1515,6 @@ html, body {
   .b-list-info-buttons {
     margin-bottom: 2rem; }
     .b-list-info-buttons .c-btn {
-      display: inline-block;
       margin-right: 1rem; }
 
 .b-table {
@@ -1560,6 +1561,7 @@ html, body {
     padding: 0;
     display: block;
     width: 100px;
+    min-width: unset;
     line-height: 2; }
     .b-table__body .c-btn-approved, .b-table__body .c-btn-rejected {
       padding: 0 0.2rem; }
@@ -1606,7 +1608,6 @@ html, body {
   .b-table--admin-assistant .b-table__footer {
     text-align: right; }
     .b-table--admin-assistant .b-table__footer .c-btn {
-      display: inline-block;
       margin: 3rem 1rem 0rem 0;
       padding: 0 1.2rem; }
   .b-table--admin-assistant .user-contact {
@@ -1656,7 +1657,6 @@ html, body {
   .b-table--reviewed-users .b-table__footer {
     text-align: right; }
     .b-table--reviewed-users .b-table__footer .c-btn {
-      display: inline-block;
       margin: 3rem 1rem 0rem 0;
       padding: 0 1.2rem; }
 
@@ -1680,7 +1680,8 @@ html, body {
   display: block;
   padding-bottom: 2.1rem;
   vertical-align: middle;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem;
+  position: relative; }
   .b-profile-picture__current {
     border-radius: 70px;
     height: 130px;
@@ -1689,9 +1690,9 @@ html, body {
     display: inline-block;
     vertical-align: middle;
     margin-right: 2.3rem; }
-    .b-profile-picture__current img {
-      height: 100%;
-      max-width: none; }
+    .b-profile-picture__current div {
+      width: 130px;
+      height: 130px; }
   .b-profile-picture__change {
     display: inline-block;
     vertical-align: middle;
@@ -1746,18 +1747,22 @@ html, body {
       margin: 0 auto;
       display: block; }
   .b-gmail__title {
-    font-size: 50px;
+    font-size: 31px;
     font-weight: bold;
     color: #5ca395;
     letter-spacing: 0.03rem; }
   .b-gmail-popup {
-    background-color: red;
+    background-color: #292929;
     border-radius: 6px;
     width: 958px;
     padding: 1rem 1.3rem 3rem;
-    position: relative; }
+    color: #c6c6c6;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
     .b-gmail-popup__btn-close {
-      color: #000;
+      color: #5A5A5A;
       cursor: pointer;
       display: block;
       font-family: verdana;
@@ -1773,7 +1778,7 @@ html, body {
       margin-top: 0.2rem;
       text-align: left; }
     .b-gmail-popup__search {
-      border-bottom: 1px solid gold;
+      border-bottom: solid 1px #767676;
       clear: both;
       padding-bottom: 1.4rem;
       text-align: left; }
@@ -1796,7 +1801,8 @@ html, body {
           font-size: 22px;
           position: absolute;
           right: 0.4rem;
-          top: 0.2rem; }
+          top: 0.2rem;
+          color: #5A5A5A; }
     .b-gmail-popup__list {
       height: 316px;
       padding: 1rem 0rem 1rem 1.8rem; }
@@ -1816,22 +1822,31 @@ html, body {
           vertical-align: middle; }
       .b-gmail-popup__list-right {
         float: right; }
-    .b-gmail-popup__footer .form-group {
-      margin-bottom: 1.7rem;
-      display: inline-block;
-      vertical-align: middle;
-      width: 100%; }
-    .b-gmail-popup__footer-left {
-      float: left; }
-      .b-gmail-popup__footer-left .checkbox {
-        margin-right: 0.5rem;
+    .b-gmail-popup__footer {
+      border-top: solid 1px #767676;
+      padding: 1rem 1.8rem 1rem 1.88rem; }
+      .b-gmail-popup__footer .form-group {
+        margin-bottom: 1.7rem;
         display: inline-block;
-        vertical-align: middle; }
-      .b-gmail-popup__footer-left span {
-        display: inline-block;
-        vertical-align: middle; }
-    .b-gmail-popup__footer-right {
-      float: right; }
+        vertical-align: middle;
+        width: 100%; }
+        .b-gmail-popup__footer .form-group--top {
+          text-align: left; }
+          .b-gmail-popup__footer .form-group--top .checkbox {
+            margin-right: 0.5rem;
+            display: inline-block;
+            vertical-align: middle; }
+          .b-gmail-popup__footer .form-group--top span {
+            display: inline-block;
+            vertical-align: middle; }
+        .b-gmail-popup__footer .form-group--bottom {
+          float: left;
+          width: 100%; }
+          .b-gmail-popup__footer .form-group--bottom .c-btn-primary {
+            float: left;
+            margin-left: 1rem; }
+          .b-gmail-popup__footer .form-group--bottom .c-btn-secondary {
+            float: right; }
 
 .c-dropdown {
   display: inline-block;
@@ -2064,7 +2079,9 @@ input.c-btn,
   padding: 0 2.5rem;
   border: solid transparent 0px;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block;
+  min-width: 125px; }
   input.c-btn-primary,
   .c-btn-primary {
     background-color: #34B2A5;
@@ -2161,6 +2178,30 @@ input.c-btn,
       position: relative;
       display: inline-block;
       vertical-align: top; }
+  input.c-btn-transparent,
+  .c-btn-transparent {
+    background-color: #2F2F2F;
+    border: solid 1px #fff;
+    color: #fff; }
+    input.c-btn-transparent:hover,
+    .c-btn-transparent:hover {
+      color: #fff; }
+    input.c-btn-transparent--green,
+    .c-btn-transparent--green {
+      border: solid 1px #38df94;
+      background-color: #2F2F2F;
+      color: #fff; }
+      input.c-btn-transparent--green:hover,
+      .c-btn-transparent--green:hover {
+        color: #fff; }
+    input.c-btn-transparent--red,
+    .c-btn-transparent--red {
+      border: solid 1px #F04246;
+      background-color: #2F2F2F;
+      color: #fff; }
+      input.c-btn-transparent--red:hover,
+      .c-btn-transparent--red:hover {
+        color: #fff; }
 
 .c-modal {
   z-index: 1;
@@ -2238,48 +2279,52 @@ input.c-btn,
 
 .c-progressbar {
   position: relative;
-  padding-left: 124px; }
-  .c-progressbar .range {
-    width: 100%;
-    background-color: red;
-    height: 16px;
+  top: 1.2rem;
+  background-color: #222222;
+  height: 11px;
+  line-height: 11px;
+  border-radius: 10px;
+  margin-bottom: 5.6rem;
+  width: 97%; }
+  .c-progressbar__range {
+    background-color: #5ca395;
+    color: #fff;
+    height: 11px;
+    line-height: 11px;
+    text-align: center;
     border-radius: 10px;
-    position: absolute;
     left: 0;
+    position: absolute;
     right: 0;
-    z-index: 1; }
-  .c-progressbar .test {
+    z-index: 1;
+    display: none; }
+  .c-progressbar__wrapper {
     position: absolute;
     z-index: 1;
-    width: 100%;
-    top: -1rem; }
-  .c-progressbar .circle {
-    background-color: black;
-    border-color: pink;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 2px;
-    color: #fff;
-    display: inline-block;
-    height: 46px;
-    line-height: 3;
-    margin-right: 164px;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    width: 46px;
-    margin-right: 164px; }
-    .c-progressbar .circle:nth-child(5) {
-      margin-right: 0; }
-    .c-progressbar .circle--full {
-      background-color: pink; }
-  .c-progressbar .range {
-    width: 10%;
-    height: 30px;
-    background-color: #4CAF50;
-    text-align: center;
-    line-height: 30px;
-    color: white; }
+    width: 89%;
+    top: -1rem;
+    left: 7.8rem; }
+    .c-progressbar__wrapper .circle {
+      border-color: #5ca395;
+      background-color: #292929;
+      border-radius: 50px;
+      border-style: solid;
+      border-width: 2px;
+      color: #fff;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      height: 45px;
+      line-height: 2.3;
+      margin-right: 10.1rem;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      width: 45px; }
+      .c-progressbar__wrapper .circle:nth-child(5) {
+        margin-right: 0; }
+      .c-progressbar__wrapper .circle-full {
+        background-color: #5ca395; }
 
 .w-calendar {
   background-color: #2D2D2D;
@@ -2425,9 +2470,7 @@ input.c-btn,
         line-height: normal; }
     .page-login-form .c-btn {
       float: right;
-      margin-right: 0.5rem;
-      display: inline-block;
-      width: 125px; }
+      margin-right: 0.5rem; }
 
 .page-password {
   margin: 0 auto;
@@ -2665,7 +2708,6 @@ input.c-btn,
             right: -0.8rem;
             top: 49%; }
   .page-events .c-btn {
-    display: inline-block;
     margin-top: 2rem; }
 
 .page-new-users__title {
@@ -2805,6 +2847,7 @@ input.c-btn,
       .page-create-discount .form .form-block-code input {
         margin-bottom: 0; }
     .page-create-discount .form .form-block-orders {
+      margin-top: 1.2rem;
       margin-bottom: 1.2rem; }
       .page-create-discount .form .form-block-orders label {
         font-weight: normal; }
@@ -2840,7 +2883,7 @@ input.c-btn,
     .page-create-discount .form .form-block-buttons {
       margin-top: 2.8rem;
       margin-bottom: 1rem; }
-      .page-create-discount .form .form-block-buttons .c-btn-primary-lighter-border {
+      .page-create-discount .form .form-block-buttons .c-btn-transparent--red {
         margin-right: 1rem; }
       .page-create-discount .form .form-block-buttons .c-btn-primary-lighter {
         padding: 0 2.9rem; }
@@ -2956,11 +2999,166 @@ input.c-btn,
 .page-settings__progress-bar {
   border-bottom: 1px solid #5A5A5A; }
 
+.page-referrals {
+  margin-bottom: 2rem; }
+  .page-referrals .reedem-btn {
+    margin: 0 auto 3rem;
+    text-align: center; }
+  .page-referrals .reedem .c-btn {
+    min-width: 127px;
+    padding: 0 0.8rem;
+    padding: 0; }
+  .page-referrals .reedem-code {
+    margin: 0 auto 1.7rem;
+    text-align: center; }
+    .page-referrals .reedem-code .c-btn {
+      padding: 0 1rem;
+      min-width: 152px; }
+  .page-referrals .reedem-duration {
+    margin: 0 auto 1.7rem;
+    text-align: center; }
+    .page-referrals .reedem-duration .form-group {
+      display: inline-block;
+      margin-right: 1rem;
+      position: relative;
+      width: 150px; }
+      .page-referrals .reedem-duration .form-group .ui-datepicker-trigger {
+        left: 0.9rem;
+        position: absolute;
+        top: 2.3rem;
+        width: 18px;
+        cursor: pointer; }
+      .page-referrals .reedem-duration .form-group label {
+        text-align: left; }
+      .page-referrals .reedem-duration .form-group input {
+        padding-left: 2.5rem;
+        margin-bottom: 0.7rem;
+        border: solid 1px #505050;
+        border-radius: 20px;
+        width: 100%;
+        line-height: 2.3;
+        position: relative; }
+    .page-referrals .reedem-duration .form-block-date {
+      clear: both;
+      margin-bottom: 1.5rem; }
+      .page-referrals .reedem-duration .form-block-date input {
+        width: auto;
+        line-height: normal;
+        margin: 0px; }
+      .page-referrals .reedem-duration .form-block-date label {
+        display: inline; }
+    .page-referrals .reedem-duration .c-btn {
+      line-height: 2.4; }
+  .page-referrals .reedem-note {
+    margin: 0 auto 0.8rem;
+    text-align: center; }
+    .page-referrals .reedem-note p {
+      color: #ACADAD;
+      min-width: 307px;
+      padding-bottom: 1.2rem;
+      border-bottom: solid 1px #505050;
+      display: inline-block; }
+  .page-referrals .reedem-share {
+    margin: 0 auto 1.8rem;
+    text-align: center;
+    color: #ACADAD; }
+    .page-referrals .reedem-share p {
+      font-size: 20px;
+      margin-bottom: 1.3rem; }
+    .page-referrals .reedem-share a {
+      display: inline-block;
+      margin-right: 1rem;
+      width: 31px;
+      height: 31px; }
+      .page-referrals .reedem-share a:nth-child(3) {
+        margin-right: 0; }
+  .page-referrals .reedem-show {
+    display: none; }
+  .page-referrals .reedem-invite {
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    border-top: solid 1px #505050; }
+    .page-referrals .reedem-invite--left {
+      float: left;
+      width: 515px;
+      position: relative; }
+      .page-referrals .reedem-invite--left .title {
+        color: #D0CFCF;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 2.45rem;
+        text-align: center; }
+      .page-referrals .reedem-invite--left .form-group {
+        position: relative; }
+        .page-referrals .reedem-invite--left .form-group input {
+          border: 1px solid #ACADAD;
+          border-radius: 20px;
+          line-height: 2.4;
+          margin-bottom: 0.7rem;
+          padding-left: 1.2rem;
+          position: relative;
+          width: 100%; }
+        .page-referrals .reedem-invite--left .form-group .c-btn {
+          position: absolute;
+          right: 0;
+          top: 0;
+          border-radius: 0px 20px 20px 0px;
+          -moz-border-radius: 0px 20px 20px 0px;
+          -webkit-border-radius: 0px 20px 20px 0px; }
+    .page-referrals .reedem-invite .reedem-share {
+      float: right;
+      display: block;
+      padding-right: 7rem;
+      margin-bottom: 0; }
+      .page-referrals .reedem-invite .reedem-share p {
+        color: #D0CFCF;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 2.4rem;
+        text-align: center; }
+      .page-referrals .reedem-invite .reedem-share a {
+        margin-right: 1.5rem;
+        width: 39px;
+        height: 39px; }
+        .page-referrals .reedem-invite .reedem-share a:nth-child(3) {
+          margin-right: 0; }
+  .page-referrals .reedem-remind {
+    border-top: solid 1px #505050;
+    padding-top: 1.7rem; }
+    .page-referrals .reedem-remind__title {
+      font-size: 30px;
+      color: #D0CFCF;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 4rem; }
+    .page-referrals .reedem-remind-row {
+      border-top: solid 1px #505050;
+      padding-bottom: 1.4rem;
+      padding-top: 1.7rem; }
+      .page-referrals .reedem-remind-row--left {
+        float: left; }
+        .page-referrals .reedem-remind-row--left .email {
+          color: #D0CFCF;
+          font-size: 18px;
+          font-style: italic;
+          font-weight: bold;
+          margin-bottom: 1.1rem; }
+        .page-referrals .reedem-remind-row--left .status {
+          color: #a2a2a2;
+          font-size: 14px; }
+      .page-referrals .reedem-remind-row--right {
+        float: right;
+        padding-right: 1.5rem; }
+        .page-referrals .reedem-remind-row--right .btn-delete {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 0.5rem; }
+
 .clearfix:after, .wrapper-main:after, .b-list-events:after, .b-list-events .event-title:after,
 .b-list-events .event-start:after,
 .b-list-events .event-end:after,
 .b-list-events .event-place:after,
-.b-list-events .event-type:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-settings .form-group:after {
+.b-list-events .event-type:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-settings .form-group:after, .page-referrals .reedem-duration:after, .page-referrals .reedem-invite:after, .page-referrals .reedem-remind-row:after {
   content: "";
   display: table;
   clear: both; }

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Create New Discount</title>
+  <meta name="description" content="Create New Discount">
+  <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
+  <link href="_common/css/jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="_common/css/styles.css">
+</head>
+
+<body class="fullPageScroll">
+  <div class="wrapper-main">
+
+    <!--header-->
+    <header class="b-header">
+      <div class="b-header__inner">
+        <h1 class="page-title">Promotions</h1>
+        <div class="b-header__user">
+          <div  class="b-header__user-data">
+            <p class="b-header__user-name">Anna Kurnikova</p>
+            <p class="b-header__user-role">Admin</p>
+          </div>
+          <div class="b-header__user-avatar">
+            <div style="background: url('./_common/images/avatar-1.jpg') center center / cover no-repeat;width: 53px; height: 53px;"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--main content-->
+    <main class="wrapper-content">
+      <div class="wrapper-content-inner full-width">
+        <div class="page-create-discount">
+          <h2 class="page-create-discount__title">Create new discount</h2>
+
+
+          <div class="form">
+            <h3 class="form-block-title">Discount</h3>
+            <label>Discount title</label>
+            <input class="form-control" type="text">
+            <label>Description</label>
+            <input class="form-control" type="text">
+            <p class="form-block-subtitle">Duration</p>
+            <div class="form-block-duration">
+              <div class="c-dropdown-wrapper">
+                <div class="form-group form-group--left">
+                  <label for="from" class="small">Start date</label>
+                  <input type="text" class="datepicker">
+                </div>
+                <div class="form-group form-group--right">
+                  <label for="to" class="small">End date</label>
+                  <input type="text" class="datepicker">
+                </div>
+              </div>
+              <div class="form-block-date">
+                <input type="checkbox">
+                <label class="smallest">No end date</label>
+              </div>
+            </div>
+              <p class="form-block-subtitle">Products</p>
+            <div class="form-block-products">
+              <div class="form-group form-group--left">
+                <label class="small">Product name</label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="form-group form-group--right">
+                <label class="small">Category</label>
+                <div class="c-dropdown">
+                  <select>
+                    <option value="1">Original art</option>
+                    <option value="2">Another option</option>
+                    <option value="3">A disabled option</option>
+                    <option value="4">Potato</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <label class="small">Artist</label>
+            <input class="form-control" type="text">
+            <div class="form-block-code">
+              <label>Discount code</label>
+              <input class="form-control" type="text">
+              <span class="smallest">Customer will enter this code at checkout</span>
+            </div>
+            <h3 class="form-block-title">Conditions</h3>
+            <div class="form-block-products">
+              <div class="form-group form-group--left">
+                <div class="c-dropdown">
+                  <select>
+                    <option value="1">% Percentage</option>
+                    <option value="2">Another option</option>
+                    <option value="3">A disabled option</option>
+                    <option value="4">Potato</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group form-group--right">
+                <div class="c-dropdown">
+                  <select>
+                    <option value="1">Amount</option>
+                    <option value="2">Another option</option>
+                    <option value="3">A disabled option</option>
+                    <option value="4">Potato</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-block-orders">
+              <label>Orders over</label>
+              <span>$</span><input class="form-control" type="text">
+            </div>
+            <h3 class="form-block-title">Usage limits</h3>
+            <div class="form-block-limit">
+              <p>Total available</p>
+              <div class="form-group">
+                <input type="radio" name="options" value="">
+                <label>Unlimited</label>
+              </div>
+              <div class="form-group">
+                <input type="radio" name="options" value="">
+                <label>Limited number of uses</label>
+                <input type="text" class="form-control" >
+              </div>
+            </div>
+            <div class="form-block-limit">
+              <p>Limit per customer</p>
+              <div class="form-group">
+                <input type="radio" name="options2" value="">
+                <label>Unlimited</label>
+              </div>
+              <div class="form-group">
+                <input type="radio" name="options2" value="">
+                <label>Limited number of uses</label>
+                <input type="text" class="form-control" >
+              </div>
+            </div>
+            <div class="form-block-buttons">
+              <button class="c-btn c-btn-transparent--red">Cancel</button>
+              <button class="c-btn c-btn-primary-lighter">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--sidebar-->
+    <div class="b-sidebar">
+      <div class="b-sidebar__inner">
+        <div class="b-logo">
+          <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
+        </div>
+        <!--sidebar menu-->
+        <ul class="b-menu">
+          <li><a href="javascript:void(0)"><i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Link 1</a></li>
+              <li><a href="javascript:void(0)">Link 2</a></li>
+              <li><a href="javascript:void(0)">Link 3</a></li>
+              <li><a href="javascript:void(0)">Link 4</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Product 1</a></li>
+              <li><a href="javascript:void(0)">Product 2</a></li>
+              <li><a href="javascript:void(0)">Product 3</a></li>
+              <li><a href="javascript:void(0)">Product 4</a></li>
+              <li><a href="javascript:void(0)">Product 5</a></li>
+              <li><a href="javascript:void(0)">Product 6</a></li>
+              <li><a href="javascript:void(0)">Product 7</a></li>
+              <li><a href="javascript:void(0)">Product 8</a></li>
+              <li><a href="javascript:void(0)">Product 9</a></li>
+              <li><a href="javascript:void(0)">Product 10</a></li>
+            </ul>
+          </li>
+            <li><a href="javascript:void(0)"><i class="fontelloIcon tag">&#xe80b;</i>Sales</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Link 1</a></li>
+              <li><a href="javascript:void(0)">Link 2</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user"><span class="number">5</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Add new assistant</a></li>
+              <li><a href="javascript:void(0)">Admin assistants</a></li>
+              <li><a href="javascript:void(0)">New users</a></li>
+              <li><a href="javascript:void(0)">Reviewed users</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon calendar">&#xe807;</i>Events</a></li>
+          <li><a class="active" href="javascript:void(0)"><i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Discount list</a></li>
+              <li><a class="active" href="javascript:void(0)">Create new discount</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon cog">&#xe809;</i>Settings</a></li>
+          <li class="last"><a href="javascript:void(0)"><i class="fontelloIcon power">&#xe80d;</i>Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/accordionMenu.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/createNewDiscount.js"></script>
+</body>
+</html>

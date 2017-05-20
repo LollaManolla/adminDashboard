@@ -48,20 +48,27 @@ var showMyProfile = function(fileInput) {
 
         if ([5, 6, 7, 8].indexOf(orientation) > -1) {
           $('#profile-rotator').attr('src', binImg);
-          var c = document.getElementById("profile-photo-slice");
-          c.width = $('#profile-rotator').height();
-          c.height = $('#profile-rotator').width();
-          var ctx = c.getContext("2d");
-          ctx.transform(0, 1, -1, 0, $('#profile-rotator').height(), 0);
-          ctx.drawImage(document.getElementById('profile-rotator'), 0, 0);
-          urlRot = c.toDataURL();
-          // set Base64 string in src profile image if rotated
-          $('#profile-img').attr("src", urlRot);
+          var tm = setInterval(function() {
+            if ($('#profile-rotator').attr('src') !== '') {
+              var c = document.getElementById("profile-photo-slice");
+              c.width = $('#profile-rotator').height();
+              c.height = $('#profile-rotator').width();
+              var ctx = c.getContext("2d");
+              ctx.transform(0, 1, -1, 0, $('#profile-rotator').height(), 0);
+              ctx.drawImage(document.getElementById('profile-rotator'), 0, 0);
+              urlRot = c.toDataURL();
+              // set Base64 string in src profile image if rotated
+              $('#profile-img').css("background-image", "url(" + urlRot + ")");
+              clearInterval(tm);
+            }
+          }, 100);
+
         } else {
           // set Base64 string in src profile image ifnot rotated
-          $('#profile-img').attr("src", binImg);
+          $('#profile-img').css("background-image", "url(" + binImg + ")");
         }
       });
+
     };
     reader.readAsDataURL(fileInput.files[0]);
   }

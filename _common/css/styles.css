@@ -1172,7 +1172,7 @@ html, body {
 .b-chart-sales {
   background-color: #2D2D2D;
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
   margin-top: 1.1rem;
   width: 1093px; }
   .b-chart-sales .b-title {
@@ -1238,7 +1238,7 @@ html, body {
   background-color: #2D2D2D;
   float: left;
   width: 348px;
-  min-height: 380px;
+  min-height: 404px;
   margin-right: 1.3rem; }
   .b-profile .b-title {
     background-color: #434343;
@@ -1264,17 +1264,30 @@ html, body {
       color: #24FF94; }
   .b-profile .ct-profile {
     clear: both;
-    float: left;
-    padding-top: 0.5rem; }
-    .b-profile .ct-profile .ct-label {
-      font-size: 30px;
-      dominant-baseline: text-after-edge; }
+    position: relative;
+    padding-top: 1.5rem; }
+    .b-profile .ct-profile canvas {
+      position: relative;
+      left: 3.9rem;
+      top: 0.7rem; }
+    .b-profile .ct-profile__label {
+      bottom: 0;
+      color: #24FF94;
+      font-size: 45px;
+      height: 100%;
+      left: 0;
+      padding-left: 30%;
+      padding-top: 27%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%; }
 
 .b-products {
   background-color: #2D2D2D;
   float: left;
   width: 348px;
-  min-height: 380px;
+  min-height: 404px;
   margin-right: 1.3rem; }
   .b-products .b-title {
     background-color: #434343;
@@ -1300,11 +1313,24 @@ html, body {
       color: #24FF94; }
   .b-products .ct-products {
     clear: both;
-    float: left;
-    padding-top: 0.5rem; }
-    .b-products .ct-products .ct-label {
-      font-size: 30px;
-      dominant-baseline: text-after-edge; }
+    position: relative;
+    padding-top: 1.5rem; }
+    .b-products .ct-products canvas {
+      position: relative;
+      left: 3.9rem;
+      top: 0.7rem; }
+    .b-products .ct-products__label {
+      bottom: 0;
+      color: #24FF94;
+      font-size: 45px;
+      height: 100%;
+      left: 0;
+      padding-left: 30%;
+      padding-top: 27%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%; }
 
 .b-visits {
   background-color: #2D2D2D;
@@ -1328,7 +1354,8 @@ html, body {
     margin-top: 1rem; }
   .b-visits .ct-visits {
     clear: both;
-    float: left; }
+    float: left;
+    position: relative; }
 
 .b-list-admins {
   background-color: #2D2D2D;
@@ -1659,6 +1686,66 @@ html, body {
     .b-table--reviewed-users .b-table__footer .c-btn {
       margin: 3rem 1rem 0rem 0;
       padding: 0 1.2rem; }
+  .b-table--sales th, .b-table--sales tr, .b-table--sales td {
+    border: solid 1px #5A5A5A;
+    text-transform: none; }
+  .b-table--sales .row-1 {
+    width: 204px; }
+  .b-table--sales .row-2 {
+    width: 248px; }
+  .b-table--sales .row-3 {
+    width: 182px; }
+  .b-table--sales .row-4 {
+    width: 183px; }
+  .b-table--sales .row-5 {
+    width: 209px; }
+  .b-table--sales .b-table__header th {
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 1.1rem; }
+  .b-table--sales .b-table__body td {
+    font-size: 16px;
+    text-align: left;
+    color: #D0CFCF;
+    line-height: 2.9;
+    vertical-align: middle;
+    overflow: visible; }
+  .b-table--sales .sales-orders {
+    font-style: italic;
+    color: #5ca395 !important; }
+  .b-table--sales .form {
+    padding-left: 0;
+    padding-right: 0; }
+    .b-table--sales .form.received .current {
+      color: #F04246; }
+    .b-table--sales .form.processing .current {
+      color: #fbb76e; }
+    .b-table--sales .form.delivered .current {
+      color: #5ca395; }
+    .b-table--sales .form .c-dropdown {
+      display: block;
+      float: none;
+      margin-right: 0; }
+      .b-table--sales .form .c-dropdown .nice-select {
+        border: medium none;
+        border-radius: 0;
+        height: auto;
+        line-height: inherit;
+        min-width: auto;
+        outline: medium none;
+        padding-left: 1.6rem;
+        padding-right: 1.2rem;
+        text-align: center;
+        width: 100%;
+        font-weight: bold; }
+        .b-table--sales .form .c-dropdown .nice-select:after {
+          height: 7px;
+          margin-top: -5px;
+          right: 1.2rem;
+          top: 50%;
+          width: 7px; }
+        .b-table--sales .form .c-dropdown .nice-select.open .list {
+          width: 208px; }
 
 .b-id {
   float: left;
@@ -2330,7 +2417,7 @@ input.c-btn,
   background-color: #2D2D2D;
   float: left;
   width: 356px;
-  min-height: 380px; }
+  min-height: 404px; }
   .w-calendar .b-calendar .simple-event-calendar .calendar-month {
     font-size: 20px;
     margin-bottom: 0;
@@ -3154,11 +3241,95 @@ input.c-btn,
           vertical-align: middle;
           margin-left: 0.5rem; }
 
+.page-sales {
+  padding-top: 1.2rem;
+  min-height: 1025px; }
+  .page-sales__title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #5ca395;
+    letter-spacing: 0.12rem;
+    margin-bottom: 2rem; }
+  .page-sales .form-block-sales {
+    margin-left: -9px;
+    margin-bottom: 2rem; }
+    .page-sales .form-block-sales .form-group {
+      display: inline-block;
+      margin-right: 1.7rem;
+      position: relative;
+      width: 170px; }
+      .page-sales .form-block-sales .form-group:nth-child(1) label, .page-sales .form-block-sales .form-group:nth-child(1) input {
+        margin-left: 14px; }
+      .page-sales .form-block-sales .form-group:nth-child(2) {
+        margin-right: 1.1rem; }
+      .page-sales .form-block-sales .form-group:nth-child(3) {
+        margin-right: 0.9rem; }
+      .page-sales .form-block-sales .form-group:nth-child(4) {
+        margin-right: 0.9rem; }
+      .page-sales .form-block-sales .form-group:nth-child(5) {
+        margin-left: 0.7rem;
+        margin-right: 0;
+        width: 182px; }
+      .page-sales .form-block-sales .form-group input {
+        border: solid 1px #505050;
+        border-radius: 20px;
+        line-height: 2.3;
+        margin-bottom: 0.7rem;
+        margin-top: 0.6rem;
+        padding-left: 1rem;
+        position: relative;
+        width: 100%; }
+        .page-sales .form-block-sales .form-group input .datepicker {
+          padding-left: 2.2rem; }
+      .page-sales .form-block-sales .form-group label {
+        font-weight: bold; }
+      .page-sales .form-block-sales .form-group .ui-datepicker-trigger {
+        cursor: pointer;
+        left: 1.2rem;
+        position: absolute;
+        top: 2.8rem;
+        width: 18px; }
+      .page-sales .form-block-sales .form-group .c-dropdown {
+        float: none;
+        margin-right: 0; }
+        .page-sales .form-block-sales .form-group .c-dropdown__title {
+          display: inline-block;
+          margin-right: 0;
+          position: relative;
+          top: -1rem; }
+        .page-sales .form-block-sales .form-group .c-dropdown .nice-select {
+          border: solid 1px #505050;
+          height: 37px;
+          line-height: 33px;
+          width: 182px;
+          color: #ACADAD;
+          font-size: 14px; }
+          .page-sales .form-block-sales .form-group .c-dropdown .nice-select:after {
+            border-bottom: 2px solid #505050;
+            border-right: 2px solid #505050; }
+          .page-sales .form-block-sales .form-group .c-dropdown .nice-select.open .list {
+            width: 185px; }
+      .page-sales .form-block-sales .form-group button {
+        background-color: transparent;
+        border: medium none;
+        bottom: 0.8rem;
+        height: 32px;
+        position: absolute;
+        right: 1.3rem;
+        width: 32px; }
+      .page-sales .form-block-sales .form-group .fontelloIcon {
+        font-size: 22px;
+        position: absolute;
+        right: 0.4rem;
+        top: 0.2rem;
+        color: #5A5A5A;
+        cursor: pointer; }
+
 .clearfix:after, .wrapper-main:after, .b-list-events:after, .b-list-events .event-title:after,
 .b-list-events .event-start:after,
 .b-list-events .event-end:after,
 .b-list-events .event-place:after,
-.b-list-events .event-type:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-settings .form-group:after, .page-referrals .reedem-duration:after, .page-referrals .reedem-invite:after, .page-referrals .reedem-remind-row:after {
+.b-list-events .event-type:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-settings .form-group:after, .page-referrals .reedem-duration:after, .page-referrals .reedem-invite:after, .page-referrals .reedem-remind-row:after, .page-sales .form-block-sales:after {
   content: "";
   display: table;
   clear: both; }

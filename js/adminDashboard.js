@@ -71,49 +71,35 @@ new Chartist.Bar('.ct-sales-report', {
   }
 });
 
-
-
 //chart profile
-var data = {
-  series:  [100, 50, 0]
-};
-var sum = function(a, b) {
-  return a + b;
-};
-new Chartist.Pie('.ct-profile', data, {
-  labelInterpolationFnc: function(value) {
-    return Math.round(value / data.series.reduce(sum) * 100) + '%';
-  },
-  donut: true,
-  donutWidth: 9,
-  donutSolid: true,
-  startAngle: 0,
-  showLabel: true,
-   labelOffset: 45,
- width:340,
- height: 205
-  });
+// https://github.com/kottenator/jquery-circle-progress
+$('.ct-profile').circleProgress({
+    value: 0.62,
+    size: 171,
+    startAngle:Math.PI / 2,
+    reverse: true,
+    thickness: 9,
+    lineCap: "round",
+    emptyFill: "rgba(37, 108, 94, 1)",
+     fill: {  color:'#24ff94'},
+  }).on('circle-animation-progress', function(event, progress, stepValue) {
+ $(this).find('strong').text(parseInt(stepValue * 100) + '%');
+});
 
 //chart products
-  var data2 = {
-    series:  [100, 50, 0]
-  };
-  var sum = function(a, b) {
-    return a + b;
-  };
-  new Chartist.Pie('.ct-products', data2, {
-    labelInterpolationFnc: function(value) {
-      return Math.round(value / data2.series.reduce(sum) * 100) + '%';
-    },
-    donut: true,
-    donutWidth: 9,
-    donutSolid: true,
-    startAngle: 0,
-    showLabel: true,
-     labelOffset: 45,
-   width:340,
-   height: 205
-    });
+$('.ct-products').circleProgress({
+    value: 0.75,
+    size: 171,
+    startAngle:Math.PI / 2,
+    reverse: true,
+    thickness: 9,
+    lineCap: "round",
+    emptyFill: "rgba(37, 108, 94, 1)",
+     fill: {  color:'#24ff94'},
+  }).on('circle-animation-progress', function(event, progress, stepValue) {
+ $(this).find('strong').text(parseInt(stepValue * 100) + '%');
+});
+
 
 //chart visits
     new Chartist.Line('.ct-visits', {

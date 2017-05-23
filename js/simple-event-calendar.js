@@ -23,7 +23,7 @@ $.fn.simpleEventCalendar = function(args) {
     if (args.monthLabels[this.month] === undefined || args.monthLabels[this.month] === null) {
       this.month = 11;
     }
-    console.log(this.month);
+    // console.log(this.month);
     var html = '';
 
     // first row month

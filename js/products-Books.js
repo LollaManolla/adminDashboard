@@ -33,14 +33,21 @@ $(document).ready(function () {
     $('.c-modal.c-modal--form').slideUp();
   });
 
-
-  //owl slider
-  $(".owl-carousel").owlCarousel({
-    autoPlay: 3000, //Set AutoPlay to 3 seconds
-    items: 1,
-    nav:true,
-    navText:["<i class='fontelloIcon left-open-mini'>&#xe80f</i>","<i class='fontelloIcon right-open-mini'>&#xe80e;</i>"],
-    dots: false
+//open modal for flip book
+  $(".c-modal-book").click(function(e) {
+      $('.c-modal.c-modal--book').hide();
+      $('.c-modal.c-modal--book').slideDown();
   });
+  $(".c-modal__btn-close").click(function() {
+    $('.c-modal.c-modal--book').slideUp();
+  });
+
+
+  $(".flipbook").turn({
+    width: 800,
+    height: 566
+  });
+
+
 
 });

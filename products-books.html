@@ -5,10 +5,6 @@
   <title>Products - Books</title>
   <meta name="description" content="products - books">
   <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
-  <link href="_common/css/jquery-ui.css" rel="stylesheet">
-  <link rel="stylesheet" href="_common/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="_common/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="_common/css/lightbox.min.css">
   <link rel="stylesheet" href="_common/css/styles.css">
 </head>
 
@@ -35,28 +31,201 @@
     <main class="wrapper-content">
       <div class="wrapper-content-inner full-width">
         <h2 class="page-products__title">Books</h2>
-        <div class="page-products">
+        <div class="page-products-top__filter">
+          <div class="c-dropdown">
+            <span class="c-dropdown__title">Filter products</span>
+            <select>
+              <option value="1">Select</option>
+              <option value="2">Accepted</option>
+              <option value="3">Rejected</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="page-products scrollProducts">
           <div class="page-products__head">
             <p>Products</p>
             <p>Artist</p>
           </div>
 
           <!--list products-->
-          <ul class="b-list-products scrollProducts">
+          <ul class="b-list-products ">
             <li class="b-list-products__details">
               <div class="b-list-products__preview">
                 <div class="col col-1">
                   <div class="product-image__teaser">
                     <a href="javascript:void(0)">
-                      <img src="./_common/images/book-1.jpg">
+                      <img src="./_common/images/original-art-1.jpg">
                     </a>
                   </div>
                 </div>
                 <div class="col col-2">
-
                   <div class="product-author"><a href="javascript:void(0)" target="_blank">Laurent Garnier</a></div>
                 </div>
                 <div class="col col-3"><!--in case there is no content, print div with col class--></div>
+                <div class="col col-4">
+                  <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
+                </div>
+                <div class="col col-5">
+                    <span class="c-btn c-btn-rejected">Rejected</span>
+                </div>
+                <div class="col col-6">
+                <a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a>
+                </div>
+              </div>
+            </li>
+            <li class="b-list-products__details">
+              <div class="b-list-products__preview">
+                <div class="col col-1">
+                  <div class="product-image__teaser">
+                    <a href="javascript:void(0)">
+                      <img src="./_common/images/original-art-1.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="col col-2">
+                  <div class="product-author"><a href="javascript:void(0)" target="_blank">Laurent Garnier</a></div>
+                </div>
+                <div class="col col-3">
+                  <span class="product-info">
+                    <a href="javascript:void(0)"><i class="fontelloIcon info ">&#xe817;</i> </a>
+                  </span>
+                </div>
+                <div class="col col-4">
+                  <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
+                </div>
+                <div class="col col-5"></div>
+                <div class="col col-6">
+                <a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a>
+                </div>
+              </div>
+            </li>
+            <li class="b-list-products__details">
+              <div class="b-list-products__preview">
+                <div class="col col-1">
+                  <div class="product-image__teaser">
+                    <a href="javascript:void(0)">
+                      <img src="./_common/images/original-art-2.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="col col-2">
+                  <div class="product-author"><a href="javascript:void(0)" target="_blank" >Laurent Garnier</a></div>
+                </div>
+                <div class="col col-3"></div>
+                <div class="col col-4">
+                  <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
+                </div>
+                <div class="col col-5">
+                  <a href="javascript:void(0)" class="c-btn c-btn-primary ">Approve</a>
+                </div>
+                <div class="col col-6">
+                  <a href="javascript:void(0)" class="c-btn c-btn-secondary">Reject</a>
+                </div>
+              </div>
+            </li>
+            <li class="b-list-products__details">
+              <div class="b-list-products__preview">
+                <div class="col col-1">
+                  <div class="product-image__teaser">
+                    <a href="javascript:void(0)">
+                      <img src="./_common/images/original-art-3.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="col col-2">
+                  <div class="product-author"><a href="javascript:void(0)" target="_blank" >Laurent Garnier</a></div>
+                </div>
+                <div class="col col-3">
+                  <span class="product-info">
+                    <a href="javascript:void(0)"><i class="fontelloIcon info ">&#xe817;</i> </a>
+                  </span>
+                </div>
+                <div class="col col-4">
+                  <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
+                </div>
+                <div class="col col-5"></div>
+                <div class="col col-6"></div>
+              </div>
+              <div class="b-list-products__full">
+                <div class="b-list-products__labels">
+                  <p>Name of product:</p>
+                  <p>Product id:</p>
+                  <p>Number of views:</p>
+                  <p>Number of wishlist:</p>
+                </div>
+                <div class="b-list-products__labels-value">
+                  <p>Stitch in blue</p>
+                  <p>1876924</p>
+                  <p>152</p>
+                  <p>12</p>
+                </div>
+                <a href="javascript:void(0)" class="b-list-products__link" target="_blank">Go to individual product page</a>
+              </div>
+            </li>
+            <li class="b-list-products__details">
+              <div class="b-list-products__preview">
+                <div class="col col-1">
+                  <div class="product-image__teaser">
+                    <a href="javascript:void(0)">
+                      <img src="./_common/images/book-2.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="col col-2">
+                  <div class="product-author"><a href="javascript:void(0)" target="_blank" >Laurent Garnier</a></div>
+                </div>
+                <div class="col col-3"></div>
+                <div class="col col-4">
+                  <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
+                </div>
+                <div class="col col-5">
+                  <a href="javascript:void(0)" class="c-btn c-btn-primary ">Approve</a>
+                </div>
+                <div class="col col-6">
+                  <a href="javascript:void(0)" class="c-btn c-btn-secondary">Reject</a>
+                </div>
+              </div>
+            </li>
+            <li class="b-list-products__details">
+              <div class="b-list-products__preview">
+                <div class="col col-1">
+                  <div class="product-image__teaser">
+                    <a href="javascript:void(0)">
+                      <img src="./_common/images/book-3.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="col col-2">
+                  <div class="product-author"><a href="javascript:void(0)" target="_blank" >Laurent Garnier</a></div>
+                </div>
+                <div class="col col-3"></div>
+                <div class="col col-4">
+                  <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
+                </div>
+                <div class="col col-5">
+                  <a href="javascript:void(0)" class="c-btn c-btn-primary ">Approve</a>
+                </div>
+                <div class="col col-6">
+                  <a href="javascript:void(0)" class="c-btn c-btn-secondary">Reject</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="b-list-products__details">
+              <div class="b-list-products__preview">
+                <div class="col col-1">
+                  <div class="product-image__teaser">
+                    <a href="javascript:void(0)">
+                      <img src="./_common/images/book-2.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="col col-2">
+                  <div class="product-author"><a href="javascript:void(0)" target="_blank" >Laurent Garnier</a></div>
+                </div>
+                <div class="col col-3"></div>
                 <div class="col col-4">
                   <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
                 </div>
@@ -97,38 +266,23 @@
                 <div class="col col-1">
                   <div class="product-image__teaser">
                     <a href="javascript:void(0)">
-                      <img src="./_common/images/book-3.jpg">
+                      <img src="./_common/images/book-2.jpg">
                     </a>
                   </div>
                 </div>
                 <div class="col col-2">
                   <div class="product-author"><a href="javascript:void(0)" target="_blank" >Laurent Garnier</a></div>
                 </div>
-                <div class="col col-3">
-                  <span class="product-info">
-                    <a href="javascript:void(0)"><i class="fontelloIcon info ">&#xe817;</i> </a>
-                  </span>
-                </div>
+                <div class="col col-3"></div>
                 <div class="col col-4">
                   <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
                 </div>
-                <div class="col col-5"></div>
-                <div class="col col-6"></div>
-              </div>
-              <div class="b-list-products__full">
-                <div class="b-list-products__labels">
-                  <p>Name of product:</p>
-                  <p>Product id:</p>
-                  <p>Number of views:</p>
-                  <p>Number of wishlist:</p>
+                <div class="col col-5">
+                  <a href="javascript:void(0)" class="c-btn c-btn-primary ">Approve</a>
                 </div>
-                <div class="b-list-products__labels-value">
-                  <p>Stitch in blue</p>
-                  <p>1876924</p>
-                  <p>152</p>
-                  <p>12</p>
+                <div class="col col-6">
+                  <a href="javascript:void(0)" class="c-btn c-btn-secondary">Reject</a>
                 </div>
-                <a href="javascript:void(0)" class="b-list-products__link" target="_blank">Go to individual product page</a>
               </div>
             </li>
             <li class="b-list-products__details">
@@ -136,131 +290,26 @@
                 <div class="col col-1">
                   <div class="product-image__teaser">
                     <a href="javascript:void(0)">
-                      <img src="./_common/images/book-4.jpg">
+                      <img src="./_common/images/book-2.jpg">
                     </a>
                   </div>
                 </div>
                 <div class="col col-2">
                   <div class="product-author"><a href="javascript:void(0)" target="_blank" >Laurent Garnier</a></div>
                 </div>
-                <div class="col col-3">
-                  <span class="product-info">
-                    <a href="javascript:void(0)"><i class="fontelloIcon info ">&#xe817;</i> </a>
-                  </span>
-                </div>
+                <div class="col col-3"></div>
                 <div class="col col-4">
                   <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
                 </div>
-                <div class="col col-5"></div>
-                <div class="col col-6"></div>
-              </div>
-              <div class="b-list-products__full">
-                <div class="b-list-products__labels">
-                  <p>Name of product:</p>
-                  <p>Product id:</p>
-                  <p class="small">Number of views:</p>
-                  <p class="small">Number of wishlist:</p>
+                <div class="col col-5">
+                  <a href="javascript:void(0)" class="c-btn c-btn-primary ">Approve</a>
                 </div>
-                <div class="b-list-products__labels-value">
-                  <p class="white">Stitch in blue</p>
-                  <p class="white">1876924</p>
-                  <p>152</p>
-                  <p>12</p>
+                <div class="col col-6">
+                  <a href="javascript:void(0)" class="c-btn c-btn-secondary">Reject</a>
                 </div>
-                <a href="javascript:void(0)" class="b-list-products__link" target="_blank">Go to individual product page</a>
               </div>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="page-products-details">
-        <div class="wrapper-content-inner full-width">
-          <h2 class="page-products__title">And then she was gone</h2>
-          <div class="page-products-details-wrapper">
-            <div class="product-media">
-              <div class="owl-carousel owl-theme product-image__full">
-                <div>
-                  <a href="./_common/images/book-4.jpg" data-lightbox="books">
-                    <img src="./_common/images/book-4.jpg">
-                  </a>
-                </div>
-                <div>
-                  <a href="./_common/images/book-4-back.jpg" data-lightbox="books">
-                    <img src="./_common/images/book-4-back.jpg">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="product-info-list">
-              <ul>
-                <li>
-                  <span class="object">Type of book:</span>
-                  <span class="value">Paper</span>
-                </li>
-                <li>
-                  <span class="object">Genre: </span>
-                  <span class="value">Thriller</span>
-                </li>
-                <li>
-                  <span class="object">Other:</span>
-                  <span class="value"></span>
-                </li>
-                <li>
-                  <span class="object">Pages:</span>
-                  <span class="value">256</span>
-                </li>
-                <li>
-                  <span class="object">Language:</span>
-                  <span class="value">English</span>
-                </li>
-                <li>
-                  <span class="object">Other:</span>
-                  <span class="value"></span>
-                </li>
-                <li>
-                  <span class="object">Publisher:</span>
-                  <span class="value">Blake Publisher</span>
-                </li>
-                <li>
-                  <span class="object">Edition:</span>
-                  <span class="value">Neki edition</span>
-                </li>
-                <li>
-                  <span class="object">Subject:</span>
-                  <span class="value"></span>
-                </li>
-                <li>
-                  <span class="object">Other:</span>
-                  <span class="value">LudiloBes</span>
-                </li>
-                <li>
-                  <span class="object">Year:</span>
-                  <span class="value">2017</span>
-                </li>
-                <li>
-                  <span class="object">Country:</span>
-                  <span class="value">Ghana</span>
-                </li>
-                <li>
-                  <span class="object">Price:</span>
-                  <span class="value">£80</span>
-                </li>
-                <li>
-                  <span class="object">Shipping:</span>
-                  <span class="value">£22</span>
-                </li>
-
-                <li>
-                  <span class="object">Shipping days:</span>
-                  <span class="value">6</span>
-                </li>
-              </ul>
-            </div>
-            <div class="product-info-text">
-              <h3>ABOUT THE book</h3>
-              <p>Hymenaeos vehicula quas pulvinar pulvinar. Integer? Mi error. Rutrum! Ad hic aliqua numquam reiciendis sapien alias tincidunt temporibus, leo fuga magni numquam? Donec tempora, molestiae. Non, viverra nunc excepturi consequatur? Voluptatem bibendum? Non, animi optio elementum, voluptatibus bibendum sit morbi nihil! Rutrum montes laudantium occaecati, nec curabitur sociosqu? Itaque porta mollit dolor? Incidunt a, eius, ipsum! Excepteur leo, inventore, mollit dapibus fermentum? Dui cupidatat adipisci vero porta natus, incididunt, minima dapibus rutrum, maxime! Magni commodo hymenaeos adipisicing turpis laoreet elementum incidunt hac possimus irure iaculis duis delectus vel class? Repudiandae, facilisi nisi, mauris quasi, et turpis tempore massa, consectetuer viverra eleifend. Nobis eum pharetra.</p>
-            </div>
-          </div>
         </div>
       </div>
     </main>
@@ -284,8 +333,8 @@
           </li>
           <li ><a class="active" href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
             <ul class="b-menu__submenu">
-              <li><a class="active" href="javascript:void(0)">Original Art</a></li>
-              <li><a href="javascript:void(0)">Books</a></li>
+              <li><a href="javascript:void(0)">Original Art</a></li>
+              <li><a class="active" href="javascript:void(0)">Books</a></li>
               <li><a href="javascript:void(0)">Art Print</a></li>
               <li><a href="javascript:void(0)">Phone Cases</a></li>
               <li><a href="javascript:void(0)">T-Shirts</a></li>
@@ -328,11 +377,34 @@
     </div>
   </div>
 
+  <div class="c-modal c-modal--form">
+    <div class="c-modal-inner c-modal--form-inner">
+      <span class="c-modal__btn-close">x</span>
+      <div class="form">
+        <div class="form-group modal-message-for">
+          <label for="name">Message for:</label><input class="form-control" type="text" value="name will be here">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="form-group-input">
+            <input class="form-control" type="text" name="email" placeholder="wallebarkman@gmail.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Message</label>
+          <div class="form-group-input">
+            <textarea name="message"></textarea>
+          </div>
+        </div>
+        <input value="Send" class="c-btn c-btn-primary-lighter " type="submit">
+      </div>
+    </div>
+  </div>
+
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/accordionMenu.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/lightbox.min.js"></script>
-  <script src="js/products-Books.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/products-OriginalArt.js"></script>
 </body>
 </html>

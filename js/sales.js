@@ -12,6 +12,14 @@ $(document).ready(function() {
   // no need to modify this
     $('select').niceSelect();
 
+//show modal receipt
+$(".c-modal-receipt").click(function(e) {
+    $('.c-modal.c-modal--receipt').hide();
+    $('.c-modal.c-modal--receipt').slideDown();
+});
+$(".c-modal__btn-close").click(function() {
+  $('.c-modal.c-modal--receipt').slideUp();
+});
 
 
 });

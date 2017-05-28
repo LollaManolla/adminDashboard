@@ -1562,15 +1562,19 @@ html, body {
       vertical-align: middle;
       width: 70px; }
       .b-list-products__preview .product-image__teaser a, .b-list-products__preview .product-image__teaser span {
-        display: table-cell;
+        display: inline-block;
         height: 70px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
         vertical-align: middle;
-        position: relative; }
+        padding: 0.5rem; }
         .b-list-products__preview .product-image__teaser a img, .b-list-products__preview .product-image__teaser span img {
-          width: 58%;
           display: inline-block;
-          vertical-align: middle;
-          height: auto; }
+          height: 55px;
+          margin: 0 auto;
+          text-align: center;
+          vertical-align: middle; }
     .b-list-products__preview .product-author {
       display: inline-block;
       font-weight: bold;
@@ -1809,6 +1813,8 @@ html, body {
   .b-table--sales .sales-orders {
     font-style: italic;
     color: #5ca395 !important; }
+    .b-table--sales .sales-orders a {
+      color: #5ca395; }
   .b-table--sales .form {
     padding-left: 0;
     padding-right: 0; }
@@ -2623,6 +2629,41 @@ input.c-btn,
       font-size: 14px;
       line-height: 2.1;
       margin: 0; }
+  .c-modal--receipt {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 10; }
+    .c-modal--receipt-inner {
+      width: 1022px;
+      height: 568px;
+      margin: 0 auto;
+      top: 25%;
+      position: relative;
+      background-color: #171717;
+      padding: 1.6rem; }
+    .c-modal--receipt .receipt-info {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #D0CFCF;
+      border-bottom: solid 1px #505050;
+      padding-bottom: 0.7rem;
+      font-weight: bold; }
+    .c-modal--receipt .col-left {
+      float: left;
+      width: 610px;
+      margin-right: 3.6rem;
+      background-color: red; }
+    .c-modal--receipt .col-right {
+      float: left;
+      width: 397;
+      background-color: pink; }
 
 .c-progressbar {
   position: relative;
@@ -3654,15 +3695,19 @@ input.c-btn,
       vertical-align: middle;
       width: 250px; }
       .page-products-details .product-media .product-image__full a {
-        display: table-cell;
+        display: inline-block;
         height: 250px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
         vertical-align: middle;
-        position: relative; }
+        padding: 1rem; }
         .page-products-details .product-media .product-image__full a img {
-          width: 65%;
           display: inline-block;
-          vertical-align: middle;
-          height: auto; }
+          height: 218px;
+          margin: 0 auto;
+          text-align: center;
+          vertical-align: middle; }
     .page-products-details .product-media .product-image__thumb--video {
       position: relative;
       padding-bottom: 50%;
@@ -3703,6 +3748,9 @@ input.c-btn,
       width: 108px; }
     .page-products-details .product-info-list ul .value {
       color: #c6c6c6; }
+    .page-products-details .product-info-list ul p.tags span {
+      overflow-wrap: break-word;
+      display: block; }
   .page-products-details .btns {
     clear: both;
     float: left;

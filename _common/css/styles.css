@@ -1812,12 +1812,6 @@ html, body {
   .b-table--sales .form {
     padding-left: 0;
     padding-right: 0; }
-    .b-table--sales .form.received .current {
-      color: #F04246; }
-    .b-table--sales .form.processing .current {
-      color: #fbb76e; }
-    .b-table--sales .form.delivered .current {
-      color: #5ca395; }
     .b-table--sales .form .c-dropdown {
       display: block;
       float: none;
@@ -1842,6 +1836,15 @@ html, body {
           width: 7px; }
         .b-table--sales .form .c-dropdown .nice-select.open .list {
           width: 208px; }
+  .b-table .received .current,
+  .b-table .received {
+    color: #F04246; }
+  .b-table .processing .current,
+  .b-table .processing {
+    color: #fbb76e; }
+  .b-table .delivered .current,
+  .b-table .delivered {
+    color: #5ca395; }
 
 .b-id {
   float: left;
@@ -2078,7 +2081,8 @@ html, body {
       position: absolute;
       width: 32px;
       right: 0.45rem;
-      top: 0.4rem; }
+      top: 0.4rem;
+      cursor: pointer; }
     .b-search .form .fontelloIcon {
       font-size: 18px;
       position: absolute;
@@ -3707,6 +3711,8 @@ input.c-btn,
       margin-right: 0.6rem;
       min-width: 100px;
       padding: 0; }
+      .page-products-details .btns .c-btn.c-btn-rejected {
+        cursor: default; }
   .page-products-details .product-info-text {
     float: left;
     padding-left: 2rem;

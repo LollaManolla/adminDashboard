@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Products - Original Art</title>
-  <meta name="description" content="products - original art">
+  <title>Products - Cards</title>
+  <meta name="description" content="Products - Cards">
   <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
   <link rel="stylesheet" href="_common/css/styles.css">
 </head>
@@ -30,7 +30,7 @@
     <!--main content-->
     <main class="wrapper-content">
       <div class="wrapper-content-inner full-width">
-        <h2 class="page-products__title">Original Art</h2>
+        <h2 class="page-products__title">Cards</h2>
         <div class="page-products-top__filter">
           <div class="c-dropdown">
             <span class="c-dropdown__title">Filter products</span>
@@ -40,8 +40,28 @@
               <option value="3">Rejected</option>
             </select>
           </div>
-        </div>
+            <div class="b-add-price">
+              <div class="b-add-price__header">
+                <span class="b-add-price__header-currency">£</span>
+                <span class="b-add-price__header-price">0</span>
+              </div>
+                <a href="javascript:void(0)"  class="c-btn c-btn-primary-lighter c-modal-price">Add price</a>
 
+                  <div class="c-modal c-modal--price">
+                    <div class="c-modal-inner c-modal--price-inner">
+                      <span class="c-modal__btn-close">x</span>
+                      <div class="form">
+                        <div class="form-group">
+                          <label for="note">Add price for cards:</label>
+                          <span class="currency">£</span>
+                          <input class="form-control" type="text" placeholder="">
+                          <input value="Add" class="c-btn c-btn-primary-lighter " type="submit">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
 
         <div class="page-products scrollProducts">
           <div class="page-products__head">
@@ -100,6 +120,21 @@
                 <a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a>
                 </div>
               </div>
+              <div class="b-list-products__full">
+                <div class="b-list-products__labels">
+                  <p>Name of product:</p>
+                  <p>Product id:</p>
+                  <p>Number of views:</p>
+                  <p>Number of wishlist:</p>
+                </div>
+                <div class="b-list-products__labels-value">
+                  <p>Stitch in blue</p>
+                  <p>1876924</p>
+                  <p>152</p>
+                  <p>12</p>
+                </div>
+                <a href="javascript:void(0)" class="b-list-products__link" target="_blank">Go to individual product page</a>
+              </div>
             </li>
             <li class="b-list-products__details">
               <div class="b-list-products__preview">
@@ -125,49 +160,7 @@
                 </div>
               </div>
             </li>
-            <li class="b-list-products__details">
-              <div class="b-list-products__preview">
-                <div class="col col-1">
-                  <div class="product-image__teaser">
-                    <a href="javascript:void(0)">
-                      <img src="./_common/images/original-art-3.jpg">
-                    </a>
-                  </div>
-                </div>
-                <div class="col col-2">
-                  <div class="product-author"><a href="javascript:void(0)" target="_blank" >Laurent Garnier</a></div>
-                </div>
-                <div class="col col-3">
-                  <span class="product-info">
-                    <a href="javascript:void(0)"><i class="fontelloIcon info ">&#xe817;</i> </a>
-                  </span>
-                </div>
-                <div class="col col-4">
-                  <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
-                </div>
-                <div class="col col-5">
-                  <a href="javascript:void(0)" class="c-btn c-btn-primary ">Approve</a>
-                </div>
-                <div class="col col-6">
-                  <a href="javascript:void(0)" class="c-btn c-btn-secondary">Reject</a>
-                </div>
-              </div>
-              <div class="b-list-products__full">
-                <div class="b-list-products__labels">
-                  <p>Name of product:</p>
-                  <p>Product id:</p>
-                  <p>Number of views:</p>
-                  <p>Number of wishlist:</p>
-                </div>
-                <div class="b-list-products__labels-value">
-                  <p>Stitch in blue</p>
-                  <p>1876924</p>
-                  <p>152</p>
-                  <p>12</p>
-                </div>
-                <a href="javascript:void(0)" class="b-list-products__link" target="_blank">Go to individual product page</a>
-              </div>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -192,13 +185,13 @@
           </li>
           <li ><a class="active" href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
             <ul class="b-menu__submenu">
-              <li><a class="active" href="javascript:void(0)">Original Art</a></li>
+              <li><a href="javascript:void(0)">Original Art</a></li>
               <li><a href="javascript:void(0)">Books</a></li>
               <li><a href="javascript:void(0)">Art Print</a></li>
               <li><a href="javascript:void(0)">Phone Cases</a></li>
               <li><a href="javascript:void(0)">T-Shirts</a></li>
               <li><a href="javascript:void(0)">Pillows</a></li>
-              <li><a href="javascript:void(0)">Cards</a></li>
+              <li><a class="active" href="javascript:void(0)">Cards</a></li>
               <li><a href="javascript:void(0)">Tote Bags</a></li>
               <li><a href="javascript:void(0)">Mugs</a></li>
               <li><a href="javascript:void(0)">Other</a></li>
@@ -264,6 +257,6 @@
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/accordionMenu.js"></script>
   <script src="js/jquery.nice-select.min.js"></script>
-  <script src="js/products-OriginalArt.js"></script>
+  <script src="js/products-Cards.js"></script>
 </body>
 </html>

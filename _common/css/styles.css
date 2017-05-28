@@ -438,27 +438,6 @@ html, body {
     .b-sidebar .fontelloIcon--user {
       padding-left: 0.8rem;
       padding-right: 0; }
-  .b-sidebar .b-search {
-    display: none;
-    line-height: 1.5;
-    position: relative;
-    padding-left: 1.5rem;
-    margin: 0.5rem 0; }
-    .b-sidebar .b-search form {
-      line-height: 1.7; }
-    .b-sidebar .b-search__submit {
-      font-family: "fontello";
-      background-color: transparent;
-      border: none;
-      color: #c6c6c6; }
-    .b-sidebar .b-search__input {
-      background-color: #292929;
-      border: none;
-      color: #c6c6c6;
-      font-size: 12px;
-      line-height: 2.2;
-      width: 145px;
-      padding-left: 0.5rem; }
   .b-sidebar .b-menu li {
     line-height: 2.79; }
     .b-sidebar .b-menu li a {
@@ -2075,6 +2054,38 @@ html, body {
     font-size: 16px;
     margin-bottom: 0.6rem; }
 
+.b-search {
+  display: inline-block;
+  margin-right: 1.5rem; }
+  .b-search__title {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.8rem;
+    margin-right: 0;
+    color: #c6c6c6; }
+  .b-search .form {
+    position: relative; }
+    .b-search .form .form-input {
+      border-radius: 2rem;
+      line-height: 2.8;
+      width: 223px;
+      padding: 0 2.2rem 0 1rem; }
+    .b-search .form button {
+      background-color: transparent;
+      border: medium none;
+      height: 32px;
+      position: absolute;
+      width: 32px;
+      right: 0.45rem;
+      top: 0.4rem; }
+    .b-search .form .fontelloIcon {
+      font-size: 18px;
+      position: absolute;
+      right: 0.4rem;
+      top: 0.2rem;
+      color: #c6c6c6; }
+
 .c-dropdown {
   display: inline-block;
   float: right;
@@ -3583,7 +3594,8 @@ input.c-btn,
     display: inline-block; }
   .page-products__head {
     border-bottom: solid 1px #505050;
-    padding-bottom: 2px; }
+    padding-bottom: 2px;
+    margin-top: 1rem; }
     .page-products__head p {
       width: 237px;
       font-size: 16px;

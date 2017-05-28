@@ -31,7 +31,17 @@
     <main class="wrapper-content">
       <div class="wrapper-content-inner full-width">
         <h2 class="page-products__title">Cards</h2>
+        <!--filters-->
         <div class="page-products-top__filter">
+          <!--filter search-->
+          <div class="b-search">
+         <span class="b-search__title">Search product ID</span>
+         <div class="form">
+         <input class="form-input" type="text">
+         <button type="submit"><i class="fontelloIcon search">&#xe802;</i></button>
+       </div>
+     </div>
+     <!--filter select-->
           <div class="c-dropdown">
             <span class="c-dropdown__title">Filter products</span>
             <select>
@@ -41,13 +51,13 @@
               <option value="2">Rejected</option>
             </select>
           </div>
+          <!--filter add price-->
             <div class="b-add-price">
               <div class="b-add-price__header">
                 <span class="b-add-price__header-currency">£</span>
                 <span class="b-add-price__header-price">0</span>
               </div>
                 <a href="javascript:void(0)"  class="c-btn c-btn-primary-lighter c-modal-price">Add price</a>
-
                   <div class="c-modal c-modal--price">
                     <div class="c-modal-inner c-modal--price-inner">
                       <span class="c-modal__btn-close">x</span>

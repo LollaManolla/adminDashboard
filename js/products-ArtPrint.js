@@ -38,13 +38,4 @@ $(document).ready(function () {
   // no need to modify this
     $('select').niceSelect();
 
-//show block add price
-$(".c-modal-set-price").click(function(e) {
-    $('.c-modal.c-modal--price').hide();
-    $('.c-modal.c-modal--price').slideDown();
-});
-$(".c-modal__btn-close").click(function() {
-  $('.c-modal.c-modal--price').slideUp();
-});
-
 });

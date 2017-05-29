@@ -31,7 +31,17 @@
     <main class="wrapper-content">
       <div class="wrapper-content-inner full-width">
         <h2 class="page-products__title">Art Print</h2>
+        <!--filters-->
         <div class="page-products-top__filter">
+          <!--filter search-->
+          <div class="b-search">
+         <span class="b-search__title">Search product ID</span>
+         <div class="form">
+         <input class="form-input" type="text">
+         <button type="submit"><i class="fontelloIcon search">&#xe802;</i></button>
+       </div>
+     </div>
+     <!--filter select-->
           <div class="c-dropdown">
             <span class="c-dropdown__title">Filter products</span>
             <select>
@@ -41,33 +51,17 @@
               <option value="2">Rejected</option>
             </select>
           </div>
-          <div class="b-set-price">
-            <p class="b-set-prices__title">Set prics</p>
-            <a href="javascript:void(0)" class="c-modal-set-price">  <img src="./_common/images/bnt-set-prices.png" alt="Logo Admin Dashboard"></a>
+          <!--filter add price-->
+          <div class="b-setup-price">
+            <p>Setup prices</p>
+    <a href="javascript:void(0)"  class="icon-paper">  <img src="./_common/images/icon-paper.png">
+      <div class="notification paper">For paper</div>
+    </a>
+    <a href="javascript:void(0)"  class="icon-frame">  <img src="./_common/images/icon-frame.png">
+          <div class="notification frame">For frame</div>
+    </a>
           </div>
 
-
-            <div class="b-add-price">
-              <div class="b-add-price__header">
-                <span class="b-add-price__header-currency">£</span>
-                <span class="b-add-price__header-price">0</span>
-              </div>
-                <a href="javascript:void(0)"  class="c-btn c-btn-primary-lighter c-modal-price">Add price</a>
-
-                  <div class="c-modal c-modal--price">
-                    <div class="c-modal-inner c-modal--price-inner">
-                      <span class="c-modal__btn-close">x</span>
-                      <div class="form">
-                        <div class="form-group">
-                          <label for="note">Add price for phone cases:</label>
-                          <span class="currency">£</span>
-                          <input class="form-control" type="text" placeholder="">
-                          <input value="Add" class="c-btn c-btn-primary-lighter " type="submit">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
         </div>
 
         <div class="page-products scrollProducts">

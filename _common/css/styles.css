@@ -3955,11 +3955,69 @@ input.c-btn,
     .page-products-details.books .product-info-list .object {
       width: 193px; }
 
+.page-products-set-prices__title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #5ca395;
+  letter-spacing: 0.04rem;
+  margin-bottom: 1.8rem;
+  margin-top: 1.2rem; }
+.page-products-set-prices .form-block-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0.9rem; }
+.page-products-set-prices .form .c-dropdown {
+  margin-right: 0;
+  float: none;
+  display: block;
+  margin-bottom: 1.5rem; }
+  .page-products-set-prices .form .c-dropdown .nice-select {
+    border-color: #505050;
+    min-width: 200px;
+    height: 39px;
+    line-height: 33px; }
+.page-products-set-prices .form .col-left {
+  float: left;
+  width: 333px;
+  margin-right: 3rem; }
+.page-products-set-prices .form .col-right {
+  float: left;
+  width: 311px; }
+.page-products-set-prices .form .form-group label {
+  font-size: 14px;
+  display: inline-block;
+  color: #ACADAD;
+  margin-right: 1.8rem;
+  width: 175px;
+  margin-right: 0; }
+.page-products-set-prices .form .form-group .currency {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 0.6rem; }
+.page-products-set-prices .form .form-group input {
+  display: inline-block;
+  border-radius: 12px;
+  width: 100px;
+  margin-bottom: 0.5rem;
+  line-height: 2;
+  font-size: 12px;
+  border-color: #505050; }
+.page-products-set-prices .btns {
+  clear: both;
+  text-align: right;
+  margin: 1rem 0; }
+  .page-products-set-prices .btns .c-btn {
+    min-width: 98px;
+    padding: 0;
+    line-height: 2;
+    margin-left: 1rem; }
+
 .clearfix:after, .wrapper-main:after, .b-list-events:after, .b-list-events .event-title:after,
 .b-list-events .event-start:after,
 .b-list-events .event-end:after,
 .b-list-events .event-place:after,
-.b-list-events .event-type:after, .b-list-products:after, .b-list-products .b-list-products__full:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-settings .form-group:after, .page-referrals .reedem-duration:after, .page-referrals .reedem-invite:after, .page-referrals .reedem-remind-row:after, .page-sales .form-block-sales:after, .page-products-details-wrapper:after {
+.b-list-events .event-type:after, .b-list-products:after, .b-list-products .b-list-products__full:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-settings .form-group:after, .page-referrals .reedem-duration:after, .page-referrals .reedem-invite:after, .page-referrals .reedem-remind-row:after, .page-sales .form-block-sales:after, .page-products-details-wrapper:after, .page-products-set-prices .form:after {
   content: "";
   display: table;
   clear: both; }

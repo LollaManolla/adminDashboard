@@ -1,235 +1,395 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Sales</title>
-  <meta name="description" content="Sales">
-  <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
+    <meta charset="utf-8">
+    <title>Sales</title>
+    <meta name="description" content="Sales">
+    <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
     <link href="_common/css/jquery-ui.css" rel="stylesheet">
-  <link rel="stylesheet" href="_common/css/styles.css">
+    <link rel="stylesheet" href="_common/css/styles.css">
 </head>
 
 <body class="fullPageScroll">
-  <div class="wrapper-main">
+    <div class="wrapper-main">
 
-    <!--header-->
-    <header class="b-header">
-      <div class="b-header__inner">
-        <h1 class="page-title">Sales</h1>
-        <div class="b-header__user">
-          <div  class="b-header__user-data">
-            <p class="b-header__user-name">Anna Kurnikova</p>
-            <p class="b-header__user-role">Admin</p>
-          </div>
-          <div class="b-header__user-avatar">
-            <div style="background: url('./_common/images/avatar-1.jpg') center center / cover no-repeat;width: 53px; height: 53px;"></div>
-          </div>
+        <!--header-->
+        <header class="b-header">
+            <div class="b-header__inner">
+                <h1 class="page-title">Sales</h1>
+                <div class="b-header__user">
+                    <div  class="b-header__user-data">
+                        <p class="b-header__user-name">Anna Kurnikova</p>
+                        <p class="b-header__user-role">Admin</p>
+                    </div>
+                    <div class="b-header__user-avatar">
+                        <div style="background: url('./_common/images/avatar-1.jpg') center center / cover no-repeat;width: 53px; height: 53px;"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--main content-->
+        <main class="wrapper-content">
+            <div class="wrapper-content-inner full-width">
+                <div class="page-sales">
+                    <h2 class="page-sales__title">Orders</h2>
+
+                    <div class="form-block-sales form">
+                        <div class="form-group">
+                            <label>Enter Order ID</label>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="from">From</label>
+                            <input type="text" class="datepicker">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="from">Until</label>
+                            <input type="text" class="datepicker">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="c-dropdown">
+                                <span class="c-dropdown__title">Filter by Status</span>
+                                <select>
+                                    <option value="1">Order Proccesing</option>
+                                    <option value="2">Another option</option>
+                                    <option value="3">A disabled option</option>
+                                    <option value="4">Potato</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="from">Search</label>
+                            <input class="form-control" type="text" placeholder=""><button type="submit"><i class="fontelloIcon search">&#xe802;</i></button>
+                        </div>
+
+                    </div>
+
+
+
+                    <table class="b-table b-table--sales">
+                        <thead class="b-table__header">
+                            <tr>
+                                <th class="row-1">Order ID</th>
+                                <th class="row-2">Date/Time</th>
+                                <th class="row-3">Sale Amount</th>
+                                <th class="row-4">Income</th>
+                                <th class="row-5">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="b-table__body">
+                            <tr>
+                                <td class="sales-orders"><a href="javascript:void(0)"  class="c-modal-receipt">88752261</a></td>
+                                <td>December 11, 12:00 am</td>
+                                <td>103</td>
+                                <td>43</td>
+                                <td class="form received">
+                                    <div class="c-dropdown">
+                                        <select>
+                                            <option value="1" >Order Received</option>
+                                            <option value="2">Order Processing</option>
+                                            <option value="3">Delivered</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sales-orders">85492261</td>
+                                <td>December 15, 10:00 am</td>
+                                <td>156</td>
+                                <td>94</td>
+                                <td class="form processing">
+                                    <div class="c-dropdown">
+                                        <select>
+                                            <option value="1">Order Processing</option>
+                                            <option value="2">Order Received</option>
+                                            <option value="3">Delivered</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sales-orders">85468417</td>
+                                <td>December 22, 6:00 pm</td>
+                                <td>96</td>
+                                <td>83</td>
+                                <td class="form delivered">
+                                    <div class="c-dropdown">
+                                        <select>
+                                            <option value="1" >Delivered</option>
+                                            <option value="2">Order Processing</option>
+                                            <option value="3">Order Received </option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sales-orders">95662873</td>
+                                <td>December 23, 4:00 pm</td>
+                                <td>223</td>
+                                <td>128</td>
+                                <td class="form delivered">
+                                    <div class="c-dropdown">
+                                        <select>
+                                            <option value="1" >Delivered</option>
+                                            <option value="2">Order Processing</option>
+                                            <option value="3">Order Received </option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sales-orders">16472993</td>
+                                <td>December 23, 7:00 pm</td>
+                                <td>122</td>
+                                <td>81</td>
+                                <td class="form received">
+                                    <div class="c-dropdown">
+                                        <select>
+                                            <option value="1" >Order Received</option>
+                                            <option value="2">Order Processing</option>
+                                            <option value="3">Delivered</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!--sidebar-->
+        <div class="b-sidebar">
+            <div class="b-sidebar__inner">
+                <div class="b-logo">
+                    <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
+                </div>
+                <!--sidebar menu-->
+                <ul class="b-menu">
+                    <li><a href="javascript:void(0)"><i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a></li>
+                    <li><a href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+                        <ul class="b-menu__submenu">
+                            <li><a href="javascript:void(0)">Link 1</a></li>
+                            <li><a href="javascript:void(0)">Link 2</a></li>
+                            <li><a href="javascript:void(0)">Link 3</a></li>
+                            <li><a href="javascript:void(0)">Link 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+                        <ul class="b-menu__submenu">
+                            <li><a href="javascript:void(0)">Original Art</a></li>
+                            <li><a  href="javascript:void(0)">Books</a></li>
+                            <li><a href="javascript:void(0)">Art Print</a></li>
+                            <li><a href="javascript:void(0)">Phone Cases</a></li>
+                            <li><a href="javascript:void(0)">T-Shirts</a></li>
+                            <li><a href="javascript:void(0)">Pillows</a></li>
+                            <li><a href="javascript:void(0)">Cards</a></li>
+                            <li><a href="javascript:void(0)">Tote Bags</a></li>
+                            <li><a href="javascript:void(0)">Mugs</a></li>
+                            <li><a href="javascript:void(0)">Other</a></li>
+                            <li><a href="javascript:void(0)">Delete requests</a></li>
+                            <li><a href="javascript:void(0)">Other requests</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="active" href="javascript:void(0)"><i class="fontelloIcon tag">&#xe80b;</i>Sales</a></li>
+                    <li><a href="javascript:void(0)"><i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+                        <ul class="b-menu__submenu">
+                            <li><a href="javascript:void(0)">Link 1</a></li>
+                            <li><a href="javascript:void(0)">Link 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)"><i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user"><span class="number">5</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+                        <ul class="b-menu__submenu">
+                            <li><a href="javascript:void(0)">Add new assistant</a></li>
+                            <li><a href="javascript:void(0)">Admin assistants</a></li>
+                            <li><a href="javascript:void(0)">New users</a></li>
+                            <li><a href="javascript:void(0)">Reviewed users</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)"><i class="fontelloIcon calendar">&#xe807;</i>Events</a></li>
+                    <li><a href="javascript:void(0)"><i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+                        <ul class="b-menu__submenu">
+                            <li><a href="javascript:void(0)">Discount list</a></li>
+                            <li><a href="javascript:void(0)">Create new discount</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)"><i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a></li>
+                    <li><a href="javascript:void(0)"><i class="fontelloIcon cog">&#xe809;</i>Settings</a></li>
+                    <li class="last"><a href="javascript:void(0)"><i class="fontelloIcon power">&#xe80d;</i>Log out</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </header>
-
-    <!--main content-->
-    <main class="wrapper-content">
-      <div class="wrapper-content-inner full-width">
-        <div class="page-sales">
-          <h2 class="page-sales__title">Orders</h2>
-
-          <div class="form-block-sales form">
-            <div class="form-group">
-              <label>Enter Order ID</label>
-              <input class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="from">From</label>
-              <input type="text" class="datepicker">
-            </div>
-
-            <div class="form-group">
-              <label for="from">Until</label>
-              <input type="text" class="datepicker">
-            </div>
-
-            <div class="form-group">
-              <div class="c-dropdown">
-                <span class="c-dropdown__title">Filter by Status</span>
-                <select>
-                  <option value="1">Order Proccesing</option>
-                  <option value="2">Another option</option>
-                  <option value="3">A disabled option</option>
-                  <option value="4">Potato</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="from">Search</label>
-              <input class="form-control" type="text" placeholder=""><button type="submit"><i class="fontelloIcon search">&#xe802;</i></button>
-            </div>
-
-          </div>
-
-
-
-          <table class="b-table b-table--sales">
-            <thead class="b-table__header">
-              <tr>
-                <th class="row-1">Order ID</th>
-                <th class="row-2">Date/Time</th>
-                <th class="row-3">Sale Amount</th>
-                <th class="row-4">Income</th>
-                <th class="row-5">Status</th>
-              </tr>
-            </thead>
-            <tbody class="b-table__body">
-              <tr>
-                <td class="sales-orders">88752261</td>
-                <td>December 11, 12:00 am</td>
-                <td>103</td>
-                <td>43</td>
-                <td class="form received">
-                  <div class="c-dropdown">
-                    <select>
-                      <option value="1" >Order Received</option>
-                      <option value="2">Order Processing</option>
-                      <option value="3">Delivered</option>
-                    </select>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="sales-orders">85492261</td>
-                <td>December 15, 10:00 am</td>
-                <td>156</td>
-                <td>94</td>
-                <td class="form processing">
-                  <div class="c-dropdown">
-                    <select>
-                      <option value="1">Order Processing</option>
-                      <option value="2">Order Received</option>
-                      <option value="3">Delivered</option>
-                    </select>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="sales-orders">85468417</td>
-                <td>December 22, 6:00 pm</td>
-                <td>96</td>
-                <td>83</td>
-                <td class="form delivered">
-                  <div class="c-dropdown">
-                    <select>
-                      <option value="1" >Delivered</option>
-                      <option value="2">Order Processing</option>
-                      <option value="3">Order Received </option>
-                    </select>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="sales-orders">95662873</td>
-                <td>December 23, 4:00 pm</td>
-                <td>223</td>
-                <td>128</td>
-                <td class="form delivered">
-                  <div class="c-dropdown">
-                    <select>
-                      <option value="1" >Delivered</option>
-                      <option value="2">Order Processing</option>
-                      <option value="3">Order Received </option>
-                    </select>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="sales-orders">16472993</td>
-                <td>December 23, 7:00 pm</td>
-                <td>122</td>
-                <td>81</td>
-                <td class="form received">
-                  <div class="c-dropdown">
-                    <select>
-                      <option value="1" >Order Received</option>
-                      <option value="2">Order Processing</option>
-                      <option value="3">Delivered</option>
-                    </select>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </main>
-
-    <!--sidebar-->
-    <div class="b-sidebar">
-      <div class="b-sidebar__inner">
-        <div class="b-logo">
-          <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
-        </div>
-        <!--sidebar menu-->
-        <ul class="b-menu">
-          <li><a href="javascript:void(0)"><i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a></li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a href="javascript:void(0)">Link 1</a></li>
-              <li><a href="javascript:void(0)">Link 2</a></li>
-              <li><a href="javascript:void(0)">Link 3</a></li>
-              <li><a href="javascript:void(0)">Link 4</a></li>
-            </ul>
-          </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a href="javascript:void(0)">Original Art</a></li>
-              <li><a  href="javascript:void(0)">Books</a></li>
-              <li><a href="javascript:void(0)">Art Print</a></li>
-              <li><a href="javascript:void(0)">Phone Cases</a></li>
-              <li><a href="javascript:void(0)">T-Shirts</a></li>
-              <li><a href="javascript:void(0)">Pillows</a></li>
-              <li><a href="javascript:void(0)">Cards</a></li>
-              <li><a href="javascript:void(0)">Tote Bags</a></li>
-              <li><a href="javascript:void(0)">Mugs</a></li>
-              <li><a href="javascript:void(0)">Other</a></li>
-              <li><a href="javascript:void(0)">Delete requests</a></li>
-              <li><a href="javascript:void(0)">Other requests</a></li>
-            </ul>
-          </li>
-            <li><a class="active" href="javascript:void(0)"><i class="fontelloIcon tag">&#xe80b;</i>Sales</a></li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a href="javascript:void(0)">Link 1</a></li>
-              <li><a href="javascript:void(0)">Link 2</a></li>
-            </ul>
-          </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user"><span class="number">5</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a href="javascript:void(0)">Add new assistant</a></li>
-              <li><a href="javascript:void(0)">Admin assistants</a></li>
-              <li><a href="javascript:void(0)">New users</a></li>
-              <li><a href="javascript:void(0)">Reviewed users</a></li>
-            </ul>
-          </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon calendar">&#xe807;</i>Events</a></li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a href="javascript:void(0)">Discount list</a></li>
-              <li><a href="javascript:void(0)">Create new discount</a></li>
-            </ul>
-          </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a></li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon cog">&#xe809;</i>Settings</a></li>
-          <li class="last"><a href="javascript:void(0)"><i class="fontelloIcon power">&#xe80d;</i>Log out</a></li>
-        </ul>
-      </div>
     </div>
-  </div>
 
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/jquery.nice-select.min.js"></script>
-  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="js/accordionMenu.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/sales.js"></script>
+    <!--modal for receipt-->
+    <!--this is the first modal-->
+    <div class="c-modal c-modal--receipt">
+        <div class="c-modal-inner c-modal--receipt-inner">
+            <span class="c-modal__btn-close">x</span>
+            <p class="receipt-info">Receipt for order <span class="order-number">#88752261</span></p>
+            <div class="col-left">
+                <div class="col-left-top">
+                    <div class="col__item">
+                        <p class="col__item-title">ITEM</p>
+                        <div class="col__item-image"><span><img src="./_common/images/sales-img-modal.png"></span></div>
+                        <div class="col__item-info">
+                            <p class="title">STITCH</p>
+                            <p class="author">by Milla Kunis</p>
+                            <p class="product">T-Shirt</p>
+                        </div>
+                    </div>
+                    <div class="col__item price">
+                        <p class="type">price</p>
+                        <p class="value">$35.00 </p>
+                    </div>
+                    <div class="col__item qty">
+                        <p class="type">qty</p>
+                        <p class="value">1</p>
+                    </div>
+                    <div class="col__item total">
+                        <p class="type">total</p>
+                        <p class="value">$35.00 </p>
+                    </div>
+                </div>
+                <div class="col-left-bottom">
+                    <ul class="list list--a">
+                        <li>Name of customer:</li>
+                        <li>Shipping Address:</li>
+                        <li>Payment Method:</li>
+                        <li>Shipping Method:</li>
+                        <li>Ordered:</li>
+                    </ul>
+                    <ul class="list list--b">
+                        <li>Laurent Garnier</li>
+                        <li>21 Cork Street, London W1S 3LZ</li>
+                        <li>Paypal</li>
+                        <li>Fedex overnight</li>
+                        <li>May 17, 2017.</li>
+                    </ul>
+                    <ul class="list list--c">
+                        <li>subtotal</li>
+                        <li>Discount</li>
+                        <li>shipping</li>
+                        <li>tax</li>
+                        <li>total</li>
+                    </ul>
+                    <ul class="list list--d">
+                        <li>$35.00</li>
+                        <li>$0.00</li>
+                        <li>$0.00</li>
+                        <li>$0.00</li>
+                        <li>$35.00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="form tracking-form">
+                    <div class="form-group">
+                        <label>Enter tracking service</label>
+                        <input class="form-control" type="text" >
+                    </div>
+                    <div class="form-group">
+                        <label>Enter tracking number</label>
+                        <input class="form-control" type="text" >
+                    </div>
+                    <div class="form-group">
+                        <label>Insert tracking link</label>
+                        <input class="form-control" type="text" >
+                    </div>
+                    <div class="btns">
+                        <input value="Save" class="c-btn c-btn-primary-lighter " type="submit">
+                        <a href="javascript:void(0)" class="link">View full tracking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--this is the second moda, after your click VIEW FULL TRACKING, this modal appear-->
+    <div class="c-modal c-modal--receipt-sum">
+        <div class="c-modal-inner c-modal--receipt-inner">
+            <span class="c-modal__btn-close">x</span>
+            <p class="title">Information about shipment</p>
+            <a href="javascript:void(0)"  class="dhl-link" target="_blank">View tracking on DHL globalmail.com</a>
+            <div class="col-full">
+                <div class="col-full-top">
+                    <div class="col-full-top__left">
+                        <ul class="list">
+                            <li><span>Ship Cerrier:</span><p>DHL Global Mail</p></li>
+                            <li><span>Tracking number:</span><p>GM2415613543546265463</p></li>
+                            <li><span>Status:</span><p class="status">Delivered</p></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-full-top__right">
+
+                        <ul class="list">
+                            <li><span>Order #:</span><p>102-13546854-1854165</p></li>
+                            <li><span>Shipment Date:</span><p>May 20, 2017</p></li>
+                            <li><span>Destination:</span><p>London</p></li>
+                        </ul>
+
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-full-bottom">
+                    <p class="title">Track your package</p>
+                    <ul class="list list--a">
+                        <li class="list-title">date</li>
+                        <li>May 19, 2017</li>
+                        <li>May 19, 2017 </li>
+                        <li>May 18, 2017 </li>
+                        <li>May 17, 2017 </li>
+                        <li>May 17, 2017 </li>
+                        <li>May 16, 2017 </li>
+                    </ul>
+                    <ul class="list list--b">
+                        <li class="list-title">time</li>
+                        <li>08:53:06AM</li>
+                        <li>08:49:36 AM</li>
+                        <li>10:35:48 AM</li>
+                        <li>10:18:31 PM</li>
+                        <li>06:35:28 AM</li>
+                        <li>06:35:00 AM</li>
+                    </ul>
+                    <ul class="list list--c">
+                        <li class="list-title">location</li>
+                        <li>London</li>
+                        <li>London</li>
+                        <li>London</li>
+                        <li>London</li>
+                        <li>London</li>
+                        <li>London</li>
+                    </ul>
+                    <ul class="list list--d">
+                        <li class="list-title">Activity</li>
+                        <li>Delivered</li>
+                        <li>Out of delivery</li>
+                        <li>Out of delivery</li>
+                        <li>Arrived at destination country</li>
+                        <li>Arrived at destination country</li>
+                        <li>Shipment received by carrier</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/accordionMenu.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/sales.js"></script>
 </body>
 </html>

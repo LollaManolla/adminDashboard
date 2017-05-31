@@ -4852,16 +4852,6 @@ input.c-btn-transparent--red:hover,
   cursor: pointer;
 }
 
-select option[value="1"] .current {
-  /* value not val */
-  background: rgba(100, 100, 100, 0.3);
-}
-
-select option[value="2"] {
-  /* value not val */
-  background: rgba(200, 200, 200, 0.3);
-}
-
 .page-products {
   height: 780px;
   overflow: hidden;
@@ -5230,7 +5220,12 @@ select option[value="2"] {
   display: block;
 }
 .page-products-set-prices.frames .btns {
-  top: -2.3rem;
+  top: -2.2rem;
+  float: right;
+}
+
+.page-payment .hide {
+  display: none;
 }
 
 .clearfix:after, .wrapper-main:after, .b-list-events:after, .b-list-events .event-title:after,

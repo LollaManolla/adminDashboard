@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Products - Art Print</title>
-  <meta name="description" content="Products - Art Print">
+  <title>Delete Requests</title>
+  <meta name="description" content="Delete Requests">
   <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
   <link rel="stylesheet" href="_common/css/styles.css">
 </head>
@@ -30,53 +30,9 @@
     <!--main content-->
     <main class="wrapper-content">
       <div class="wrapper-content-inner full-width">
-        <h2 class="page-products__title">Art Print</h2>
-        <!--filters-->
-        <div class="page-products-top__filter">
-            <!--filter search-->
+        <h2 class="page-products__title">Delete Requests</h2>
 
-
-           <div class="c-dropdown">
-             <span class="c-dropdown__title">Filter messages</span>
-             <select>
-               <option value="all">All</option>
-               <option value="1">Sent</option>
-               <option value="2">Not Sent</option>
-             </select>
-           </div>
-
-          <!--filter search-->
-          <div class="b-search">
-         <span class="b-search__title">Search product ID</span>
-         <div class="form">
-         <input class="form-input" type="text">
-         <button type="submit"><i class="fontelloIcon search">&#xe802;</i></button>
-       </div>
-     </div>
-     <!--filter select-->
-          <div class="c-dropdown">
-            <span class="c-dropdown__title">Filter products</span>
-            <select>
-              <option value="all">All</option>
-              <option value="new">New</option>
-              <option value="1">Accepted</option>
-              <option value="2">Rejected</option>
-            </select>
-          </div>
-          <!--filter add price-->
-          <div class="b-setup-price">
-            <p>Setup prices</p>
-    <a href="javascript:void(0)"  class="icon-paper">  <img src="./_common/images/icon-paper.png">
-      <div class="notification paper">For paper</div>
-    </a>
-    <a href="javascript:void(0)"  class="icon-frame">  <img src="./_common/images/icon-frame.png">
-          <div class="notification frame">For frame</div>
-    </a>
-          </div>
-
-        </div>
-
-        <div class="page-products scrollProducts">
+        <div class="page-products delete-requests scrollProducts">
           <div class="page-products__head">
             <p>Products</p>
             <p>Artist</p>
@@ -91,20 +47,20 @@
                     <a href="javascript:void(0)">
                       <img src="./_common/images/original-art-1.jpg">
                     </a>
-                    <p class="notification__image-sent"><i class="fontelloIcon ok">&#xe812;</i></p>
                   </div>
                 </div>
                 <div class="col col-2">
                   <div class="product-author"><a href="javascript:void(0)" target="_blank">Laurent Garnier</a></div>
                 </div>
-                <div class="col col-3"><!--in case there is no content, print div with col class--></div>
+                <div class="col col-3">
+                    <span class="product-info">
+                      <a href="javascript:void(0)"><i class="fontelloIcon info ">&#xe817;</i> </a>
+                    </span>
+                </div>
                 <div class="col col-4">
                   <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
                 </div>
                 <div class="col col-5">
-                    <span class="c-btn c-btn-rejected">Rejected</span>
-                </div>
-                <div class="col col-6">
                 <a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a>
                 </div>
               </div>
@@ -129,8 +85,7 @@
                 <div class="col col-4">
                   <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
                 </div>
-                <div class="col col-5"></div>
-                <div class="col col-6">
+                <div class="col col-5">
                 <a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a>
                 </div>
               </div>
@@ -162,15 +117,16 @@
                 <div class="col col-2">
                   <div class="product-author"><a href="javascript:void(0)" target="_blank" >Laurent Garnier</a></div>
                 </div>
-                <div class="col col-3"></div>
+                <div class="col col-3">
+                    <span class="product-info">
+                      <a href="javascript:void(0)"><i class="fontelloIcon info ">&#xe817;</i> </a>
+                    </span>
+                </div>
                 <div class="col col-4">
                   <span class="c-modal-open"><a href="javascript:void(0)"><i class="fontelloIcon paper-plane">&#xe811;</i></a></span>
                 </div>
                 <div class="col col-5">
-                  <a href="javascript:void(0)" class="c-btn c-btn-primary ">Approve</a>
-                </div>
-                <div class="col col-6">
-                  <a href="javascript:void(0)" class="c-btn c-btn-secondary">Reject</a>
+                  <a href="javascript:void(0)" class="c-btn c-btn-secondary">Delete</a>
                 </div>
               </div>
             </li>
@@ -191,22 +147,22 @@
           <li><a href="javascript:void(0)"><i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a></li>
           <li><a href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
             <ul class="b-menu__submenu">
-                <li><a href="javascript:void(0)">Link 1</a></li>
-                <li><a href="javascript:void(0)">Link 2</a></li>
-                <li><a href="javascript:void(0)">Link 3</a></li>
-                <li><a href="javascript:void(0)">Link 4</a></li>
-                <li><a href="javascript:void(0)">Link 5</a></li>
-                <li><a href="javascript:void(0)">Link 6</a></li>
-                <li><a href="javascript:void(0)">Link 7</a></li>
-                <li><a href="javascript:void(0)">Link 8</a></li>
-                <li><a href="javascript:void(0)">Link 9</a></li>
+              <li><a href="javascript:void(0)">Link 1</a></li>
+              <li><a href="javascript:void(0)">Link 2</a></li>
+              <li><a href="javascript:void(0)">Link 3</a></li>
+              <li><a href="javascript:void(0)">Link 4</a></li>
+              <li><a href="javascript:void(0)">Link 5</a></li>
+              <li><a href="javascript:void(0)">Link 6</a></li>
+              <li><a href="javascript:void(0)">Link 7</a></li>
+              <li><a href="javascript:void(0)">Link 8</a></li>
+              <li><a href="javascript:void(0)">Link 9</a></li>
             </ul>
           </li>
-          <li ><a class="active" href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+          <li><a class="active" href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
             <ul class="b-menu__submenu">
               <li><a href="javascript:void(0)">Original Art</a></li>
-              <li><a href="javascript:void(0)">Books</a></li>
-              <li><a class="active" href="javascript:void(0)">Art Print</a></li>
+              <li><a  href="javascript:void(0)">Books</a></li>
+              <li><a href="javascript:void(0)">Art Print</a></li>
               <li><a href="javascript:void(0)">Phone Cases</a></li>
               <li><a href="javascript:void(0)">T-Shirts</a></li>
               <li><a href="javascript:void(0)">Pillows</a></li>
@@ -214,15 +170,15 @@
               <li><a href="javascript:void(0)">Tote Bags</a></li>
               <li><a href="javascript:void(0)">Mugs</a></li>
               <li><a href="javascript:void(0)">Other</a></li>
-              <li><a href="javascript:void(0)">Delete requests</a></li>
+              <li><a class="active" href="javascript:void(0)">Delete requests</a></li>
               <li><a href="javascript:void(0)">Other requests</a></li>
             </ul>
           </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon tag">&#xe80b;</i>Sales</a></li>
+            <li><a href="javascript:void(0)"><i class="fontelloIcon tag">&#xe80b;</i>Sales</a></li>
           <li><a href="javascript:void(0)"><i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
             <ul class="b-menu__submenu">
-                <li><a href="javascript:void(0)">Payment Schedule</a></li>
-                <li><a href="javascript:void(0)">Payment Overview</a></li>
+              <li><a href="javascript:void(0)">Payment Schedule</a></li>
+              <li><a href="javascript:void(0)">Payment Overview</a></li>
             </ul>
           </li>
           <li><a href="javascript:void(0)"><i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user"><span class="number">5</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
@@ -276,6 +232,6 @@
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/accordionMenu.js"></script>
   <script src="js/jquery.nice-select.min.js"></script>
-  <script src="js/products-ArtPrint.js"></script>
+  <script src="js/products-Cards.js"></script>
 </body>
 </html>

@@ -4464,6 +4464,8 @@ input.c-btn,
         .page-payment__content .b-quarter__content-col a {
           display: inline;
           color: #959595; }
+          .page-payment__content .b-quarter__content-col a:hover {
+            color: #5ca395; }
         .page-payment__content .b-quarter__content-col p {
           display: table-cell;
           height: 100%;

@@ -1861,6 +1861,36 @@ html, body {
   .b-table .delivered .current,
   .b-table .delivered {
     color: #5ca395; }
+  .b-table--user th, .b-table--user td {
+    border: solid 1px #5A5A5A;
+    text-transform: none;
+    color: #fff;
+    vertical-align: middle; }
+  .b-table--user th {
+    padding: 1.4rem 1rem 1rem; }
+  .b-table--user td {
+    font-size: 14px;
+    line-height: 3;
+    padding: 0rem 1rem; }
+  .b-table--user .row-1 {
+    width: 170px; }
+  .b-table--user .row-2 {
+    width: 170px; }
+  .b-table--user .row-3 {
+    width: 230px; }
+  .b-table--user .row-4 {
+    width: 160px; }
+  .b-table--user .row-5 {
+    width: 90px; }
+  .b-table--user .row-6 {
+    width: 130px; }
+  .b-table--user .b-table__header th {
+    font-size: 16px;
+    font-weight: bold; }
+  .b-table--user .c-modal-user {
+    font-style: italic;
+    color: #5ca395;
+    font-weight: bold; }
 
 .b-id {
   float: left;
@@ -3033,6 +3063,58 @@ input.c-btn,
           font-weight: bold;
           line-height: normal;
           margin-bottom: 0.8rem; }
+  .c-modal--user {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 10; }
+    .c-modal--user-inner {
+      width: 1025px;
+      height: auto;
+      margin: 0 auto;
+      top: 25%;
+      position: relative;
+      background-color: #222222;
+      padding: 2rem 1rem 4rem 2rem; }
+    .c-modal--user .b-media {
+      width: 123px;
+      border-radius: 100px;
+      position: relative;
+      overflow: hidden;
+      float: left;
+      margin-right: 2.3rem; }
+      .c-modal--user .b-media div {
+        width: 123px;
+        height: 123px; }
+    .c-modal--user .col-data {
+      display: block;
+      float: left;
+      width: 209px;
+      color: #fff; }
+      .c-modal--user .col-data h6 {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6; }
+      .c-modal--user .col-data p {
+        color: #D0CFCF;
+        font-size: 14px;
+        line-height: 1.85; }
+        .c-modal--user .col-data p.uppercasr {
+          text-transform: uppercase; }
+      .c-modal--user .col-data a {
+        color: #5ca395;
+        font-style: italic;
+        font-size: 14px; }
+    .c-modal--user .c-modal__btn-close {
+      position: absolute;
+      right: 1rem;
+      top: 0.5rem; }
 
 .c-progressbar {
   position: relative;
@@ -4405,6 +4487,13 @@ input.c-btn,
   top: -2.2rem;
   float: right; }
 
+.page-payment__title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #5ca395;
+  letter-spacing: 0.04rem;
+  margin-bottom: 1.8rem;
+  display: inline-block; }
 .page-payment__header--title {
   font-size: 25px;
   font-weight: bold;
@@ -4636,7 +4725,7 @@ input.c-btn,
 .b-list-events .event-start:after,
 .b-list-events .event-end:after,
 .b-list-events .event-place:after,
-.b-list-events .event-type:after, .b-list-products:after, .b-list-products .b-list-products__full:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .c-modal--receipt-sum .c-modal--receipt-inner:after, .c-modal--receipt-sum .col-full-top .list > li:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-settings .form-group:after, .page-referrals .reedem-duration:after, .page-referrals .reedem-invite:after, .page-referrals .reedem-remind-row:after, .page-sales .form-block-sales:after, .page-products.other-requests .col-top:after, .page-products.other-requests .col-bottom:after, .page-products-details-wrapper:after, .page-products-set-prices .form:after, .page-payment:after, .page-payment__content .b-quarter-wrapper:after, .page-payment__content .b-select-graph:after,
+.b-list-events .event-type:after, .b-list-products:after, .b-list-products .b-list-products__full:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .c-modal--receipt-sum .c-modal--receipt-inner:after, .c-modal--receipt-sum .col-full-top .list > li:after, .c-modal--user-inner:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-settings .form-group:after, .page-referrals .reedem-duration:after, .page-referrals .reedem-invite:after, .page-referrals .reedem-remind-row:after, .page-sales .form-block-sales:after, .page-products.other-requests .col-top:after, .page-products.other-requests .col-bottom:after, .page-products-details-wrapper:after, .page-products-set-prices .form:after, .page-payment:after, .page-payment__content .b-quarter-wrapper:after, .page-payment__content .b-select-graph:after,
 .page-payment__content .b-graph:after,
 .page-payment__content .g1:after,
 .page-payment__content .g2:after,

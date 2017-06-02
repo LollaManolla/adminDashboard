@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Payment - Overview</title>
+  <meta name="description" content="Payment - Overview">
+  <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="_common/css/styles.css">
+</head>
+
+<body class="fullPageScroll">
+  <div class="wrapper-main">
+
+    <!--header-->
+    <header class="b-header">
+      <div class="b-header__inner">
+        <h1 class="page-title">Payment</h1>
+        <div class="b-header__user">
+          <div  class="b-header__user-data">
+            <p class="b-header__user-name">Anna Kurnikova</p>
+            <p class="b-header__user-role">Admin</p>
+          </div>
+          <div class="b-header__user-avatar">
+            <div style="background: url('./_common/images/avatar-1.jpg') center center / cover no-repeat;width: 34px; height: 34px;"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--main content-->
+    <main class="wrapper-content">
+      <div class="wrapper-content-inner full-width">
+        <div class="page-payment ">
+          <h2 class="page-payment__title">Overview</h2>
+          <!--filters-->
+          <div class="page-payment__filter-payments">
+            <div class="page-payment__header">
+              <!--filter select-->
+              <div class="c-dropdown">
+                <span class="c-dropdown__title">Year</span>
+                <select>
+                  <option value="1">2017</option>
+                  <option value="2">2016</option>
+                </select>
+              </div>
+              <!--filter quarter-->
+              <div class="c-dropdown">
+                <span class="c-dropdown__title">Quarter</span>
+                <select class="quarter-toggle" data-target=".b-quarter">
+                  <option value="quarter_a" data-show=".quarter_a">Q1</option>
+                  <option value="quarter_b" data-show=".quarter_b">Q2</option>
+                </select>
+              </div>
+            </div>
+
+            <!--block quarter-->
+            <div class="b-quarter">
+              <div class="b-quarter-wrapper quarter_a hide">
+                <div  class="b-quarter__content">
+                  <h3>October</h3>
+                  <div  class="b-quarter__content-col">
+                    <p>£1568.00</p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>November</h3>
+                  <div  class="b-quarter__content-col">
+                    <p>£2425.50</p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>December</h3>
+                  <div  class="b-quarter__content-col">
+                    <p>£1568.00</p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>Total</h3>
+                  <div  class="b-quarter__content-col">
+                    <p>£8863.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="b-quarter-wrapper quarter_b hide">
+                <div  class="b-quarter__content">
+                  <h3>January</h3>
+                  <div  class="b-quarter__content-col">
+                    <p>£2589.00</p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>February</h3>
+                  <div  class="b-quarter__content-col">
+                    <p>£2689.50</p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>March</h3>
+                  <div  class="b-quarter__content-col">
+                    <p>£8759.00</p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>Total</h3>
+                  <div  class="b-quarter__content-col">
+                    <p>£1000.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--block select graph-->
+            <div class="b-select-graph">
+              <div class="c-dropdown">
+                <span class="c-dropdown__title">Select graph</span>
+                <select class="graph-toggle" data-target=".b-graph">
+                  <option value="g1" data-show=".g1" >G1</option>
+                  <option value="g2" data-show=".g2">G2</option>
+                  <option value="g3" data-show=".g3">G3</option>
+                </select>
+              </div>
+              <div class="b-graph">
+                <div class="g1 hide">
+                  <div class="b-chart-sales">
+                    <div class="b-chart-sales__header">
+                      <h2 class="b-title">Sales report</h2>
+                      <div class="c-dropdown">
+                        <span class="c-dropdown__title">Show:</span>
+                        <select>
+                          <option value="1">Year</option>
+                          <option value="2">Another option</option>
+                          <option value="3">A disabled option</option>
+                        </select>
+                      </div>
+                      <div class="b-sales__legend">
+                        <p><span class="fontelloIcon circle sales">&#xf111;</span>Paid</p>
+                        <p><span class="fontelloIcon circle income">&#xf111;</span>Due</p>
+                      </div>
+                    </div>
+                    <div class="ct-chart ct-bar  ct-sales-report"></div>
+                  </div>
+                </div>
+                <div class="g2 hide">
+                  <h2 class="b-title">Top products</h2>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/original-art-1.jpg">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width: 24%; display: inline-block;position:relative;">
+                        <span class="number">5/10</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/original-art-1.jpg" >
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width: 65%; display: inline-block;position:relative;">
+                        <span class="number">6/10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="g3 hide">
+                  <h2 class="b-title">Top buyers</h2>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/chart-profile.jpg" >
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width: 33%; display: inline-block;position:relative;">
+                        <span class="number">3/10</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/chart-profile2.jpg" >
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width:90%; display: inline-block;position:relative;">
+                        <span class="number">9/10</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/chart-profile3.jpg" >
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width: 12%; display: inline-block;position:relative;">
+                        <span class="number">1/10</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/chart-profile4.jpg" >
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width: 63%; display: inline-block;position:relative;">
+                        <span class="number">6/10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--sidebar-->
+    <div class="b-sidebar">
+      <div class="b-sidebar__inner">
+        <div class="b-logo">
+          <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
+        </div>
+        <!--sidebar menu-->
+        <ul class="b-menu">
+          <li><a href="javascript:void(0)"><i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Link 1</a></li>
+              <li><a href="javascript:void(0)">Link 2</a></li>
+              <li><a href="javascript:void(0)">Link 3</a></li>
+              <li><a href="javascript:void(0)">Link 4</a></li>
+              <li><a href="javascript:void(0)">Link 5</a></li>
+              <li><a href="javascript:void(0)">Link 6</a></li>
+              <li><a href="javascript:void(0)">Link 7</a></li>
+              <li><a href="javascript:void(0)">Link 8</a></li>
+              <li><a href="javascript:void(0)">Link 9</a></li>
+            </ul>
+          </li>
+          <li ><a href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Original Art</a></li>
+              <li><a href="javascript:void(0)">Books</a></li>
+              <li><a href="javascript:void(0)">Art Print</a></li>
+              <li><a href="javascript:void(0)">Phone Cases</a></li>
+              <li><a href="javascript:void(0)">T-Shirts</a></li>
+              <li><a href="javascript:void(0)">Pillows</a></li>
+              <li><a class="active" href="javascript:void(0)">Cards</a></li>
+              <li><a href="javascript:void(0)">Tote Bags</a></li>
+              <li><a href="javascript:void(0)">Mugs</a></li>
+              <li><a href="javascript:void(0)">Other</a></li>
+              <li><a href="javascript:void(0)">Delete requests</a></li>
+              <li><a href="javascript:void(0)">Other requests</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon tag">&#xe80b;</i>Sales</a></li>
+          <li><a class="active" href="javascript:void(0)"><i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Payment Schedule</a></li>
+              <li><a class="active" href="javascript:void(0)">Payment Overview</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user"><span class="number">5</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Add new assistant</a></li>
+              <li><a href="javascript:void(0)">Admin assistants</a></li>
+              <li><a href="javascript:void(0)">New users</a></li>
+              <li><a href="javascript:void(0)">Reviewed users</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon calendar">&#xe807;</i>Events</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+            <ul class="b-menu__submenu">
+              <li><a href="javascript:void(0)">Discount list</a></li>
+              <li><a href="javascript:void(0)">Create new discount</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a></li>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon cog">&#xe809;</i>Settings</a></li>
+          <li class="last"><a href="javascript:void(0)"><i class="fontelloIcon power">&#xe80d;</i>Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-modal c-modal--form">
+    <div class="c-modal-inner c-modal--form-inner">
+      <span class="c-modal__btn-close">x</span>
+      <div class="form">
+        <div class="form-group modal-message-for">
+          <label for="name">Message for:</label><input class="form-control" type="text" value="name will be here">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="form-group-input">
+            <input class="form-control" type="text" name="email" placeholder="wallebarkman@gmail.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Message</label>
+          <div class="form-group-input">
+            <textarea name="message"></textarea>
+          </div>
+        </div>
+        <input value="Send" class="c-btn c-btn-primary-lighter " type="submit">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/chartist.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/accordionMenu.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/paymentOverview.js"></script>
+</body>
+</html>

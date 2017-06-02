@@ -31,47 +31,105 @@
     <main class="wrapper-content">
       <div class="wrapper-content-inner full-width">
         <div class="page-payment ">
-          <h2 class="page-payment__title">Overview</h2>
-          <!--filters-->
-          <div class="page-payment__filter-payments">
-            <div class="page-payment__header">
-              <!--filter select-->
-              <div class="c-dropdown">
-                <span class="c-dropdown__title">Year</span>
-                <select>
-                  <option value="1">2017</option>
-                  <option value="2">2016</option>
-                </select>
-              </div>
-              <!--filter quarter-->
-              <div class="c-dropdown">
-                <span class="c-dropdown__title">Quarter</span>
-                <select class="quarter-toggle" data-target=".b-quarter">
-                  <option value="quarter_a" data-show=".quarter_a">Q1</option>
-                  <option value="quarter_b" data-show=".quarter_b">Q2</option>
-                </select>
-              </div>
+
+          <div class="page-payment__header">
+            <h2 class="page-payment__header--title">Overview</h2>
+            <!--filter select-->
+            <div class="page-payment__header--filter">
+            <div class="c-dropdown">
+              <span class="c-dropdown__title">Year</span>
+              <select>
+                <option value="1">2017</option>
+                <option value="2">2016</option>
+              </select>
             </div>
+            <!--filter quarter-->
+            <div class="c-dropdown">
+              <span class="c-dropdown__title">Quarter</span>
+              <select class="quarter-toggle" data-target=".b-quarter">
+                <option value="quarter_a" data-show=".quarter_a">Q1</option>
+                <option value="quarter_b" data-show=".quarter_b">Q2</option>
+                <option value="quarter_c" data-show=".quarter_c">Q3</option>
+                <option value="quarter_d" data-show=".quarter_d">Q4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+          <!--filters-->
+          <div class="page-payment__content">
+
 
             <!--block quarter-->
             <div class="b-quarter">
               <div class="b-quarter-wrapper quarter_a hide">
                 <div  class="b-quarter__content">
-                  <h3>October</h3>
+                  <h3>January</h3>
                   <div  class="b-quarter__content-col">
-                    <p>£1568.00</p>
+                    <p><a href="javascript:void(0)">£1568.00</a></p>
                   </div>
                 </div>
                 <div  class="b-quarter__content">
-                  <h3>November</h3>
+                  <h3>February</h3>
                   <div  class="b-quarter__content-col">
-                    <p>£2425.50</p>
+                    <p><a href="javascript:void(0)">£2425.50</a></p>
                   </div>
                 </div>
                 <div  class="b-quarter__content">
-                  <h3>December</h3>
+                  <h3>March</h3>
                   <div  class="b-quarter__content-col">
-                    <p>£1568.00</p>
+                    <p><a href="javascript:void(0)">£1568.00</a></p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>Total</h3>
+                  <div  class="b-quarter__content-col">
+                  <p>£8863.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="b-quarter-wrapper quarter_b hide">
+                <div  class="b-quarter__content">
+                  <h3>April</h3>
+                  <div  class="b-quarter__content-col">
+                    <p><a href="javascript:void(0)">£2589.00</a></p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>May</h3>
+                  <div  class="b-quarter__content-col">
+                    <p><a href="javascript:void(0)">£2689.50</a></p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>June</h3>
+                  <div  class="b-quarter__content-col">
+                    <p><a href="javascript:void(0)">£8759.00</a></p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>Total</h3>
+                  <div  class="b-quarter__content-col">
+                    <p>£1000.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="b-quarter-wrapper quarter_c hide">
+                <div  class="b-quarter__content">
+                  <h3>July</h3>
+                  <div  class="b-quarter__content-col">
+                    <p><a href="javascript:void(0)">£1568.00</a></p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>August</h3>
+                  <div  class="b-quarter__content-col">
+                    <p><a href="javascript:void(0)">£2425.50</a></p>
+                  </div>
+                </div>
+                <div  class="b-quarter__content">
+                  <h3>September</h3>
+                  <div  class="b-quarter__content-col">
+                    <p><a href="javascript:void(0)">£1568.00</a></p>
                   </div>
                 </div>
                 <div  class="b-quarter__content">
@@ -81,29 +139,29 @@
                   </div>
                 </div>
               </div>
-              <div class="b-quarter-wrapper quarter_b hide">
+              <div class="b-quarter-wrapper quarter_d hide">
                 <div  class="b-quarter__content">
-                  <h3>January</h3>
+                  <h3>October</h3>
                   <div  class="b-quarter__content-col">
-                    <p>£2589.00</p>
+                    <p><a href="javascript:void(0)">£1568.00</a></p>
                   </div>
                 </div>
                 <div  class="b-quarter__content">
-                  <h3>February</h3>
+                  <h3>November</h3>
                   <div  class="b-quarter__content-col">
-                    <p>£2689.50</p>
+                    <p><a href="javascript:void(0)">£2425.50</a></p>
                   </div>
                 </div>
                 <div  class="b-quarter__content">
-                  <h3>March</h3>
+                  <h3>December</h3>
                   <div  class="b-quarter__content-col">
-                    <p>£8759.00</p>
+                    <p><a href="javascript:void(0)">£1568.00</a></p>
                   </div>
                 </div>
                 <div  class="b-quarter__content">
                   <h3>Total</h3>
                   <div  class="b-quarter__content-col">
-                    <p>£1000.00</p>
+                    <p>£8863.00</p>
                   </div>
                 </div>
               </div>
@@ -119,19 +177,13 @@
                   <option value="g3" data-show=".g3">G3</option>
                 </select>
               </div>
+              <div class="btn-year"><a href="javascript:void(0)" class="c-btn c-btn-primary-lighter">Show whole year</a></div>
               <div class="b-graph">
                 <div class="g1 hide">
                   <div class="b-chart-sales">
                     <div class="b-chart-sales__header">
                       <h2 class="b-title">Sales report</h2>
-                      <div class="c-dropdown">
-                        <span class="c-dropdown__title">Show:</span>
-                        <select>
-                          <option value="1">Year</option>
-                          <option value="2">Another option</option>
-                          <option value="3">A disabled option</option>
-                        </select>
-                      </div>
+
                       <div class="b-sales__legend">
                         <p><span class="fontelloIcon circle sales">&#xf111;</span>Paid</p>
                         <p><span class="fontelloIcon circle income">&#xf111;</span>Due</p>
@@ -160,13 +212,55 @@
                     <div class="b-media">
                       <div class="b-media__img">
                         <a href="javascript:void(0)">
-                          <img src="./_common/images/original-art-1.jpg" >
+                          <img src="./_common/images/original-art-2.jpg" >
                         </a>
                       </div>
                     </div>
                     <div class="c-progressbar">
                       <div class="c-progressbar__range" style="width: 65%; display: inline-block;position:relative;">
                         <span class="number">6/10</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/original-art-1.jpg">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width: 24%; display: inline-block;position:relative;">
+                        <span class="number">5/10</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/original-art-1.jpg">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width: 24%; display: inline-block;position:relative;">
+                        <span class="number">5/10</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/original-art-1.jpg">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width: 24%; display: inline-block;position:relative;">
+                        <span class="number">5/10</span>
                       </div>
                     </div>
                   </div>
@@ -226,6 +320,20 @@
                     <div class="c-progressbar">
                       <div class="c-progressbar__range" style="width: 63%; display: inline-block;position:relative;">
                         <span class="number">6/10</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-full">
+                    <div class="b-media">
+                      <div class="b-media__img">
+                        <a href="javascript:void(0)">
+                          <img src="./_common/images/chart-profile.jpg" >
+                        </a>
+                      </div>
+                    </div>
+                    <div class="c-progressbar">
+                      <div class="c-progressbar__range" style="width: 33%; display: inline-block;position:relative;">
+                        <span class="number">3/10</span>
                       </div>
                     </div>
                   </div>

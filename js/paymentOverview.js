@@ -35,7 +35,7 @@ new Chartist.Bar('.ct-sales-report', {
         showGrid: false
     },
     height: 499,
-    width:1094,
+    width:1038,
     axisY: {
         onlyInteger: true,
         offset: 45,

@@ -44,9 +44,9 @@
                   <div class="add-img">
                     <label>Add cover 1</label>
                     <div class="add-img-wrapper">
-                      <div style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
-                        <div class="hide"><input type="file" accept="image/*"></div>
-                  </div>
+                        <div id="cms-event-prev-img" style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
+                        <div class="hide"><input type="file" class="cms-events-input" accept="image/*"></div>
+                    </div>
                   </div>
                 </div>
                 <p class="note">*Max file size 2Mb</p>
@@ -58,9 +58,9 @@
                   <div class="add-img">
                     <label>Add cover 2</label>
                     <div class="add-img-wrapper">
-                        <div style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
-                    <div class="hide"><input type="file" accept="image/*"></div>
-                  </div>
+                        <div id="cms-event-prev-img" style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
+                        <div class="hide"><input type="file" class="cms-events-input" accept="image/*"></div>
+                    </div>
                   </div>
                 </div>
                 <p class="note">*Max file size 2Mb</p>
@@ -72,9 +72,9 @@
                   <div class="add-img">
                     <label>Add cover 3</label>
                     <div class="add-img-wrapper">
-                        <div style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
-                        <div class="hide"><input type="file" accept="image/*"></div>
-                  </div>
+                        <div id="cms-event-prev-img" style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
+                        <div class="hide"><input type="file" class="cms-events-input" accept="image/*"></div>
+                    </div>
                   </div>
                 </div>
                 <p class="note">*Max file size 2Mb</p>
@@ -86,9 +86,9 @@
                   <div class="add-img">
                     <label>Add cover 4</label>
                     <div class="add-img-wrapper">
-                        <div style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
-                        <div class="hide"><input type="file" accept="image/*"></div>
-                  </div>
+                        <div id="cms-event-prev-img" style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
+                        <div class="hide"><input type="file" class="cms-events-input" accept="image/*"></div>
+                    </div>
                   </div>
                 </div>
                 <p class="note">*Max file size 2Mb</p>
@@ -228,6 +228,13 @@
         </ul>
       </div>
     </div>
+  </div>
+
+  <div style="display:none">
+    <!-- IMAGE ROTATOR AND POSITIONER -->
+    <canvas id="canvas" style="display: none;"></canvas>
+    <img id="worker" src="" style="display: none;">
+    <!-- END IMAGE ROTATOR AND POSITIONER -->
   </div>
 
   <script src="js/jquery-3.1.1.min.js"></script>

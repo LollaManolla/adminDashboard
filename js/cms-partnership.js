@@ -1,14 +1,17 @@
-$(document).ready(function () {
-  //show details
-  $(".clickThis").click(function(){
-    $(".slideDetails").slideToggle();
-    $('.icon').toggleClass( "icon-minus", 'icon-plus' );
-    if ($('icon').hasClass("icon-plus")) {
-      $('.icon').removeClass('icon-plus');
-    } else {
-
-      $('.icon').hasClass('icon-minus');
-      $('icon').removeClass('icon-minus');
-    }
-  });
+$(document).ready(function() {
+  addPartner();
 });
+
+/* add element */
+var addPartner = function() {
+  $('.clickThis').click(function() {
+    $('.slideDetails:first').clone().insertAfter('.slideDetails:last').slideDown('300');
+  });
+};
+
+/* delete element */
+var delPartner = function(ele) {
+  $(ele).parent().slideUp("300", function() {
+    $(ele).parent().remove();
+  });
+};

@@ -5,7 +5,8 @@ $(document).ready(function() {
   var blogList = $(".blog-input")[0];
   var cmsPress = $(".cms-press-input")[0];
   var cmsPressLogo = $(".cms-press-logo-input")[0];
-  // var cmsEvents = $(".cms-events-input")[0];
+  var cmsEvents = $(".cms-events-input")[0];
+  var cmsCategory = $(".cms-category-input")[0];
 
   // input file on chage
   $('#img-input').change(function(event) {
@@ -28,10 +29,15 @@ $(document).ready(function() {
     readURL(cmsPressLogo, 'cms-press-logo-prev-img');
   });
 
-  // $('.cms-events-input').change(function() {
-  //   var file = event.target.files[0];
-  //   readURL(cmsEvents, 'cms-event-prev-img');
-  // });
+  $('.cms-events-input').change(function(event) {
+    var file = event.target.files[0];
+    readURL(cmsEvents, 'cms-event-prev-img');
+  });
+
+  $('.cms-category-input').change(function(event) {
+    var file = event.target.files[0];
+    readURL(cmsCategory, 'cms-category-prev-img');
+  });
 
 });
 

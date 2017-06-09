@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CMS - FAQ</title>
+    <meta name="description" content="CMS - FAQ">
+    <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="_common/css/styles.css">
+</head>
+
+<body class="fullPageScroll">
+    <div class="wrapper-main">
+
+        <!--header-->
+        <header class="b-header">
+            <div class="b-header__inner">
+                <h1 class="page-title">CMS</h1>
+                <div class="b-header__user">
+                    <div class="b-header__user-data">
+                        <p class="b-header__user-name">Anna Kurnikova</p>
+                        <p class="b-header__user-role">Admin</p>
+                    </div>
+                    <div class="b-header__user-avatar">
+                        <div style="background: url('./_common/images/avatar-1.jpg') center center / cover no-repeat;width: 34px; height: 34px;"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--main content-->
+        <main class="wrapper-content">
+            <div class="wrapper-content-inner full-width">
+                <div class="page-cms">
+                    <h2 class="page-cms__title">FAQ</h2>
+                    <div class="page-faq">
+
+
+
+                        <div class="select-heading">
+                            <h3> Select heading</h3>
+                            <div class="form">
+                                <div class="form-group">
+                                    <input name="options" value="" type="radio">
+                                    <label>Getting started</label>
+                                </div>
+                                <div class="form-group">
+                                    <input name="options" value="" type="radio">
+                                    <label>Account & Profile</label>
+                                </div>
+                                <div class="form-group">
+                                    <input name="options" value="" type="radio">
+                                    <label>Buying</label>
+                                </div>
+                                <div class="form-group">
+                                    <input name="options" value="" type="radio">
+                                    <label>Trust & Guidelines </label>
+                                </div>
+                                <div class="form-group">
+                                    <input name="options" value="" type="radio">
+                                    <label>Polices</label>
+                                </div>
+                                <div class="form-group">
+                                    <input name="options" value="" type="radio">
+                                    <label>Troubleshooting</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="choose-category">
+                            <h3> Choose category</h3>
+
+                            <div class="b-trigger">
+                                <a href="javascript:void(0)" class="clickThis">
+                                    <span class="icon icon-plus"></span>
+                                    <span>Add category</span>
+                                </a>
+                            </div>
+
+                            <!--hidden div,adds category-->
+                            <div class="addCategory">
+                                <!-- <a href="javascript:void(0)" class="remove" onclick="delPartner(this);">x</a> -->
+                                <div class="form">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" maxlength="40">
+                                        <a href="javascript:void(0)" class="c-btn c-btn-primary-lighter">Add</a>
+                                        <a href="javascript:void(0)" class="c-btn c-btn-secondary">Cancel</a>
+                                    </div>
+                                </div>
+                                <!--end hidden div-->
+                            </div>
+                        </div>
+
+                        <ul class="b-list-categories scrollBlogList">
+                            <li class="b-list-categories__details">
+                                <div class="b-list-categories__preview">
+                                    <div class="col col-1">
+                                        <div class="categories-title"><a href="javascript:void(0)">Category 1</a></div>
+                                    </div>
+                                    <div class="col col-2">
+                                        <a href="javascript:void(0)" class="add-article">Add article</a>
+                                    </div>
+                                    <div class="col col-3">
+                                        <a href="javascript:void(0)" class="edit-post">Edit</a>
+                                    </div>
+                                    <div class="col col-4">
+                                        <a href="javascript:void(0)" class="remove-post">Remove</a>
+                                    </div>
+                                </div>
+                                <!--div that slides down-->
+                                <div class="b-list-categories__full">
+                                    <div class="form">
+                                        <div class="b-titles">
+                                            <div class="form-group">
+                                                <label>Rename category</label>
+                                                <div class="form-group-input">
+                                                    <input class="form-control" maxlength="60" type="text" placeholder="Category1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn">
+                                            <a href="javascript:void(0)" class="c-btn c-btn-primary-lighter">Save</a>
+                                            <a href="javascript:void(0)" class="c-btn c-btn-secondary">Cancel</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--end div that slides down-->
+                            </li>
+
+                            <li class="b-list-categories__details">
+                                <div class="b-list-categories__preview">
+                                    <div class="col col-1">
+                                        <div class="categories-title"><a href="javascript:void(0)">Category 2</a></div>
+                                    </div>
+                                    <div class="col col-2">
+                                        <a href="javascript:void(0)" class="add-article">Add article</a>
+                                    </div>
+                                    <div class="col col-3">
+                                        <a href="javascript:void(0)" class="edit-post">Edit</a>
+                                    </div>
+                                    <div class="col col-4">
+                                        <a href="javascript:void(0)" class="remove-post">Remove</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="b-list-categories__details">
+                                <div class="b-list-categories__preview">
+                                    <div class="col col-1">
+                                        <div class="categories-title"><a href="javascript:void(0)">Category 3</a></div>
+                                    </div>
+                                    <div class="col col-2">
+                                        <a href="javascript:void(0)" class="add-article">Add article</a>
+                                    </div>
+                                    <div class="col col-3">
+                                        <a href="javascript:void(0)" class="edit-post">Edit</a>
+                                    </div>
+                                    <div class="col col-4">
+                                        <a href="javascript:void(0)" class="remove-post">Remove</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+
+
+                        <div class="btn">
+                            <a href="javascript:void(0)" class="c-btn c-btn-primary-lighter">Save</a>
+                            <a href="javascript:void(0)" class="c-btn c-btn-secondary">Cancel</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+
+            <!--sidebar-->
+            <div class="b-sidebar">
+                <div class="b-sidebar__inner">
+                    <div class="b-logo">
+                        <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
+                    </div>
+                    <!--sidebar menu-->
+                    <ul class="b-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a class="active" href="javascript:void(0)">
+                                    <i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i>
+                                </a>
+                                <ul class="b-menu__submenu">
+                                    <li>
+                                        <a href="javascript:void(0)">Home page</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Galleries</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Category pages</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Partnerships and Collaborations</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Press</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a class="active" href="javascript:void(0)">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Promotion banner</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification">
+                                        <span class="number">7</span>
+                                    </span>
+                                    <i class="fontelloIcon right-open-mini">&#xe80e;</i>
+                                </a>
+                                <ul class="b-menu__submenu">
+                                    <li>
+                                        <a href="javascript:void(0)">Original Art</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Books</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Art Print</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Phone Cases</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">T-Shirts</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Pillows</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Cards</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Tote Bags</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Mugs</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Other</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Delete requests</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Other requests</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="fontelloIcon tag">&#xe80b;</i>Sales</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i>
+                                    </a>
+                                    <ul class="b-menu__submenu">
+                                        <li>
+                                            <a href="javascript:void(0)">Payment Schedule</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Payment Overview</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user">
+                                            <span class="number">5</span>
+                                        </span>
+                                        <i class="fontelloIcon right-open-mini">&#xe80e;</i>
+                                    </a>
+                                    <ul class="b-menu__submenu">
+                                        <li>
+                                            <a href="javascript:void(0)">Add new assistant</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Admin assistants</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">New users</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Reviewed users</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="fontelloIcon calendar">&#xe807;</i>Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i>
+                                        </a>
+                                        <ul class="b-menu__submenu">
+                                            <li>
+                                                <a href="javascript:void(0)">Discount list</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Create new discount</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <i class="fontelloIcon cog">&#xe809;</i>Settings</a>
+                                            </li>
+                                            <li class="last">
+                                                <a href="javascript:void(0)">
+                                                    <i class="fontelloIcon power">&#xe80d;</i>Log out</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="display:none">
+                                    <!-- IMAGE ROTATOR AND POSITIONER -->
+                                    <canvas id="canvas" style="display: none;"></canvas>
+                                    <img id="worker" src="" style="display: none;">
+                                    <!-- END IMAGE ROTATOR AND POSITIONER -->
+                                </div>
+
+                                <script src="js/jquery-3.1.1.min.js"></script>
+                                <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+                                <script src="js/accordionMenu.js"></script>
+                                <script src="js/imageUpload.js"></script>
+                                <script src="js/cms-commonAllPages.js"></script>
+                                <script src="js/cms-faq.js"></script>
+                            </body>
+                            </html>

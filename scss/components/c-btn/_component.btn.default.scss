@@ -1,0 +1,28 @@
+//-------------------------
+//-------------------COMPONENT BUTTONS
+//-------------------------
+input.c-btn, // need to overwrite defaults
+.c-btn  {
+    @include border-radius(16px);
+    color: $white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 2.5;
+    padding:0 2.5rem;
+    border: solid transparent 0px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 125px;
+
+    @import
+    'component.btn.primary',
+    'component.btn.primary.lighter',
+    'component.btn.primary.lighter-border',
+    'component.btn.secondary',
+    'component.btn.secondary.lighter',
+    'component.btn.approved',
+    'component.btn.rejected',
+        'component.btn.transparent';
+
+}

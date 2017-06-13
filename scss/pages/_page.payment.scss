@@ -1,0 +1,321 @@
+//-------------------------
+//-------------------PAGE payment
+//-------------------------
+
+.page-payment {
+  @extend .clearfix;
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    color: $keppel;
+    letter-spacing: 0.04rem;
+    margin-bottom: 1.8rem;
+    display: inline-block;
+  }
+
+  &__header {
+    &--title {
+      font-size: 25px;
+      font-weight: bold;
+      color: $keppel;
+      letter-spacing: 0.04rem;
+      margin-bottom: 1.8rem;
+      display: inline-block;
+    }
+    &--filter {
+      display: block;
+      float: right;
+      .c-dropdown {
+        margin-right: 0;
+        margin-left: 1.2rem;
+      }
+    }
+
+
+
+
+  }
+  .c-dropdown {
+    float: none;
+    margin-bottom: 1rem;
+    &__title {
+      display: block;
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+    .nice-select {
+      font-size: 15px;
+      height: 31px;
+      line-height: 30px;
+      min-width: 120px;
+      padding: 0 0.8rem;
+      .list {
+        min-width: 120px;
+      }
+    }
+  }
+
+  &__content {
+    float: left;
+    .b-quarter {
+      border-bottom: 1px double $matterhorn;
+      float: left;
+      margin-bottom: 1.3rem;
+      margin-top: 0.4rem;
+      padding-bottom: 3.8rem;
+      width: 100%;
+      h3 {
+        color: $lightg;
+        font-size: 17px;
+        margin-bottom: 0.9rem;
+        margin-bottom: 0.9rem;
+      }
+      &-wrapper {
+        @extend .clearfix;
+      }
+
+      &__content {
+        float: left;
+        width: 259px;
+        display: inline-block;
+        vertical-align: middle;
+        &-col {
+          display: table;
+          height: 80px;
+          vertical-align: middle;
+          width: 100%;
+          border: 1px double $matterhorn;
+          border-width: 1px 0px 1px 1px;
+          &:nth-last-child(1) {
+            border-right: 1px solid  $matterhorn;
+          }
+          a {
+            display: inline;
+            color: #959595;
+            &:hover {
+              color: $keppel;
+            }
+          }
+          p {
+            display: table-cell;
+            height: 100%;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 25px;
+            color: #959595;
+          }
+        }
+      }
+    }
+
+    //block charts
+    .b-select-graph,
+    .b-graph,
+    .g1,
+    .g2,
+    .g3 {
+      clear: both;
+      @extend .clearfix;
+    }
+    .b-select-graph {
+      position: relative;
+    }
+    .btn-year {
+      position: absolute;
+      right: 15px;
+      top: 38px;
+      .c-btn {
+        line-height: 2.1;
+        min-width: 150px;
+        padding: 0;
+      }
+    }
+    .b-graph {
+      padding-bottom: 2rem;
+      .b-title {
+        padding-top: 0;
+        margin: 0;
+        font-size: 25px;
+        display: block;
+      }
+      .g2, .g3  {
+        .b-title {
+          margin-top: 1.8rem;
+          margin-bottom: 2.2rem;
+        }
+      }
+
+
+      //g1
+      .b-chart-sales {
+        margin-bottom: 0;
+        margin-top: 0;
+        width: auto;
+        &__header {
+          margin-top: 13px;
+          margin-left: 0;
+          width: 1028px;
+        }
+        .b-title {
+          display: inline-block;
+        }
+        .b-sales__legend {
+          padding: 0;
+          display: block;
+          text-align: right;
+          clear: both;
+          margin-top: 17px;
+          p {
+            display: inline-block;
+            margin-left: 17px;
+            span {
+              padding-right: 9px;
+            }
+          }
+        }
+        .c-dropdown {
+          margin: 0;
+          padding: 0;
+          float: right;
+          &__title {
+            display: inline-block;
+            margin: 0;
+          }
+          .nice-select {
+            // min-width: 160px;
+            padding: 0 1.3rem;
+            margin-left: 10px;
+            .list {
+              // min-width: 160px;
+            }
+          }
+        }
+      }
+
+      //g2
+      .col-full {
+        float: left;
+        width: 100%;
+        margin-bottom: 0.6rem;
+      }
+      .g3 .col-full {
+        margin-bottom: 1rem;
+      }
+      .b-media {
+        float: left;
+        position: relative;
+        width: 75px;
+        margin-right: 3.6rem;
+        &__img {
+          background-color: $white;
+          display: inline-block;
+          height: 75px;
+          margin: 0 auto;
+          text-align: center;
+          vertical-align: middle;
+          width: 75px;
+
+          a, span {
+            display: inline-block;
+            height: 75px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0.5rem;
+            img {
+              display: inline-block;
+              height: 60px;
+              margin: 0 auto;
+              text-align: center;
+              vertical-align: middle;
+            }
+          }
+        }
+        &__video {
+          position:relative;
+          padding-bottom:4.342%;
+          padding-top:30px;
+          height:0;
+          overflow:hidden;
+          margin: 0;
+          width: 75px;
+          iframe,
+          object,
+          embed,
+          .youtube-box {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100% !important;
+            height:100% !important;
+            right: 0;
+            bottom: 0;
+          }
+          .youtube-box {
+            background-size: 100% 100%;
+          }
+        }
+      }
+      .c-progressbar {
+        float: left;
+        width: 86%;
+        margin-bottom: 0;
+        height: 15px;
+        top: 1.5rem;
+        &__range {
+          height: 15px;
+          border-radius: 10px 0px 0px 10px;
+          -moz-border-radius: 10px 0px 0px 10px;
+          -webkit-border-radius: 10px 0px 0px 10px;
+        }
+        .number {
+          font-weight: bold;
+          color: $lightg;
+          text-align: center;
+          margin: 0 auto;
+          position: absolute;
+          right: -1.3rem;
+          top: 1.4rem;
+
+        }
+      }
+      //g3
+      .g3 {
+        .b-media {
+          width: 65px;
+          border-radius: 100px;
+          position: relative;
+          overflow: hidden;
+          &__img {
+            height: 63px;
+            width: 65px;
+            background-color: transparent;
+            a, span {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              width: 100%;
+              height: 100%;
+              img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: auto;
+                max-width: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .hide {
+    display: none;
+  }
+}

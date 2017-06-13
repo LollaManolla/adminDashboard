@@ -1,0 +1,12 @@
+//-------------------------
+//-------------------COMPONENT BUTTONS
+//-------------------------
+
+&-primary-lighter-border {
+  background-color: transparent;
+  border: solid 1px $hamrock;
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+}

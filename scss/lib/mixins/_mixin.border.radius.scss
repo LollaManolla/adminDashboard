@@ -1,0 +1,14 @@
+//-------------------------
+//------BORDER RADIUS MIXIN
+//-------------------------
+
+// EXAMPLE
+//
+//     @include border-radius(5px);
+//
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}

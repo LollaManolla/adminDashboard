@@ -1,0 +1,15 @@
+//-------------------------
+//-------------------COMPONENT DROP DOWN
+//-------------------------
+
+.c-dropdown  {
+display: inline-block;
+float: right;
+margin-right: 1.2rem;
+&__title {
+  color: $silver;
+   letter-spacing: 0.05rem;
+   margin-right: 1.6rem;
+}
+@import 'settings/style';
+}

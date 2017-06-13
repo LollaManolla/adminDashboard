@@ -1,0 +1,45 @@
+//-------------------------
+//-------------------BLOCK LIST INFO
+//-------------------------
+.b-list-info {
+  margin-top: 1.1rem;
+  margin-right: 1.7rem;
+  padding-top: 1.5rem;
+  border-right: solid 1px $grey;
+  float: left;
+  width: 516px;
+  border-bottom: none;
+  border-right: solid 1px #767676;
+
+
+  &__title {
+    font-size: 20px;
+    color: $keppel;
+    font-weight: bold;
+  }
+
+  ul {
+    margin-top: 1.3rem;
+    margin-bottom: 1.9rem;
+    li {
+      color: $white;
+      font-size: 16px;
+      line-height: 2.45;
+      p {
+        display: inline-block;
+        min-width: 171px;
+      }
+      span {
+        color: $lightg;
+        display: inline-block;
+      }
+    }
+  }
+  &-buttons {
+    margin-bottom: 2rem;
+    .c-btn {
+      // display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+}

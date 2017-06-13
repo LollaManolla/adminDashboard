@@ -1,0 +1,204 @@
+//-------------------------
+//-------------------PAGE add new user
+//-------------------------
+
+.page-create-discount {
+  width: 420px;
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    color: $keppel;
+    letter-spacing: 0.04rem;
+    margin-bottom: 2.7rem;
+    margin-top: 1.2rem;
+  }
+  .form-block-title  {
+    font-weight: bold;
+    font-size: 20px;
+    color: $white;
+    border-bottom: solid 1px $ambezi;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.6rem;
+  }
+  .form-block-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: $lightg;
+    margin-bottom: 0.6rem;
+    margin-top: 0.4rem;
+
+  }
+
+  .form {
+    margin-top: 1.2rem;
+    margin-left: 0.2rem;
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      color: $lightg;
+      margin-bottom: 0.6rem;
+      text-align: left;
+
+    }
+    input {
+      border: solid 1px $matterhorn;
+      border-radius: 20px;
+      width: 100%;
+      line-height: 2.3;
+      position: relative;
+      margin-bottom: 1.6rem;
+    }
+    .small {
+      font-size: 14px;
+      color:$darkgray;
+      font-weight: normal;
+    }
+    .smallest {
+      font-size: 12px;
+      color:$darkgray;
+      font-weight: normal;
+    }
+
+    .form-group {
+      &--left,
+      &--right {
+        width: 200px;
+        margin-bottom: 0;
+        position: relative;
+      }
+      &--left {
+        float: left;
+      }
+      &--right {
+        float: right;
+      }
+    }
+
+    .form-block-duration {
+      @extend .clearfix;
+      .form-group {
+        &--left,
+        &--right {
+          .ui-datepicker-trigger {
+            left: 0.9rem;
+            position: absolute;
+            top: 2.3rem;
+            width: 18px;
+            cursor: pointer;
+          }
+          input {
+            padding-left: 2.5rem;
+            margin-bottom: 0.7rem;
+          }
+        }
+      }
+      .form-block-date {
+        clear: both;
+        margin-bottom: 1.5rem;
+        input {
+          width: auto;
+          line-height: normal;
+          margin: 0px;
+        }
+        label {
+          display: inline;
+        }
+      }
+    }
+
+    .form-block-products {
+      @extend .clearfix;
+      .form-group {
+        .c-dropdown {
+          float: none;
+          margin: 0;
+          .nice-select {
+            min-width: 200px;
+            border: solid 1px $matterhorn;
+            height: 35px;
+            line-height: 30px;
+            .current {
+              color: $silver;
+              font-size:14px;
+            }
+            &:after {
+              border-bottom: 2px solid $matterhorn;
+              border-right: 2px solid $matterhorn;
+            }
+            .list {
+              font-size: 14px;
+            }
+          }
+        }
+        .form-group--right {
+          input {
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    .form-block-code {
+      margin-bottom: 3rem;
+      input {
+        margin-bottom: 0;
+      }
+    }
+
+    .form-block-orders {
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem;
+      label {
+        font-weight: normal;
+      }
+      span {
+        font-size: 20px;
+        color: $silver;
+      }
+      input {
+        display: inline-block;
+        margin-left: 5px;
+        width: 102px;
+      }
+    }
+
+    .form-block-limit {
+      margin-bottom: 1rem;
+      p {
+        color: $lightg;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0.6rem;
+      }
+      input {
+        width: auto;
+        display: inline-block;
+        margin: 0;
+      }
+      label {
+        display: inline-block;
+        font-size: 14px;
+        color: $silver;
+        font-weight: normal;
+        line-height: 1;
+        margin: 0 0 0 0.2rem;
+      }
+      .form-control {
+        margin-left: 1.5rem;
+        margin-top: -0.2rem;
+        width: 100px;
+      }
+    }
+
+    .form-block-buttons {
+      margin-top: 2.8rem;
+      margin-bottom: 1rem;
+      .c-btn-transparent--red {
+        margin-right: 1rem;
+      }
+      .c-btn-primary-lighter {
+        padding: 0 2.9rem;
+      }
+    }
+  }
+}

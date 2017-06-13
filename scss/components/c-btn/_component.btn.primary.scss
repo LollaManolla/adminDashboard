@@ -1,0 +1,10 @@
+//-------------------------
+//-------------------COMPONENT BUTTONS
+//-------------------------
+
+&-primary {
+    @include horizontalGradient($sea, $shamrock);
+    &:hover {
+      color: $night;
+    }
+}

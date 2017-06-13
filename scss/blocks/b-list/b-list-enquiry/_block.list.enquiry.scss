@@ -1,0 +1,89 @@
+//-------------------------
+//-------------------BLOCK LIST enquiry
+//-------------------------
+.b-list-enquiry {
+    @extend .clearfix;
+    position: relative;
+    table-layout: fixed;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+    &__details {
+        display: block;
+        border-bottom: solid 1px #404040;
+        padding: 0.6rem 0 0.6rem 2rem;
+    }
+    &__preview {
+        display: table-row;
+        .col {
+            display: table-cell;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+        .col-1 {
+            width:194px;
+        }
+        .col-2 {
+            width:615px;
+        }
+        .col-3 {
+            width: 160px;
+        }
+
+        .product-image__teaser {
+            background-color: $white;
+            display: inline-block;
+            height: 70px;
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+            width: 70px;
+
+            a, span {
+                display: inline-block;
+                height: 70px;
+                margin: 0 auto;
+                position: relative;
+                text-align: center;
+                vertical-align: middle;
+                padding: 0.5rem;
+                img {
+                    display: inline-block;
+                    height: 55px;
+                    margin: 0 auto;
+                    text-align: center;
+                    vertical-align: middle;
+
+                }
+            }
+
+        }
+        .product-author {
+            display: inline-block;
+            font-weight: bold;
+            font-style: italic;
+            a {
+                color: $keppel;
+            }
+        }
+
+        .c-modal{
+            &-open {
+              font-style: italic;
+              a {
+                color: $keppel;
+              }
+
+            }
+        }
+
+    }
+
+
+    // //overwrite defaults
+    // .mCSB_inside > .mCSB_container {
+    //     margin-right: 0;
+    // }
+}

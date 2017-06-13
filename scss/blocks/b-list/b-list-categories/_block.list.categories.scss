@@ -1,0 +1,217 @@
+//-------------------------
+//-------------------BLOCK LIST BLOG
+//-------------------------
+.b-list-categories {
+    @extend .clearfix;
+    position: relative;
+    table-layout: fixed;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+    float: left;
+    margin-top: 1rem;
+    &__details {
+        display: block;
+        border-bottom: solid 1px $matterhorn;
+        padding: 0;
+        line-height: 4;
+    }
+    &__preview {
+        display: table-row;
+        .col {
+            display: table-cell;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+        .col-1 {
+            width:739px;
+        }
+        .col-2 {
+            width:127px;
+        }
+        .col-3 {
+            width: 81px;
+        }
+        .col-4 {
+            width: 74px;
+        }
+        .categories-title {
+            display: block;
+            font-size: 16px;
+            font-style: italic;
+            color: #f3f3f3;
+            a {
+                color: $keppel;
+            }
+        }
+
+        .edit-post,
+        .remove-post,
+        .add-article  {
+            font-style: italic;
+
+        }
+        .add-article {
+            color: $silver;
+        }
+        .edit-post {
+            color: $keppel;
+        }
+        .remove-post {
+            color:$amaranth;
+        }
+    }
+    .b-list-categories__full {
+        display: none;
+        border-top: solid 1px $matterhorn;
+        margin-bottom: 3rem;
+
+        .form {
+            padding: 1.5rem 0.2rem;
+            .note {
+                color: $keppel;
+                font-size: 12px;
+                margin: 5px 0;
+                line-height: normal;
+            }
+
+            label, .b-covers h3 {
+                font-size: 16px;
+                color: $white;
+                margin-bottom: 13px;
+                font-weight: bold;
+                line-height: 1;
+            }
+            //   .b-covers h3 {
+            //     margin-bottom: 1.05rem;
+            //   }
+            .form-group {
+                float: none;
+                width: auto;
+                padding: 0;
+                margin-left: 0;
+                margin-right: 0;
+                &-input {
+                    line-height: 3.5;
+                }
+            }
+            .form-control {
+                border-color: #505050;
+                border-radius: 20px;
+                line-height: 2.2;
+                padding: 0 1rem;
+                width: 100%;
+            }
+            .col-left {
+                float: left;
+                width: 270px;
+                margin-right: 1.1rem;
+                &.last {
+                    width: 742px;
+                    margin-right: 0;
+                    margin-top: 0.5rem;
+                }
+                .b-titles {
+                    margin-bottom: 6px;
+                }
+
+                .b-covers {
+                    //margin-bottom: 8px;
+                    .form-group-input {
+                        .add-img {
+                            border-style: dashed;
+                            border-width: 1px;
+                            border-color: $matterhorn;
+                            border-radius: 20px;
+                            height: 123px;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        label {
+                            font-style: italic;
+                            color: $hit;
+                            font-weight: normal;
+                            font-size: 18px;
+                            @include centerer;
+                            text-align: center;
+                            margin: 0;
+
+                        }
+                        .add-img-wrapper {
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            top: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 100%;
+                            div {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .hide  {
+                                bottom: 0;
+                                height: 100%;
+                                left: 0;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                width: 100%;
+                                input {
+                                    opacity: 0;
+                                    height: 100%;
+                                    cursor: pointer;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .b-texts {
+                    .form-control {
+                        border-radius: 20px;
+                        width: 100%;
+                        border-color: $matterhorn;
+                        background-color: transparent;
+                        border-style: solid;
+                        border-width: 1px;
+                        line-height: 1.5;
+                        font-size: 14px;
+                        color: $hit;
+                        overflow: hidden;
+                        height: 298px;
+                        padding: 0.5rem 1rem;
+                        overflow: auto; 
+                        &:focus {
+                            border-width: 1px;
+                        }
+                    }
+                }
+
+            }
+            .btn {
+                padding: 0;
+                .c-btn {
+                    min-width: 90px;
+                    padding: 0;
+                    vertical-align: middle;
+                }
+            }
+
+        }
+    }
+
+}
+
+//overwrite for certain pages or block on pages
+.page-faq .add-new-article .b-list-categories__preview {
+    .col-1 {
+        width: 867px;
+    }
+    .col-2 {
+        width: 70px;
+    }
+}

@@ -1,0 +1,87 @@
+//------------------------------------------------------------------------------
+//   Import all styles
+//-----------------------------------------------------------------------------
+
+//------CORE
+// Core files prepare DOM by making HTML elements consistent across browsers
+// and removing built-in browser styling.
+@import 'core/all';
+
+//------MIXINS and functions
+@import 'lib/all';
+
+//------SETTINGS FOR PROJECT
+//------variable, breakpoints, typo
+@import
+//'settings/settings.breakpoints',
+'settings/settings.colors',
+'settings/settings.wrappers',
+'settings/settings.links',
+'settings/settings.paths',
+'settings/settings.typography',
+'settings/settings.global';
+
+//------BLOCKS
+@import
+'blocks/b-header/block.header',
+'blocks/b-sidebar/block.sidebar',
+'blocks/b-logo/block.logo',
+'blocks/b-charts/all',
+'blocks/b-list/all',
+'blocks/b-table/block.table',
+'blocks/b-id/block.id',
+'blocks/b-profile-picture/block.profile.picture',
+'blocks/b-board/block.board',
+'blocks/b-gmail/block.gmail',
+'blocks/b-add-price/block.add.price',
+'blocks/b-search/block.search',
+'blocks/b-setup-price/block.setup.price',
+'blocks/b-art-print/block.art.print';
+
+//------COMPONENTS
+@import
+'components/c-dropdown/component.dropdown.default',
+'components/c-btn/component.btn.default',
+'components/c-modal/component.modal.default',
+'components/c-progressbar/component.progress.bar';
+
+//------WIDGETS
+@import
+'widgets/calendar/widget.calendar';
+
+
+//------PAGES
+@import
+'pages/page.login',
+'pages/page.password.reset',
+'pages/page.thanks',
+'pages/page.add.new.user',
+'pages/page.calendar',
+'pages/page.events',
+'pages/page.new.users',
+'pages/page.info',
+'pages/page.admin.assistant',
+'pages/page.create.discount',
+'pages/page.discount.list',
+'pages/page.reviewed.users',
+'pages/page.settings',
+'pages/page.referrals',
+'pages/page.sales',
+'pages/page.products',
+'pages/page.products.set.prices',
+'pages/page.payment',
+'pages/page.cms',
+'pages/page.cms.blog',
+'pages/page.cms.blog.list',
+'pages/page.cms.press',
+'pages/page.cms.press.coverage.list',
+'pages/page.cms.faq',
+'pages/page.cms.banner';
+
+
+//------TRUMPS
+@import
+'trumps/trumps.clearfix',
+'trumps/trumps.hacks',
+'trumps/trumps.ie',
+'trumps/trumps.print';

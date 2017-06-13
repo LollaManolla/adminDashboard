@@ -1,0 +1,243 @@
+//-------------------------
+//-------------------BLOCK LIST BLOG
+//-------------------------
+.b-list-blog {
+  @extend .clearfix;
+  position: relative;
+  table-layout: fixed;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+  float: left;
+  width: 100%;
+  margin-top: 1rem;
+  &__details {
+    display: block;
+    border-bottom: solid 1px #404040;
+    padding: 0.6rem 0.5rem;
+  }
+  &__preview {
+    display: table-row;
+    .col {
+      display: table-cell;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+    .col-1 {
+      width:60px;
+    }
+    .col-2 {
+      width:602px;
+      padding-left: 11px;
+      padding-right: 11px;
+      overflow-wrap: break-word;
+      display: block;
+      text-overflow: initial;
+      white-space: pre-line;
+    }
+    .col-3 {
+      width: 210px;
+    }
+    .col-4 {
+      width: 50px;
+    }
+    .col-5 {
+      width: 70px;
+    }
+
+    .blog-image__teaser {
+      display: inline-block;
+      height: 37px;
+      vertical-align: middle;
+      width: 60px;
+      overflow: hidden;
+      position: relative;
+      a, span {
+        display: inline-block;
+        div {
+          width: 60px;
+          height: 37px;
+        }
+      }
+    }
+    .blog-title {
+      display: block;
+      font-size: 16px;
+      font-style: italic;
+      a {
+        color: $keppel;
+      }
+    }
+    .blog-date {
+      color: $silver;
+      font-size: 14px;
+    }
+    .edit-post,
+    .remove-post  {
+      font-style: italic;
+      font-size: 14px;
+
+    }
+    .edit-post {
+      color: $keppel;
+    }
+    .remove-post {
+      color:$amaranth;
+    }
+  }
+  .b-list-blog__full {
+    display: none;
+    margin-top: 0.7rem;
+
+    background-color: $black;
+
+    .form {
+        padding: 1.5rem 0.2rem;
+      .note {
+        color: $keppel;
+        font-size: 12px;
+        margin: 5px 0;
+      }
+      h3 {
+        font-size: 18px;
+        margin-bottom: 34px;
+
+      }
+      label, .b-covers h3 {
+        font-size: 14px;
+        color: $white;
+        margin-bottom: 0.8rem;
+      }
+      .b-covers h3 {
+        margin-bottom: 1.05rem;
+      }
+      .form-group {
+        float: none;
+        width: auto;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .form-control {
+        border-color: #505050;
+        border-radius: 20px;
+        line-height: 2.2;
+        padding: 0 1rem;
+        width: 100%;
+      }
+      .col-full {
+        float: left;
+        width: 100%;
+        position: relative;
+      }
+      .col-left {
+        float: left;
+        width: 303px;
+        &.middle {
+          width: 181px;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+        &.last {
+          width: 350px;
+        }
+        .b-titles {
+          margin-bottom: 25px;
+        }
+
+        .b-covers {
+          margin-bottom: 8px;
+          .form-group-input {
+
+            .add-img {
+              border-style: dashed;
+              border-width: 1px;
+              border-color: $matterhorn;
+              border-radius: 20px;
+              height: 123px;
+              position: relative;
+              overflow: hidden;
+            }
+            label {
+              font-style: italic;
+              color: $hit;
+              font-weight: normal;
+              font-size: 18px;
+              @include centerer;
+              text-align: center;
+              margin: 0;
+
+            }
+            .add-img-wrapper {
+              position: absolute;
+              right: 0;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              width: 100%;
+              height: 100%;
+              div {
+                width: 100%;
+                height: 100%;
+              }
+              .hide  {
+                bottom: 0;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                input {
+                  opacity: 0;
+                  height: 100%;
+                  cursor: pointer;
+                }
+
+              }
+            }
+          }
+        }
+        .b-texts {
+          .form-control {
+            border-radius: 20px;
+            width: 100%;
+            border-color: $matterhorn;
+            background-color: $black;
+            border-style: solid;
+            border-width: 1px;
+            line-height: 1.5;
+            font-size: 14px;
+            color: $hit;
+            overflow: hidden;
+            height: 123px;
+            padding: 0.5rem 1rem;
+            &:focus {
+              border-width: 1px;
+            }
+          }
+        }
+      }
+      .c-btn {
+        bottom: 1.6rem;
+         line-height: 27px;
+         min-width: 90px;
+         padding: 0;
+         position: absolute;
+         right:0.5rem;
+         vertical-align: middle;
+      }
+    }
+
+
+
+  }
+
+
+  //overwrite defaults
+  // .mCSB_inside > .mCSB_container {
+  //   margin-right: 0;
+  // }
+}

@@ -1,0 +1,60 @@
+//-------------------------
+//-------------------BLOCK PRODUCTS has chart
+//-------------------------
+.b-products {
+  background-color: $night;
+  float: left;
+  width: 348px;
+  min-height: 404px;
+  margin-right: 1.3rem;
+  .b-title {
+    background-color: $charcoal;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 1.7rem;
+    padding-top: 2rem;
+    text-align: center;
+  }
+  &__legend {
+    color: $silver;
+    float: right;
+    font-size: 14px;
+    line-height: 1.9;
+    padding-right: 1.7rem;
+    padding-top: 1.3rem;
+    span {
+      padding-right: 1rem;
+    }
+    .products {
+      color: $keppel;
+    }
+    .reviewed {
+      color:$spring;
+    }
+  }
+  .ct-products {
+    clear: both;
+    position: relative;
+        padding-top: 1.5rem;
+    canvas {
+      position: relative;
+      left: 3.9rem;
+      top: 0.7rem;
+    }
+    &__label {
+      bottom: 0;
+      color:$spring;
+      font-size: 45px;
+      height: 100%;
+      left: 0;
+      padding-left: 30%;
+      padding-top: 27%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+}

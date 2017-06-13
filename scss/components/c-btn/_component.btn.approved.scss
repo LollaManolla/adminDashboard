@@ -1,0 +1,24 @@
+//-------------------------
+//-------------------COMPONENT BUTTONS
+//-------------------------
+
+&-approved {
+color: $keppel;
+font-weight: bold;
+display: inline-block;
+vertical-align: middle;
+font-size: 16px;
+line-height: normal;
+    &:hover {
+      color:$keppel;
+    }
+    &:before {
+        content: "\e812";
+        font-family: $iconFontello;
+        font-size: 17px;
+        right: 0.1rem;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+    }
+}

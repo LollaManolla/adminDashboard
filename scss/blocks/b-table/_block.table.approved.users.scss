@@ -1,0 +1,48 @@
+//-------------------------
+//-------------------BLOCK TABLE NEW USERS TABLE
+//-------------------------
+
+&--approved-users {
+  // Column widths are based on these cells
+
+  .row-1 {
+    width:170px;
+    //padding-left: 1.2rem;
+  }
+  .row-2 {
+    width: 168px;
+  }
+  .row-3 {
+    width: 202px;
+  }
+  .row-4 {
+    width: 148px;
+  }
+  .row-5 {
+    width: 90px;
+  }
+  .row-6 {
+    width: 123px;
+    //padding-right: 1.2rem;
+  }
+  .row-7 {
+    width: 135px;
+    //padding-right: 1.2rem;
+  }
+
+  .user-role {
+      color: $silver;
+  }
+  .b-table__footer  {
+    text-align: right;
+    .c-btn {
+      // display: inline-block;
+      margin: 3rem 1rem 0rem 0;
+      padding: 0 1.2rem;
+    }
+  }
+  // .c-modal--form {
+  //   left: 18rem;
+  // }
+
+}

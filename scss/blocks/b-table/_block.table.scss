@@ -1,0 +1,90 @@
+//-------------------------
+//-------------------BLOCK TABLE common elements for all tables
+//-------------------------
+.b-table {
+  text-align: left;
+  vertical-align: top;
+  table-layout: fixed;
+  white-space: nowrap;
+  width: 1027px;
+  position: relative;
+  &__header {
+    border-bottom: solid 1px $zambezi;
+    th {
+      font-size: 16px;
+      color: $white;
+      text-transform: uppercase;
+      padding-bottom: 1.2rem;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
+  }
+
+  &__body {
+    tr {
+      line-height: 3.3;
+    }
+    td {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-bottom: solid 1px $zambezi;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
+    // .unseen {
+    //     background-color: $charcoal;
+    // }
+    .user-name,
+    .user-name a {
+      font-style: italic;
+      color: $lightg;
+      //padding-left: 0.6rem;
+    }
+    .user-role,
+    .user-role a {
+      color: $whiteish;
+    }
+    .user-contact,
+    .user-contact a {
+      color:$lighterg;
+      font-size: 1.38rem;
+      line-height: normal;
+      // position: relative;
+    }
+    .user-joined,
+    .user-visits {
+      color: $silver;
+    }
+    .c-btn {
+      padding:0;
+      display: block;
+      width: 100px;
+      min-width: unset;
+      line-height: 2;
+      &-approved,
+      &-rejected {
+        padding: 0 0.2rem;
+      }
+    }
+    .rejected td,
+    .rejected .nice-select,
+    .rejected .user-name a {
+      color: $grey;
+    }
+    .rejected .nice-select {
+      border-color:$grey;
+      &:after {
+        border-color:$grey;
+      }
+    }
+  }
+
+  @import
+  "block.table.new.users",
+  "block.table.admin.assistant",
+  "block.table.discount.list",
+  "block.table.reviewed.users",
+  "block.table.sales",
+  "block.table.user";
+}

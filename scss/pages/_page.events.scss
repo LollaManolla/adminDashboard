@@ -1,0 +1,93 @@
+//-------------------------
+//-------------------PAGE EVENTS
+//-------------------------
+
+.page-events {
+  @extend .clearfix;
+  background-color: $ron;
+  padding: 1.8rem 1.4rem;
+  &__title {
+    font-size: 30px;
+    padding: 1.6rem 1.2rem;
+    text-align: center;
+    color:$silver;
+    background-color: $charcoal;
+    .fontelloIcon {
+      float: left;
+    }
+  }
+
+  //block search events
+  .b-search__events {
+    float: left;
+    width: 233px;
+    margin-left: 1.2rem;
+    .c-dropdown__title {
+      display: inline-block;
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+    .nice-select {
+      margin-bottom: 1.2rem;
+    }
+    .c-dropdown-wrapper {
+      float: left;
+      .form-group {
+        display: inline-block;
+        width: 104px;
+        float: left;
+        position: relative;
+        input {
+          background-color: $ron;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          border-radius:  2rem;
+          border: solid 1px $silver;
+          color: $silver;
+          box-sizing: border-box;
+          cursor: pointer;
+          display: inline-block;
+          font-family: inherit;
+          font-size: 14px;
+          font-weight: normal;
+          height: 42px;
+          line-height: 72px - 2;
+          outline: none;
+          padding-left:  16px;
+          padding-right:  0;
+          position: relative;
+          text-align: left !important;
+          -webkit-transition
+          : all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          white-space: nowrap;
+          width: 104px;
+        }
+        label {
+          color: $silver;
+          letter-spacing: 0.05rem;
+          display: inline-block;
+          margin-bottom: 1rem;
+        }
+        &--left {
+          margin-right: 20px;
+          // &:after {
+          //   color: $silver;
+          //   content: "-";
+          //   display: block;
+          //   position: absolute;
+          //   right: -0.8rem;
+          //   top: 49%;
+          // }
+        }
+      }
+    }
+  }
+  .c-btn {
+    // display: inline-block;
+    margin-top: 2rem;
+  }
+}

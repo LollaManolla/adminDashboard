@@ -1,0 +1,36 @@
+//-------------------------
+//-------------------PAGE cms blog list
+//-------------------------
+
+
+.page-cms__blog-list {
+  float: left;
+  width: 100%;
+    &__header {
+   @extend .clearfix;
+
+        .header-title {
+            font-size: 20px;
+            font-weight: normal;
+            color: $keppel;
+            display: inline-block;
+            letter-spacing: 0.02rem;
+        }
+        .c-dropdown {
+            margin-right: 3.5rem;
+            margin-top: 4px;
+          &__title {
+      font-size: 15px;
+      margin-right: 0.3rem;
+  }
+        }
+        .nice-select {
+            min-width: 187px;
+            height: 39px;
+            line-height: 38px;
+            .list {
+                min-width: 187px;
+            }
+        }
+    }
+}

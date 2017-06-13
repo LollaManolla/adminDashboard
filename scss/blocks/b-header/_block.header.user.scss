@@ -1,0 +1,32 @@
+//-------------------------
+//-------------------HEADER block header user
+//-------------------------
+
+&__user {
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+  &-data {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 23px;
+    line-height: 1.4;
+  }
+  &-avatar {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    right: 13px;
+    div {
+      border-radius: 2rem;
+    }
+  }
+  &-name {
+    font-size: 14px;
+    color: $silver;
+  }
+  &-role {
+    font-size: 12px;
+    color: $keppel;
+  }
+}

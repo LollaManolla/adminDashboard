@@ -1,0 +1,31 @@
+//-------------------------
+//-------------------BLOCK VISITS has chart
+//-------------------------
+.b-visits {
+  background-color: $night;
+   float: left;
+   height: 433px;
+   margin-right: 1.1rem;
+   margin-top: 1.3rem;
+   width: 1094px;
+  .b-title {
+    float: left;
+    font-size: 25px;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 1.9rem;
+    padding-left: 2.5rem;
+    padding-top: 0.2rem;
+       padding-top: 1.6rem;
+  }
+  .c-dropdown {
+    margin-right: 6.2rem;
+    margin-top: 1rem;
+}
+  .ct-visits{
+    clear: both;
+    float: left;
+    position: relative;
+  }
+}

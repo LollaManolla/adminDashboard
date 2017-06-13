@@ -1,0 +1,100 @@
+//-------------------------
+//-------------------WIDGET CALENDAR
+//-------------------------
+.w-calendar {
+  background-color: $night;
+  float: left;
+  width: 356px;
+  min-height: 404px;
+  .b-calendar {
+
+    // default JS code
+    .simple-event-calendar{
+      .calendar-month{
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: 2rem 1.7rem 1.7rem 1.7rem;
+        text-align: center;
+        color: $silver;
+        background-color: $charcoal;
+        .right-open-mini, .left-open-mini {
+          display: block;
+          vertical-align: middle;
+          text-decoration: none;
+          padding: 0 10px;
+        }
+        .right-open-mini{
+          float: right;
+        }
+        .left-open-mini{
+          float: left;
+        }
+      }
+
+      table{
+        border-collapse: collapse;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        width: 85%;
+        th, td{
+          box-sizing: border-box;
+          text-align: center;
+          vertical-align: middle;
+        }
+        .week-cell {
+          text-transform: uppercase;
+          font-size: 14px;
+          color: $silver;
+          padding-bottom: 1.8rem;
+        }
+        td .date{
+          border-radius: 30px;
+          box-sizing: border-box;
+          color: $white;
+          display: block;
+          font-size: 16px;
+          height: 30px;
+          line-height: 1.8;
+          margin: 0 auto 0.56rem;
+          width: 30px;
+          .circle {
+            display: none;
+          }
+        }
+
+        .today .date{
+          background-color: $keppel;
+        }
+
+        .has-event{
+          position: relative;
+          .date {
+            &:hover {
+              background-color: $keppel;
+              cursor: pointer;
+              @include transition(0.8s);
+              .circle {
+                display: none;
+              }
+            }
+            .circle {
+              display: block;
+              font-size: 8px;
+              position: relative;
+              top: -0.35rem;
+              color: $spring;
+            }
+          }
+        }
+      }
+    }
+    &--homepage {
+      .events-list {
+        display: none;
+      }
+    }
+  }
+}

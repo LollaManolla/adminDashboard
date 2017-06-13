@@ -1,0 +1,10 @@
+//-------------------------
+//-------------------COMPONENT BUTTONS
+//-------------------------
+
+&-secondary {
+    @include horizontalGradient($mandy, $flamingo);
+    &:hover {
+      color: $night;
+    }
+}

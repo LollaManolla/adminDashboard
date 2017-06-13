@@ -1,0 +1,55 @@
+//-------------------------
+//-------------------BLOCK ORDERS has chart
+//-------------------------
+.b-orders,
+.b-sales {
+  background-color: $night;
+  float: left;
+  height: 498px;
+  margin-right: 1.1rem;
+  width: 717px;
+  .b-title {
+    background-color: $charcoal;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 1.9rem;
+    padding-left: 2.5rem;
+    padding-top: 1.8rem;
+  }
+  &__legend {
+    color: $silver;
+    float: right;
+    font-size: 14px;
+    line-height: 1.9;
+    padding-right: 1.5rem;
+    padding-top: 0.9rem;
+    span {
+      padding-right: 1rem;
+    }
+    .orders,
+    .sales {
+      color: $keppel;
+    }
+    .delivered,
+    .income {
+      color:$spring;
+    }
+  }
+  .ct-orders {
+    clear: both;
+    float: left;
+  }
+
+  //overwrite defaults charts
+  .ct-label.ct-horizontal.ct-end {
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+  }
+}
+
+.b-sales__legend {
+    padding-top: 2.1rem;
+}

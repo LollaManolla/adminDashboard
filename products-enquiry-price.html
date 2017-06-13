@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CMS - Home page Logged In</title>
-  <meta name="description" content="CMS - Home page Logged In">
+  <title>Products - Enquiry price</title>
+  <meta name="description" content="Products - Art Print">
   <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
   <link rel="stylesheet" href="_common/css/styles.css">
 </head>
@@ -14,7 +14,7 @@
     <!--header-->
     <header class="b-header">
       <div class="b-header__inner">
-        <h1 class="page-title">CMS</h1>
+        <h1 class="page-title">Products</h1>
         <div class="b-header__user">
           <div  class="b-header__user-data">
             <p class="b-header__user-name">Anna Kurnikova</p>
@@ -30,105 +30,76 @@
     <!--main content-->
     <main class="wrapper-content">
       <div class="wrapper-content-inner full-width">
-        <div class="page-cms">
-          <h2 class="page-cms__title">Home page Logged In</h2>
+        <h2 class="page-products__title">Enquiry price</h2>
 
-          <div class="form">
 
-            <div class="col-three b-covers">
-              <h3>Add cover photos</h3>
-
-              <div class="form-group ">
-                <div class="form-group-input">
-                  <div class="add-img">
-                    <label>Add cover 1</label>
-                    <div class="add-img-wrapper">
-                      <div  style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
-                        <div class="hide" ><input type="file" accept="image/*"></div>
-                  </div>
-                  </div>
-                </div>
-                <p class="note">*Max file size 2Mb</p>
-              </div>
-
-              <div class="form-group">
-                <div class="form-group-input">
-                  <div class="add-img">
-                    <label>Add cover 2</label>
-                    <div class="add-img-wrapper">
-                        <div style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
-                    <div class="hide"><input type="file" accept="image/*"></div>
-                  </div>
-                  </div>
-                </div>
-                <p class="note">*Max file size 2Mb</p>
-              </div>
-
-              <div class="form-group">
-                <div class="form-group-input">
-                  <div class="add-img">
-                    <label>Add cover 3</label>
-                    <div class="add-img-wrapper">
-                        <div style="background: url('./_common/images/bg-cms-home.png') center center / cover no-repeat;"></div>
-                        <div class="hide"><input type="file" accept="image/*"></div>
-                  </div>
-                  </div>
-                </div>
-                <p class="note">*Max file size 2Mb</p>
-              </div>
-            </div>
-
-            <div class="col-three b-titles">
-
-              <div class="form-group">
-                <label>Add title 1</label>
-                <div class="form-group-input">
-                  <input class="form-control" type="text" maxlength="60">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label>Add title 2</label>
-                <div class="form-group-input">
-                  <input class="form-control" type="text" maxlength="60">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label>Add title 3</label>
-                <div class="form-group-input">
-                  <input class="form-control" type="text" maxlength="60">
-                </div>
-              </div>
-            </div>
-
-              <div class="col-three b-texts">
-                <div class="form-group">
-                  <label>Add text</label>
-                  <div class="form-group-input">
-                  <textarea name="message" class="form-control" maxlength="130"></textarea>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Add text</label>
-                  <div class="form-group-input">
-                    <textarea name="message" class="form-control" maxlength="130"></textarea>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Add text</label>
-                  <div class="form-group-input">
-                  <textarea name="message" class="form-control" maxlength="130"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="btn-bottom-page home"><a href="javascript:void(0)" class="c-btn c-btn-primary-lighter">Save</a></div>
+        <div class="page-products scrollProducts">
+          <div class="page-products__head">
+            <p>Products</p>
+            <p>Artist</p>
           </div>
+
+          <!--list products-->
+          <ul class="b-list-enquiry scrollPrice">
+            <li class="b-list-enquiry__details">
+              <div class="b-list-enquiry__preview">
+                <div class="col col-1">
+                  <div class="product-image__teaser">
+                    <a href="javascript:void(0)">
+                      <img src="./_common/images/original-art-1.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="col col-2">
+                  <div class="product-author"><a href="javascript:void(0)" target="_blank">Laurent Garnier</a></div>
+                </div>
+                <div class="col col-3">
+                  <span class="c-modal-open"><a href="javascript:void(0)">Send private link</a></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="b-list-enquiry__details">
+              <div class="b-list-enquiry__preview">
+                <div class="col col-1">
+                  <div class="product-image__teaser">
+                    <a href="javascript:void(0)">
+                      <img src="./_common/images/original-art-1.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="col col-2">
+                  <div class="product-author"><a href="javascript:void(0)" target="_blank">Laurent Garnier</a></div>
+                </div>
+                <div class="col col-3">
+                  <span class="c-modal-open"><a href="javascript:void(0)">Send private link</a></span>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="b-list-enquiry__details">
+              <div class="b-list-enquiry__preview">
+                <div class="col col-1">
+                  <div class="product-image__teaser">
+                    <a href="javascript:void(0)">
+                      <img src="./_common/images/original-art-1.jpg">
+                    </a>
+                  </div>
+                </div>
+                <div class="col col-2">
+                  <div class="product-author"><a href="javascript:void(0)" target="_blank">Laurent Garnier</a></div>
+                </div>
+                <div class="col col-3">
+                  <span class="c-modal-open"><a href="javascript:void(0)">Send private link</a></span>
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
         </div>
       </div>
-      <div class="cms-progress"><span class="cms-progress-bar" style="width: 20%;"></span></div>
     </main>
 
     <!--sidebar-->
@@ -140,9 +111,9 @@
         <!--sidebar menu-->
         <ul class="b-menu">
           <li><a href="javascript:void(0)"><i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a></li>
-          <li><a class="active" href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+          <li><a href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
             <ul class="b-menu__submenu">
-              <li><a class="active" href="javascript:void(0)">Home page</a></li>
+              <li><a href="javascript:void(0)">Home page</a></li>
               <li><a href="javascript:void(0)">Galleries</a></li>
               <li><a href="javascript:void(0)">Events</a></li>
               <li><a href="javascript:void(0)">Category pages</a></li>
@@ -153,7 +124,7 @@
               <li><a href="javascript:void(0)">Banner &amp Tax</a></li>
             </ul>
           </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
+          <li><a class="active" href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
             <ul class="b-menu__submenu">
               <li><a href="javascript:void(0)">Original Art</a></li>
               <li><a  href="javascript:void(0)">Books</a></li>
@@ -167,6 +138,7 @@
               <li><a href="javascript:void(0)">Other</a></li>
               <li><a href="javascript:void(0)">Delete requests</a></li>
               <li><a href="javascript:void(0)">Other requests</a></li>
+              <li><a class="active" href="javascript:void(0)">Enquiry price</a></li>
             </ul>
           </li>
           <li><a href="javascript:void(0)"><i class="fontelloIcon tag">&#xe80b;</i>Sales</a></li>
@@ -199,10 +171,32 @@
     </div>
   </div>
 
+  <div class="c-modal c-modal--form">
+    <div class="c-modal-inner c-modal--form-inner">
+      <span class="c-modal__btn-close">x</span>
+        <p>Message</p>
+      <div class="form">
+        <div class="form-group">
+          <label for="price">Add price</label>
+          <div class="form-group-input">
+            <span>£</span><input class="form-control" type="text" name="price">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="form-group-input">
+            <input class="form-control" type="text" name="email">
+          </div>
+        </div>
+
+        <input value="Send" class="c-btn c-btn-primary-lighter " type="send">
+      </div>
+    </div>
+  </div>
+
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/accordionMenu.js"></script>
-  <script src="js/imageUpload.js"></script>
-  <script src="js/cms-commonAllPages.js"></script>
+  <script src="js/products-enquiryPrice.js"></script>
 </body>
 </html>

@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>CMS - Press release list</title>
-    <meta name="description" content="CMS - Press release list">
+    <title>CMS - Banner &amp Tax</title>
+    <meta name="description" content="CMS - Banner &amp Tax">
     <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css"/>
     <link rel="stylesheet" href="_common/css/styles.css">
 </head>
@@ -32,73 +32,51 @@
             <div class="wrapper-content-inner full-width">
                 <div class="page-cms">
 
+                    <div class="form page-cms__banner">
 
-                    <div class="page-cms__press-list ">
-                        <div class="page-cms__press-list__header">
-                            <h2 class="header-title">Press release list</h2>
 
-                            <div class="c-dropdown">
-                                <span class="c-dropdown__title">Filter by date</span>
-                                <select>
-                                    <option value="all">Newest</option>
-                                    <option value="new">Oldest</option>
-                                </select>
+
+                        <div class="col-full">
+                            <h2 class="page-cms__title">Banner</h2>
+
+                            <div class="form-group">
+                                <label>Add text</label>
+                                <div class="form-group-input">
+                                    <textarea name="message" class="form-control" maxlength="130"></textarea>
+                                </div>
                             </div>
+
+                            <div class="form-group">
+                                <label>Add link</label>
+                                <div class="form-group-input">
+                                    <input class="form-control" type="text" maxlength="60">
+                                </div>
+                            </div>
+
+                            <div class="btn"><a href="javascript:void(0)" class="c-btn c-btn-primary-lighter">Save</a></div>
+                        </div>
+
+                        <div class="col-full bottom">
+                            <h2 class="page-cms__title">Tax</h2>
+
+
+
+                                    <div class="form-group">
+                                        <label>Add Tax</label>
+                                        <div class="form-group-input">
+                                            <input class="form-control" type="text" maxlength="60"><span>%</span>
+                                            <a href="javascript:void(0)" class="c-btn c-btn-primary-lighter">Save</a>
+                                        </div>
+                                    </div>
+
+
                         </div>
 
 
-                        <!--list products-->
-                        <ul class="b-list-press noImage scrollPressReleaseList">
-                            <li class="b-list-press__details">
-                                <div class="b-list-press__preview">
-                                    <div class="col col-1">
-                                        <div class="blog-title"><a href="javascript:void(0)">Few people can name five female artists — can you?</a></div>
-                                    </div>
-                                    <div class="col col-2">
-                                        <span class="blog-date">May 15, 2017.</span>
-                                    </div>
-                                    <div class="col col-3">
-                                        <a href="javascript:void(0)" class="remove-post">Remove</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="b-list-press__details">
-                                <div class="b-list-press__preview">
-                                    <div class="col col-1">
-                                        <div class="blog-title"><a href="javascript:void(0)">Few people can name five female artists — can you?</a></div>
-                                    </div>
-                                    <div class="col col-2">
-                                        <span class="blog-date">May 15, 2017.</span>
-                                    </div>
-                                    <div class="col col-3">
-                                        <a href="javascript:void(0)" class="remove-post">Remove</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="b-list-press__details">
-                                <div class="b-list-press__preview">
-                                    <div class="col col-1">
-                                        <div class="blog-title"><a href="javascript:void(0)">Few people can name five female artists — can you?</a></div>
-                                    </div>
-                                    <div class="col col-2">
-                                        <span class="blog-date">May 15, 2017.</span>
-                                    </div>
-                                    <div class="col col-3">
-                                        <a href="javascript:void(0)" class="remove-post">Remove</a>
-                                    </div>
-                                </div>
-                            </li>
-
-
-                        </ul>
                     </div>
-
-
-
                 </div>
             </div>
+
         </main>
 
         <!--sidebar-->
@@ -134,7 +112,7 @@
                                     <a href="javascript:void(0)">Partnerships and Collaborations</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="javascript:void(0)">Press</a>
+                                    <a  href="javascript:void(0)">Press</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)">Blog</a>
@@ -142,7 +120,7 @@
                                 <li>
                                     <a href="javascript:void(0)">FAQ</a>
                                 </li>
-                        <li><a href="javascript:void(0)">Banner &amp Tax</a></li>
+                          <li><a class="active" href="javascript:void(0)">Banner &amp Tax</a></li>
                             </ul>
                         </li>
                         <li>
@@ -264,12 +242,17 @@
                                 </div>
                             </div>
 
+                            <div style="display:none">
+                                <!-- IMAGE ROTATOR AND POSITIONER -->
+                                <canvas id="canvas" style="display: none;"></canvas>
+                                <img id="worker" src="" style="display: none;">
+                                <!-- END IMAGE ROTATOR AND POSITIONER -->
+                            </div>
 
                             <script src="js/jquery-3.1.1.min.js"></script>
                             <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
                             <script src="js/accordionMenu.js"></script>
-                            <script src="js/jquery.nice-select.min.js"></script>
                             <script src="js/cms-commonAllPages.js"></script>
-                            <script src="js/cms-pressRelease.js"></script>
+
                         </body>
                         </html>

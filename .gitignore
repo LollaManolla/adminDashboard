@@ -1,2 +1,3 @@
 *.map
 _common/images/.DS_Store
+*.sass-cache

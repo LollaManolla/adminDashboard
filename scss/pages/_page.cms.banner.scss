@@ -17,28 +17,16 @@
         input {
             line-height: 2.2;
             border-radius: 20px;
-            width: 100%;
+            width: 97%;
             padding: 0 1rem;
             border-color: $matterhorn;
         }
-
-        textarea {
-            border-radius: 20px;
-            width: 95%;
-            border-color: $matterhorn;
-            background-color: $night;
-            border-style: solid;
-            border-width: 1px;
-            line-height: 1.5;
-            font-size: 14px;
-            color: $hit;
-            overflow: hidden;
-            height: 100px;
-            padding: 0.5rem 1rem;
-            &:focus {
-                border-width: 1px;
-            }
+        &:nth-child(3) {
+          .form-control {
+            width: 100%;
+          }
         }
+
     }
 
 

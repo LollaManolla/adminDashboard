@@ -6081,24 +6081,11 @@ input.c-btn,
     .page-cms .form.page-cms__banner .form-group input {
       line-height: 2.2;
       border-radius: 20px;
-      width: 100%;
+      width: 97%;
       padding: 0 1rem;
       border-color: #505050; }
-    .page-cms .form.page-cms__banner .form-group textarea {
-      border-radius: 20px;
-      width: 95%;
-      border-color: #505050;
-      background-color: #2D2D2D;
-      border-style: solid;
-      border-width: 1px;
-      line-height: 1.5;
-      font-size: 14px;
-      color: #ACADAD;
-      overflow: hidden;
-      height: 100px;
-      padding: 0.5rem 1rem; }
-      .page-cms .form.page-cms__banner .form-group textarea:focus {
-        border-width: 1px; }
+    .page-cms .form.page-cms__banner .form-group:nth-child(3) .form-control {
+      width: 100%; }
   .page-cms .form.page-cms__banner .col-full {
     border-bottom: solid 1px #505050;
     position: relative;

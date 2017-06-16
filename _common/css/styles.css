@@ -6902,8 +6902,9 @@ input.c-btn-transparent--red:hover,
   font-size: 14px;
   color: #ACADAD;
   overflow: hidden;
-  height: 123px;
+  height: 175px;
   padding: 0.5rem 1rem;
+  overflow-y: scroll;
 }
 .page-cms .form.page-cms__blog .col-left .b-texts .form-control:focus {
   border-width: 1px;

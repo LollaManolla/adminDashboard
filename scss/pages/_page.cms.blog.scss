@@ -123,8 +123,9 @@
         font-size: 14px;
         color: $hit;
         overflow: hidden;
-        height: 123px;
+        height: 175px;
         padding: 0.5rem 1rem;
+        overflow-y: scroll;
 
         &:focus {
           border-width: 1px;

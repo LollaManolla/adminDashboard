@@ -185,7 +185,7 @@ padding-right: 1em;
               div {
                 width: 100%;
                 height: 100%;
-              }
+              } 
               .hide  {
                 bottom: 0;
                 height: 100%;
@@ -215,7 +215,8 @@ padding-right: 1em;
             line-height: 1.5;
             font-size: 14px;
             color: $hit;
-            overflow: hidden;
+            overflow-x: hidden;
+     overflow-y: scroll;
             height: 123px;
             padding: 0.5rem 1rem;
             &:focus {

@@ -1828,7 +1828,8 @@ html, body {
           line-height: 1.5;
           font-size: 14px;
           color: #ACADAD;
-          overflow: hidden;
+          overflow-x: hidden;
+          overflow-y: scroll;
           height: 123px;
           padding: 0.5rem 1rem; }
           .b-list-blog .b-list-blog__full .form .col-left .b-texts .form-control:focus {

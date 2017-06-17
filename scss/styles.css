@@ -1767,9 +1767,7 @@ html, body {
           margin-left: 20px;
           margin-right: 20px; }
         .b-list-blog .b-list-blog__full .form .col-left.last {
-          width: 100%;
-          clear: both;
-          float: none; }
+          width: 350px; }
         .b-list-blog .b-list-blog__full .form .col-left .b-titles {
           margin-bottom: 25px; }
         .b-list-blog .b-list-blog__full .form .col-left .b-covers {
@@ -1833,11 +1831,11 @@ html, body {
             border-width: 1px; }
       .b-list-blog .b-list-blog__full .form .c-btn {
         bottom: 1.6rem;
-        float: right;
         line-height: 27px;
-        margin-top: 1em;
         min-width: 90px;
         padding: 0;
+        position: absolute;
+        right: 0.5rem;
         vertical-align: middle; }
 
 .b-list-press {
@@ -5614,8 +5612,7 @@ input.c-btn,
   .page-cms .form.page-cms__blog h3 {
     font-size: 18px;
     margin-bottom: 34px; }
-  .page-cms .form.page-cms__blog .b-covers h3,
-  .page-cms .form.page-cms__blog label {
+  .page-cms .form.page-cms__blog label, .page-cms .form.page-cms__blog .b-covers h3 {
     font-size: 14px; }
   .page-cms .form.page-cms__blog .b-covers h3 {
     margin-bottom: 16px; }
@@ -5637,9 +5634,7 @@ input.c-btn,
       margin-right: 29px;
       margin-left: 29px; }
     .page-cms .form.page-cms__blog .col-left.last {
-      width: 100%;
-      clear: both;
-      float: none; }
+      width: 350px; }
     .page-cms .form.page-cms__blog .col-left .b-titles {
       margin-bottom: 25px; }
     .page-cms .form.page-cms__blog .col-left .b-covers {
@@ -5696,15 +5691,14 @@ input.c-btn,
       font-size: 14px;
       color: #ACADAD;
       overflow: hidden;
-      height: 175px;
-      padding: 0.5rem 1rem;
-      overflow-y: scroll; }
+      height: 123px;
+      padding: 0.5rem 1rem; }
       .page-cms .form.page-cms__blog .col-left .b-texts .form-control:focus {
         border-width: 1px; }
   .page-cms .form.page-cms__blog .tooltip {
     position: absolute;
     top: 0;
-    right: 0; }
+    right: 10rem; }
     .page-cms .form.page-cms__blog .tooltip img {
       width: 86%; }
     .page-cms .form.page-cms__blog .tooltip:hover:after {
@@ -5728,8 +5722,7 @@ input.c-btn,
   .page-cms .form.page-cms__blog .btn {
     clear: both;
     text-align: right;
-    margin-right: 0;
-    margin-top: 2rem; }
+    margin-right: 9rem; }
 
 .page-cms__blog-list {
   float: left;

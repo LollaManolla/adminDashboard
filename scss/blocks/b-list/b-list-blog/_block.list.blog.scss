@@ -141,7 +141,9 @@
           margin-right: 20px;
         }
         &.last {
-          width: 350px;
+          width: 100%;
+          clear: both;
+          float: none;
         }
         .b-titles {
           margin-bottom: 25px;
@@ -222,12 +224,12 @@
       }
       .c-btn {
         bottom: 1.6rem;
-         line-height: 27px;
-         min-width: 90px;
-         padding: 0;
-         position: absolute;
-         right:0.5rem;
-         vertical-align: middle;
+          float: right;
+          line-height: 27px;
+          margin-top: 1em;
+          min-width: 90px;
+          padding: 0;
+          vertical-align: middle;
       }
     }
 

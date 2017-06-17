@@ -1758,7 +1758,9 @@ html, body {
       .b-list-blog .b-list-blog__full .form .col-full {
         float: left;
         width: 100%;
-        position: relative; }
+        position: relative;
+        padding-left: 1em;
+        padding-right: 1em; }
       .b-list-blog .b-list-blog__full .form .col-left {
         float: left;
         width: 303px; }

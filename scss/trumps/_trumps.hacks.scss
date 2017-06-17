@@ -178,3 +178,9 @@
 .sale-order__received {color: #f04246;}
 .sale-order__processing  {color: #fbb76e;}
 .sale-order__delivered  {color: #5ca395;}
+
+
+//overwrite height modal on products-enquiry-price.html
+.c-modal-inner.c-modal--form-inner.enquiry-price {
+  height: 335px;
+}

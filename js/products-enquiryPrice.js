@@ -3,9 +3,16 @@ $(document).ready(function () {
   //for the scrollbar
   //change browser scrollbar
   // no need to modify this
-  $(".scrollPrice").mCustomScrollbar({
+
+  $(".fullPageScroll").mCustomScrollbar({
+    axis:"yx",
     theme:"3d-thick"
   });
+
+  // 
+  // $(".scrollPrice").mCustomScrollbar({
+  //   theme:"3d-thick"
+  // });
 
 
   //slide down info

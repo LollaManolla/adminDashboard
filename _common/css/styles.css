@@ -3165,6 +3165,11 @@ input.c-btn,
       input.c-btn-transparent--green:hover,
       .c-btn-transparent--green:hover {
         color: #fff; }
+      input.c-btn-transparent--green:focus,
+      .c-btn-transparent--green:focus {
+        border-color: #38df94;
+        border-width: 1px;
+        outline: none; }
     input.c-btn-transparent--red,
     .c-btn-transparent--red {
       border: solid 1px #F04246;
@@ -3173,6 +3178,11 @@ input.c-btn,
       input.c-btn-transparent--red:hover,
       .c-btn-transparent--red:hover {
         color: #fff; }
+      input.c-btn-transparent--red:focus,
+      .c-btn-transparent--red:focus {
+        border-color: #F04246;
+        border-width: 1px;
+        outline: none; }
 
 .c-modal {
   z-index: 1;
@@ -4247,7 +4257,7 @@ input.c-btn,
       .page-create-discount .form .form-block-duration .form-block-date input {
         width: auto;
         line-height: normal;
-        margin: 0; }
+        margin: 0 0.4rem 0 0; }
       .page-create-discount .form .form-block-duration .form-block-date label {
         display: inline; }
     .page-create-discount .form .form-block-products {
@@ -4291,6 +4301,54 @@ input.c-btn,
           .page-create-discount .form .form-block-products .form-group-wrapper .form-group--left input,
           .page-create-discount .form .form-block-products .form-group-wrapper .form-group--right input {
             width: 100%; }
+    .page-create-discount .form .form-block-conditions {
+      margin-top: 2em; }
+      .page-create-discount .form .form-block-conditions .form-group {
+        position: relative;
+        margin-bottom: 1.5rem; }
+        .page-create-discount .form .form-block-conditions .form-group a {
+          position: absolute;
+          right: -3em;
+          top: 2.2em;
+          color: #5ca395;
+          font-style: italic; }
+        .page-create-discount .form .form-block-conditions .form-group .c-dropdown {
+          float: none;
+          margin: 0; }
+          .page-create-discount .form .form-block-conditions .form-group .c-dropdown .nice-select {
+            min-width: 200px;
+            border: solid 1px #505050;
+            height: 35px;
+            line-height: 30px; }
+            .page-create-discount .form .form-block-conditions .form-group .c-dropdown .nice-select .current {
+              color: #c6c6c6;
+              font-size: 14px; }
+            .page-create-discount .form .form-block-conditions .form-group .c-dropdown .nice-select:after {
+              border-bottom: 2px solid #505050;
+              border-right: 2px solid #505050; }
+            .page-create-discount .form .form-block-conditions .form-group .c-dropdown .nice-select .list {
+              font-size: 14px;
+              height: 100px;
+              overflow: auto;
+              min-width: 186px; }
+        .page-create-discount .form .form-block-conditions .form-group .form-group--right input {
+          width: 100px; }
+      .page-create-discount .form .form-block-conditions .form-group-wrapper {
+        float: left;
+        width: 100%;
+        margin-bottom: 1rem; }
+        .page-create-discount .form .form-block-conditions .form-group-wrapper .form-group--left,
+        .page-create-discount .form .form-block-conditions .form-group-wrapper .form-group--right {
+          width: 45%; }
+          .page-create-discount .form .form-block-conditions .form-group-wrapper .form-group--left input,
+          .page-create-discount .form .form-block-conditions .form-group-wrapper .form-group--right input {
+            width: 100%; }
+      .page-create-discount .form .form-block-conditions .form-group--last {
+        clear: both;
+        width: 100%;
+        margin-bottom: 0; }
+        .page-create-discount .form .form-block-conditions .form-group--last .form-block-orders {
+          margin-top: 0; }
     .page-create-discount .form .form-block-code {
       margin-bottom: 3rem; }
       .page-create-discount .form .form-block-code input {
@@ -4326,7 +4384,7 @@ input.c-btn,
       .page-create-discount .form .form-block-limit input {
         width: auto;
         display: inline-block;
-        margin: 0; }
+        margin: 0 0.4rem 0 0; }
       .page-create-discount .form .form-block-limit label {
         display: inline-block;
         font-size: 14px;
@@ -6220,7 +6278,7 @@ input.c-btn,
 .b-list-events .event-start:after,
 .b-list-events .event-end:after,
 .b-list-events .event-place:after,
-.b-list-events .event-type:after, .b-list-products:after, .b-list-products .b-list-products__full:after, .b-list-blog:after, .b-list-press:after, .b-list-categories:after, .b-list-enquiry:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .c-modal--receipt-sum .c-modal--receipt-inner:after, .c-modal--receipt-sum .col-full-top .list > li:after, .c-modal--user-inner:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-settings .form-group:after, .page-referrals .reedem-duration:after, .page-referrals .reedem-invite:after, .page-referrals .reedem-remind-row:after, .page-sales .form-block-sales:after, .page-products.other-requests .col-top:after, .page-products.other-requests .col-bottom:after, .page-products-details-wrapper:after, .page-products-set-prices .form:after, .page-payment:after, .page-payment__content .b-quarter-wrapper:after, .page-payment__content .b-select-graph:after,
+.b-list-events .event-type:after, .b-list-products:after, .b-list-products .b-list-products__full:after, .b-list-blog:after, .b-list-press:after, .b-list-categories:after, .b-list-enquiry:after, .b-gmail-popup__list .form-group:after, .b-gmail-popup__footer .form-group:after, .c-modal--receipt-sum .c-modal--receipt-inner:after, .c-modal--receipt-sum .col-full-top .list > li:after, .c-modal--user-inner:after, .page-password-content:after, .page-thanks-content:after, .page-add-new-user .form-group:after, .page-events:after, .page-info:after, .page-create-discount .form .form-block-duration:after, .page-create-discount .form .form-block-products:after, .page-create-discount .form .form-block-conditions:after, .page-settings .form-group:after, .page-referrals .reedem-duration:after, .page-referrals .reedem-invite:after, .page-referrals .reedem-remind-row:after, .page-sales .form-block-sales:after, .page-products.other-requests .col-top:after, .page-products.other-requests .col-bottom:after, .page-products-details-wrapper:after, .page-products-set-prices .form:after, .page-payment:after, .page-payment__content .b-quarter-wrapper:after, .page-payment__content .b-select-graph:after,
 .page-payment__content .b-graph:after,
 .page-payment__content .g1:after,
 .page-payment__content .g2:after,

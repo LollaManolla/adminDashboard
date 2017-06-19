@@ -2079,8 +2079,7 @@ html, body {
   table-layout: fixed;
   text-align: left;
   vertical-align: top;
-  white-space: nowrap;
- }
+  white-space: nowrap; }
   .b-list-enquiry__details {
     display: block;
     border-bottom: solid 1px #404040;
@@ -2129,7 +2128,8 @@ html, body {
       text-align: center;
       vertical-align: middle;
       width: 70px; }
-      .b-list-enquiry__preview .product-image__teaser a, .b-list-enquiry__preview .product-image__teaser span {
+      .b-list-enquiry__preview .product-image__teaser a,
+      .b-list-enquiry__preview .product-image__teaser span {
         display: inline-block;
         height: 70px;
         margin: 0 auto;
@@ -2137,7 +2137,8 @@ html, body {
         text-align: center;
         vertical-align: middle;
         padding: 0.5rem; }
-        .b-list-enquiry__preview .product-image__teaser a img, .b-list-enquiry__preview .product-image__teaser span img {
+        .b-list-enquiry__preview .product-image__teaser a img,
+        .b-list-enquiry__preview .product-image__teaser span img {
           display: inline-block;
           height: 55px;
           margin: 0 auto;
@@ -2173,8 +2174,8 @@ html, body {
           border-bottom: solid 1px #505050;
           padding-bottom: 0.8rem;
           display: inline-block; }
-        .b-list-enquiry .b-list-enquiry__full .content li:nth-child(3) .content__head,
-        .b-list-enquiry .b-list-enquiry__full .content li:nth-child(3) .content__data {
+        .b-list-enquiry .b-list-enquiry__full .content li:nth-child(3) .content__data,
+        .b-list-enquiry .b-list-enquiry__full .content li:nth-child(3) .content__head {
           display: block; }
         .b-list-enquiry .b-list-enquiry__full .content li:nth-child(3) .content__head {
           margin-bottom: 0.5rem; }
@@ -4246,34 +4247,66 @@ input.c-btn,
       .page-create-discount .form .form-block-duration .form-block-date input {
         width: auto;
         line-height: normal;
-        margin: 0px; }
+        margin: 0; }
       .page-create-discount .form .form-block-duration .form-block-date label {
         display: inline; }
-    .page-create-discount .form .form-block-products .form-group .c-dropdown {
-      float: none;
-      margin: 0; }
-      .page-create-discount .form .form-block-products .form-group .c-dropdown .nice-select {
-        min-width: 200px;
-        border: solid 1px #505050;
-        height: 35px;
-        line-height: 30px; }
-        .page-create-discount .form .form-block-products .form-group .c-dropdown .nice-select .current {
-          color: #c6c6c6;
-          font-size: 14px; }
-        .page-create-discount .form .form-block-products .form-group .c-dropdown .nice-select:after {
-          border-bottom: 2px solid #505050;
-          border-right: 2px solid #505050; }
-        .page-create-discount .form .form-block-products .form-group .c-dropdown .nice-select .list {
-          font-size: 14px; }
-    .page-create-discount .form .form-block-products .form-group .form-group--right input {
-      width: 100px; }
+    .page-create-discount .form .form-block-products {
+      margin-top: 2.8em; }
+      .page-create-discount .form .form-block-products .form-group {
+        position: relative; }
+        .page-create-discount .form .form-block-products .form-group a {
+          position: absolute;
+          right: -3em;
+          top: 2.2em;
+          color: #5ca395;
+          font-style: italic; }
+        .page-create-discount .form .form-block-products .form-group .c-dropdown {
+          float: none;
+          margin: 0; }
+          .page-create-discount .form .form-block-products .form-group .c-dropdown .nice-select {
+            min-width: 200px;
+            border: solid 1px #505050;
+            height: 35px;
+            line-height: 30px; }
+            .page-create-discount .form .form-block-products .form-group .c-dropdown .nice-select .current {
+              color: #c6c6c6;
+              font-size: 14px; }
+            .page-create-discount .form .form-block-products .form-group .c-dropdown .nice-select:after {
+              border-bottom: 2px solid #505050;
+              border-right: 2px solid #505050; }
+            .page-create-discount .form .form-block-products .form-group .c-dropdown .nice-select .list {
+              font-size: 14px;
+              height: 100px;
+              overflow: auto;
+              min-width: 186px; }
+        .page-create-discount .form .form-block-products .form-group .form-group--right input {
+          width: 100px; }
+      .page-create-discount .form .form-block-products .form-group-wrapper {
+        float: left;
+        width: 100%;
+        margin-bottom: 1rem; }
+        .page-create-discount .form .form-block-products .form-group-wrapper .form-group--left,
+        .page-create-discount .form .form-block-products .form-group-wrapper .form-group--right {
+          width: 45%; }
+          .page-create-discount .form .form-block-products .form-group-wrapper .form-group--left input,
+          .page-create-discount .form .form-block-products .form-group-wrapper .form-group--right input {
+            width: 100%; }
     .page-create-discount .form .form-block-code {
       margin-bottom: 3rem; }
       .page-create-discount .form .form-block-code input {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        width: 72%; }
+      .page-create-discount .form .form-block-code .c-btn {
+        float: right;
+        line-height: 2;
+        min-width: 100px;
+        padding: 0; }
+      .page-create-discount .form .form-block-code .smallest {
+        clear: both;
+        display: block;
+        margin-top: 0.5rem; }
     .page-create-discount .form .form-block-orders {
-      margin-top: 1.2rem;
-      margin-bottom: 1.2rem; }
+      margin-top: -2em; }
       .page-create-discount .form .form-block-orders label {
         font-weight: normal; }
       .page-create-discount .form .form-block-orders span {

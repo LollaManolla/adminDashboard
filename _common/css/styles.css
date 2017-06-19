@@ -5157,10 +5157,23 @@ input.c-btn-transparent--red:hover,
 .page-create-discount .form .form-block-duration .form-block-date input {
   width: auto;
   line-height: normal;
-  margin: 0px;
+  margin: 0;
 }
 .page-create-discount .form .form-block-duration .form-block-date label {
   display: inline;
+}
+.page-create-discount .form .form-block-products {
+  margin-top: 2.8em;
+}
+.page-create-discount .form .form-block-products .form-group {
+  position: relative;
+}
+.page-create-discount .form .form-block-products .form-group a {
+  position: absolute;
+  right: -3em;
+  top: 2.2em;
+  color: #5ca395;
+  font-style: italic;
 }
 .page-create-discount .form .form-block-products .form-group .c-dropdown {
   float: none;
@@ -5186,6 +5199,19 @@ input.c-btn-transparent--red:hover,
 .page-create-discount .form .form-block-products .form-group .form-group--right input {
   width: 100px;
 }
+.page-create-discount .form .form-block-products .form-group-wrapper {
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.page-create-discount .form .form-block-products .form-group-wrapper .form-group--left,
+.page-create-discount .form .form-block-products .form-group-wrapper .form-group--right {
+  width: 45%;
+}
+.page-create-discount .form .form-block-products .form-group-wrapper .form-group--left input,
+.page-create-discount .form .form-block-products .form-group-wrapper .form-group--right input {
+  width: 100%;
+}
 .page-create-discount .form .form-block-code {
   margin-bottom: 3rem;
 }
@@ -5193,8 +5219,7 @@ input.c-btn-transparent--red:hover,
   margin-bottom: 0;
 }
 .page-create-discount .form .form-block-orders {
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-top: -2em;
 }
 .page-create-discount .form .form-block-orders label {
   font-weight: normal;

@@ -60,11 +60,37 @@
             </div>
               <p class="form-block-subtitle">Products</p>
             <div class="form-block-products">
+              <div class="form-group-wrapper">
               <div class="form-group form-group--left">
-                <label class="small">Product name</label>
-                <input class="form-control" type="text">
+                <label class="small">Choose profession</label>
+                <div class="c-dropdown">
+                  <select>
+                    <option value="1">Artist</option>
+                    <option value="2">Author</option>
+                    <option value="3">Gallery</option>
+                    <option value="4">Publisher</option>
+                  </select>
+                </div>
               </div>
+
+
               <div class="form-group form-group--right">
+                <label class="small">Select name</label>
+                <!-- <input class="form-control" type="text"> -->
+                <div class="c-dropdown">
+                  <select>
+                    <option value="1">Name1</option>
+                    <option value="2">Name2</option>
+                    <option value="3">Name3</option>
+                    <option value="4">Publisher</option>
+                  </select>
+                </div>
+              <a href="javascript:void(0)" target="_blank">Visit</a>
+              </div>
+              </div>
+
+                    <div class="form-group-wrapper">
+              <div class="form-group form-group--left">
                 <label class="small">Category</label>
                 <div class="c-dropdown">
                   <select>
@@ -75,9 +101,14 @@
                   </select>
                 </div>
               </div>
+              <div class="form-group form-group--right">
+                <label class="small">Product name</label>
+                <input class="form-control" type="text">
+              <a href="javascript:void(0)" target="_blank">Visit</a>
+              </div>
             </div>
-            <label class="small">Artist</label>
-            <input class="form-control" type="text">
+            </div>
+
             <div class="form-block-code">
               <label>Discount code</label>
               <input class="form-control" type="text">
@@ -96,20 +127,24 @@
                 </div>
               </div>
               <div class="form-group form-group--right">
-                <div class="c-dropdown">
+                <div class="form-block-orders">
+                  <label>Orders over</label>
+                  <span>£</span><input class="form-control" type="text">
+                </div>
+                <!-- <div class="c-dropdown">
                   <select>
                     <option value="1">Amount</option>
                     <option value="2">Another option</option>
                     <option value="3">A disabled option</option>
                     <option value="4">Potato</option>
                   </select>
-                </div>
+                </div> -->
               </div>
             </div>
-            <div class="form-block-orders">
+            <!-- <div class="form-block-orders">
               <label>Orders over</label>
               <span>$</span><input class="form-control" type="text">
-            </div>
+            </div> -->
             <h3 class="form-block-title">Usage limits</h3>
             <div class="form-block-limit">
               <p>Total available</p>

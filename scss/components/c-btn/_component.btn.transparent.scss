@@ -16,6 +16,11 @@
       &:hover {
         color: $white;
       }
+      &:focus {
+              border-color:$hamrock;
+            border-width: 1px;
+            outline: none;
+            }
     }
     &--red {
       border: solid 1px  $amaranth;
@@ -24,6 +29,12 @@
       &:hover {
         color: $white;
       }
+&:focus {
+        border-color:$amaranth;
+      border-width: 1px;
+      outline: none;
+      }
+
     }
-    
+
 }

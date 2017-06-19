@@ -109,7 +109,7 @@
         input {
           width: auto;
           line-height: normal;
-          margin: 0;
+          margin:0 0.4rem 0 0;
         }
 
         label {
@@ -155,9 +155,9 @@
 
             .list {
               font-size: 14px;
-  height: 100px;
-  overflow: auto;
-  min-width: 186px;
+              height: 100px;
+              overflow: auto;
+              min-width: 186px;
 
             }
           }
@@ -186,6 +186,84 @@
       }
     }
 
+    .form-block-conditions {
+      margin-top: 2em;
+      @extend .clearfix;
+
+      .form-group {
+        position: relative;
+          margin-bottom: 1.5rem;
+
+        a {
+          position: absolute;
+          right: -3em;
+          top: 2.2em;
+          color: $keppel;
+          font-style: italic;
+        }
+
+        .c-dropdown {
+          float: none;
+          margin: 0;
+
+          .nice-select {
+            min-width: 200px;
+            border: solid 1px $matterhorn;
+            height: 35px;
+            line-height: 30px;
+
+            .current {
+              color: $silver;
+              font-size: 14px;
+            }
+
+            &:after {
+              border-bottom: 2px solid $matterhorn;
+              border-right: 2px solid $matterhorn;
+            }
+
+            .list {
+              font-size: 14px;
+              height: 100px;
+              overflow: auto;
+              min-width: 186px;
+
+            }
+          }
+        }
+
+        .form-group--right {
+          input {
+            width: 100px;
+          }
+        }
+      }
+
+      .form-group-wrapper {
+        float: left;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .form-group--left,
+        .form-group--right {
+          width: 45%;
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+      .form-group--last {
+        .form-block-orders {
+          margin-top: 0;
+        }
+        clear: both;
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+
     .form-block-code {
       margin-bottom: 3rem;
 
@@ -195,9 +273,9 @@
       }
       .c-btn {
         float: right;
-  line-height: 2;
-  min-width: 100px;
-  padding: 0;
+        line-height: 2;
+        min-width: 100px;
+        padding: 0;
       }
       .smallest {
         clear: both;
@@ -239,7 +317,7 @@
       input {
         width: auto;
         display: inline-block;
-        margin: 0;
+        margin:0 0.4rem 0 0;
       }
 
       label {

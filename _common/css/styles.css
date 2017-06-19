@@ -4261,7 +4261,7 @@ input.c-btn,
       .page-create-discount .form .form-block-duration .form-block-date label {
         display: inline; }
     .page-create-discount .form .form-block-products {
-      margin-top: 2.8em; }
+      margin-top: 1em; }
       .page-create-discount .form .form-block-products .form-group {
         position: relative; }
         .page-create-discount .form .form-block-products .form-group a {
@@ -4302,10 +4302,9 @@ input.c-btn,
           .page-create-discount .form .form-block-products .form-group-wrapper .form-group--right input {
             width: 100%; }
     .page-create-discount .form .form-block-conditions {
-      margin-top: 2em; }
+      margin-top: 2.8em; }
       .page-create-discount .form .form-block-conditions .form-group {
-        position: relative;
-        margin-bottom: 1.5rem; }
+        position: relative; }
         .page-create-discount .form .form-block-conditions .form-group a {
           position: absolute;
           right: -3em;
@@ -4331,8 +4330,8 @@ input.c-btn,
               height: 100px;
               overflow: auto;
               min-width: 186px; }
-        .page-create-discount .form .form-block-conditions .form-group .form-group--right input {
-          width: 100px; }
+        .page-create-discount .form .form-block-conditions .form-group--right {
+          margin-top: -1.8rem; }
       .page-create-discount .form .form-block-conditions .form-group-wrapper {
         float: left;
         width: 100%;
@@ -4345,8 +4344,7 @@ input.c-btn,
             width: 100%; }
       .page-create-discount .form .form-block-conditions .form-group--last {
         clear: both;
-        width: 100%;
-        margin-bottom: 0; }
+        width: 100%; }
         .page-create-discount .form .form-block-conditions .form-group--last .form-block-orders {
           margin-top: 0; }
     .page-create-discount .form .form-block-code {

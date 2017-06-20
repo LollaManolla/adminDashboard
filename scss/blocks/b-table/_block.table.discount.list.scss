@@ -3,45 +3,145 @@
 //-------------------------
 
 &--discount-list {
+  white-space: initial;
+  width: auto;
+  min-width: 1078px;
   // Column widths are based on these cells
-  th, td {
+  a:hover {
+    color: $amaranth;
+  }
+
+  td,
+  th {
     border: solid 1px $zambezi;
     text-transform: none;
     color: $white;
     vertical-align: middle;
+  }
 
-  }
   th {
-    padding: 1.4rem 1rem 1rem;
+    padding: 1rem;
   }
+
   td {
     font-size: 14px;
-    line-height: 3;
-    padding: 0rem 1rem;
+    line-height: 1.5;
+    padding: 1rem;
+    // height: 3rem;
+    text-overflow: initial;
+  }
+
+  .b-table__body td {
+    white-space: initial;
+    overflow: visible;
   }
 
   .row-1 {
-    width:170px;
+    width: 155px;
     //padding-left: 1.2rem;
   }
-  .row-2 {
-    width:170px;
-  }
+  //
+  // .row-2 {
+  //   width: 126px;
+  // }
+  //
   .row-3 {
-    width:170px;
+    width: 168px;
   }
-  .row-4 {
-    width:305px;
-  }
-  .row-5 {
-    width:110px;
-  }
-  .row-6 {
-    width:110px;
-  }
-
+  //
+  // .row-4 {
+  //   width: 305px;
+  // }
+  //
+  // .row-5 {
+  //   width: 102px;
+  // }
+  //
+  // .row-6 {
+  //   width: 102px;
+  // }
+  //
+  // .row-7 {
+  //   // width: 186px;
+  //
+  // }
   .b-table__header th {
     font-size: 17px;
     font-weight: bold;
+  }
+
+  .delete {
+    position: absolute;
+    top: 2px;
+    font-size: 0.85rem;
+    background-color: $amaranth;
+    color: $white;
+    padding: 0 4px;
+    right: -24px;
+    border-radius: 101px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    font-family: tahoma;
+    // span {
+    //   display: inline-block;
+    //   margin-right: 3px;
+    //   margin-bottom: -4px;
+    //   margin-top: 5px;
+    // a {
+    //   position: relative;
+    //   display: block;
+    // img {
+    //   width: 85%;
+    // }
+    // &:hover {
+    //   position: relative;
+    //
+    //   &:before {
+    //     display: block;
+    //     font-size: 12px;
+    //     line-height: normal;
+    //     padding: 6px 14px;
+    //     position: absolute;
+    //     right: 2rem;
+    //     top: 0;
+    //     z-index: 2;
+    //     background-color: $black;
+    //     color: $white;
+    //   }
+    // }
+    // &.hover:before {
+    //   content: "delete request";
+    // }
+    // }
+    // }
+  }
+
+  .code-wrapper {
+    position: relative;
+    display: block;
+
+    &:hover {
+      &:before {
+        content: "Delete discount";
+        display: block;
+        font-size: 12px;
+        line-height: normal;
+        padding: 6px 15px;
+        position: absolute;
+        right: 0;
+        top: -3px;
+        z-index: 2;
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+
+  .code {
+    display: block;
+    position: relative;
   }
 }

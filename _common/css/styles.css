@@ -2326,24 +2326,27 @@ html, body {
       width: 16px;
       height: 16px;
       text-align: center;
-      line-height: 1;
-      font-weight: bold;
-      font-family: tahoma; }
-    .b-table--discount-list .code-wrapper {
-      position: relative;
-      display: block; }
-      .b-table--discount-list .code-wrapper:hover:before {
+      line-height: 0.99;
+      font-family: tahoma;
+      cursor: pointer;
+      border: none; }
+      .b-table--discount-list .delete:hover:before {
         content: "Delete discount";
         display: block;
         font-size: 12px;
         line-height: normal;
-        padding: 6px 15px;
+        padding: 6px 10px;
         position: absolute;
-        right: 0;
-        top: -3px;
+        right: 19px;
+        top: -5px;
         z-index: 2;
         background-color: #000;
-        color: #fff; }
+        color: #fff;
+        width: 100px; }
+    .b-table--discount-list .code-wrapper {
+      position: relative;
+      display: block;
+      color: #c6c6c6; }
     .b-table--discount-list .code {
       display: block;
       position: relative; }

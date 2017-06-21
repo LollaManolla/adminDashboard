@@ -4159,7 +4159,7 @@ input.c-btn-transparent--red:focus,
   margin-right: 3.6rem;
   color: #ACADAD;
 }
-.c-modal--receipt .col-left-top, .c-modal--receipt .col-left-bottom, .c-modal--receipt-sum .col-left-top, .c-modal--receipt-sum .col-left-bottom {
+.c-modal--receipt .col-left-bottom, .c-modal--receipt .col-left-top, .c-modal--receipt-sum .col-left-bottom, .c-modal--receipt-sum .col-left-top {
   float: left;
   width: 100%;
 }
@@ -4177,6 +4177,8 @@ input.c-btn-transparent--red:focus,
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 1.2rem;
+  border: none;
+  padding-bottom: 0;
 }
 .c-modal--receipt .col-left-top .col__item-image, .c-modal--receipt-sum .col-left-top .col__item-image {
   background-color: #222222;
@@ -4184,7 +4186,7 @@ input.c-btn-transparent--red:focus,
   display: inline-block;
   height: 122px;
   width: 122px;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 1rem;
   text-align: center;
   vertical-align: middle;
 }
@@ -4214,12 +4216,20 @@ input.c-btn-transparent--red:focus,
 .c-modal--receipt .col-left-top .col__item-info .title, .c-modal--receipt-sum .col-left-top .col__item-info .title {
   text-transform: uppercase;
   font-weight: bold;
+  border: none;
+  padding-bottom: 0;
 }
 .c-modal--receipt .col-left-top .col__item-info .author, .c-modal--receipt-sum .col-left-top .col__item-info .author {
   font-style: italic;
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .c-modal--receipt .col-left-top .col__item-info .product, .c-modal--receipt-sum .col-left-top .col__item-info .product {
   font-weight: bold;
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .c-modal--receipt .col-left-top .col__item.price, .c-modal--receipt .col-left-top .col__item.qty, .c-modal--receipt .col-left-top .col__item.total, .c-modal--receipt-sum .col-left-top .col__item.price, .c-modal--receipt-sum .col-left-top .col__item.qty, .c-modal--receipt-sum .col-left-top .col__item.total {
   width: 77px;
@@ -4238,9 +4248,14 @@ input.c-btn-transparent--red:focus,
 .c-modal--receipt .col-left-top .col__item .type, .c-modal--receipt-sum .col-left-top .col__item .type {
   text-transform: uppercase;
   margin-bottom: 2rem;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 .c-modal--receipt .col-left-top .col__item .value, .c-modal--receipt-sum .col-left-top .col__item .value {
   color: #D0CFCF;
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .c-modal--receipt .col-left-bottom .list, .c-modal--receipt-sum .col-left-bottom .list {
   display: block;
@@ -4287,7 +4302,7 @@ input.c-btn-transparent--red:focus,
 }
 .c-modal--receipt .tracking-form, .c-modal--receipt-sum .tracking-form {
   border: solid 1px #505050;
-  padding: 2.3rem 1rem 2.3rem 1rem;
+  padding: 2.3rem 1rem;
 }
 .c-modal--receipt .tracking-form .form-group, .c-modal--receipt-sum .tracking-form .form-group {
   margin-bottom: 1.2rem;
@@ -4371,6 +4386,9 @@ input.c-btn-transparent--red:focus,
   width: 232px;
   float: left;
   padding-right: 0.8rem;
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 .c-modal--receipt-sum .col-full-top .list > li .status {
   color: #5ca395;
@@ -4401,6 +4419,8 @@ input.c-btn-transparent--red:focus,
 .c-modal--receipt-sum .col-full-bottom .title {
   display: block;
   margin-bottom: 2.8rem;
+  border: none;
+  padding-bottom: 0;
 }
 .c-modal--receipt-sum .col-full-bottom .list {
   display: block;
@@ -4468,6 +4488,9 @@ input.c-btn-transparent--red:focus,
   color: #D0CFCF;
   font-size: 14px;
   line-height: 1.85;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 .c-modal--user .col-data p.uppercasr {
   text-transform: uppercase;
@@ -6925,6 +6948,9 @@ input.c-btn-transparent--red:focus,
 }
 .page-cms .form .col-five.b-titles__profit-calc .btn-bottom-page {
   width: auto;
+  clear: both;
+  margin: 0;
+  padding-top: 1.5rem;
 }
 .page-cms .form .col-five.b-titles__profit-calc .percentage {
   font-size: 16px;

@@ -106,6 +106,8 @@
             font-weight: bold;
             border: none;
             padding-bottom: 0;
+            font-size: 16px;
+            margin-bottom: 0;
           }
 
           .author {
@@ -113,6 +115,7 @@
             border: none;
             margin-bottom: 0;
             padding-bottom: 0;
+              font-size: 16px;
           }
 
           .product {
@@ -120,6 +123,7 @@
             border: none;
             margin-bottom: 0;
             padding-bottom: 0;
+              font-size: 16px;
           }
         }
 
@@ -306,6 +310,7 @@
           display: block;
           @extend .clearfix;
 
+
           span {
             display: block;
             float: left;
@@ -324,6 +329,7 @@
             margin-bottom: 0;
             border-bottom: 0;
             padding-bottom: 0;
+                font-size: 16px;
           }
 
           .status {

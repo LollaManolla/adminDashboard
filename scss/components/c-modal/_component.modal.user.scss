@@ -13,6 +13,7 @@
   height: 100%;
   margin: 0;
   z-index: 10;
+
   &-inner {
     width: 1025px;
     height: auto;
@@ -20,9 +21,8 @@
     top: 25%;
     position: relative;
     background-color: $background;
-    padding:2rem 1rem 4rem 2rem;
+    padding: 2rem 1rem 4rem 2rem;
     @extend .clearfix;
-
   }
 
   .b-media {
@@ -33,11 +33,10 @@
     float: left;
     margin-right: 2.3rem;
 
-div {
-  width: 123px;
-  height: 123px;
-}
-
+    div {
+      width: 123px;
+      height: 123px;
+    }
   }
 
   .col-data {
@@ -45,26 +44,33 @@ div {
     float: left;
     width: 209px;
     color: $white;
+
     h6 {
       font-size: 16px;
       font-weight: bold;
       line-height: 1.6;
     }
+
     p {
       color: $lightg;
       font-size: 14px;
-      line-height:1.85;
+      line-height: 1.85;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+
       &.uppercasr {
         text-transform: uppercase;
       }
-
     }
+
     a {
       color: $keppel;
       font-style: italic;
       font-size: 14px;
     }
   }
+
   .c-modal__btn-close {
     position: absolute;
     right: 1rem;

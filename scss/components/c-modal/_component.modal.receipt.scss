@@ -117,6 +117,9 @@
 
           .product {
             font-weight: bold;
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
           }
         }
 
@@ -149,6 +152,9 @@
 
         .value {
           color: $lightg;
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
         }
       }
     }

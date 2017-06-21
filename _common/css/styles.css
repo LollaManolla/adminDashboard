@@ -4227,6 +4227,9 @@ input.c-btn-transparent--red:focus,
 }
 .c-modal--receipt .col-left-top .col__item-info .product, .c-modal--receipt-sum .col-left-top .col__item-info .product {
   font-weight: bold;
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .c-modal--receipt .col-left-top .col__item.price, .c-modal--receipt .col-left-top .col__item.qty, .c-modal--receipt .col-left-top .col__item.total, .c-modal--receipt-sum .col-left-top .col__item.price, .c-modal--receipt-sum .col-left-top .col__item.qty, .c-modal--receipt-sum .col-left-top .col__item.total {
   width: 77px;
@@ -4250,6 +4253,9 @@ input.c-btn-transparent--red:focus,
 }
 .c-modal--receipt .col-left-top .col__item .value, .c-modal--receipt-sum .col-left-top .col__item .value {
   color: #D0CFCF;
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .c-modal--receipt .col-left-bottom .list, .c-modal--receipt-sum .col-left-bottom .list {
   display: block;

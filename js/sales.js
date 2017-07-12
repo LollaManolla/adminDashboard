@@ -14,13 +14,13 @@ $(document).ready(function() {
 
 
   //show modal receipt
-  $(".c-modal-receipt").click(function(e) {
-    $('.c-modal.c-modal--receipt').hide();
-    $('.c-modal.c-modal--receipt').slideDown();
-  });
-  $(".c-modal__btn-close").click(function() {
-    $('.c-modal.c-modal--receipt').slideUp();
-  });
+  // $(".c-modal-receipt").click(function(e) {
+  //   $('.c-modal.c-modal--receipt').hide();
+  //   $('.c-modal.c-modal--receipt').slideDown();
+  // });
+  // $(".c-modal__btn-close").click(function() {
+  //   $('.c-modal.c-modal--receipt').slideUp();
+  // });
 
 
   //show modal receipt// this is second modal

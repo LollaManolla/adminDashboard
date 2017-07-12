@@ -5,83 +5,81 @@
 //------CORE
 // Core files prepare DOM by making HTML elements consistent across browsers
 // and removing built-in browser styling.
-@import 'core/all';
+@import "core/all";
 
 //------MIXINS and functions
-@import 'lib/all';
+@import "lib/all";
 
 //------SETTINGS FOR PROJECT
 //------variable, breakpoints, typo
-@import
-//'settings/settings.breakpoints',
-'settings/settings.colors',
-'settings/settings.wrappers',
-'settings/settings.links',
-'settings/settings.paths',
-'settings/settings.typography',
-'settings/settings.global';
+
+@import "settings/settings.colors";
+@import "settings/settings.wrappers";
+@import "settings/settings.links";
+@import "settings/settings.paths";
+@import "settings/settings.typography";
+@import "settings/settings.global";
 
 //------BLOCKS
-@import
-'blocks/b-header/block.header',
-'blocks/b-sidebar/block.sidebar',
-'blocks/b-logo/block.logo',
-'blocks/b-charts/all',
-'blocks/b-list/all',
-'blocks/b-table/block.table',
-'blocks/b-id/block.id',
-'blocks/b-profile-picture/block.profile.picture',
-'blocks/b-board/block.board',
-'blocks/b-gmail/block.gmail',
-'blocks/b-add-price/block.add.price',
-'blocks/b-search/block.search',
-'blocks/b-setup-price/block.setup.price',
-'blocks/b-art-print/block.art.print';
+
+@import "blocks/b-header/block.header";
+@import "blocks/b-sidebar/block.sidebar";
+@import "blocks/b-logo/block.logo";
+@import "blocks/b-charts/all";
+@import "blocks/b-list/all";
+@import "blocks/b-table/block.table";
+@import "blocks/b-id/block.id";
+@import "blocks/b-profile-picture/block.profile.picture";
+@import "blocks/b-board/block.board";
+@import "blocks/b-gmail/block.gmail";
+@import "blocks/b-add-price/block.add.price";
+@import "blocks/b-search/block.search";
+@import "blocks/b-setup-price/block.setup.price";
+@import "blocks/b-art-print/block.art.print";
 
 //------COMPONENTS
-@import
-'components/c-dropdown/component.dropdown.default',
-'components/c-btn/component.btn.default',
-'components/c-modal/component.modal.default',
-'components/c-progressbar/component.progress.bar';
+
+@import "components/c-dropdown/component.dropdown.default";
+@import "components/c-btn/component.btn.default";
+@import "components/c-modal/component.modal.default";
+@import "components/c-progressbar/component.progress.bar";
 
 //------WIDGETS
-@import
-'widgets/calendar/widget.calendar';
 
+@import "widgets/calendar/widget.calendar";
 
 //------PAGES
-@import
-'pages/page.login',
-'pages/page.password.reset',
-'pages/page.thanks',
-'pages/page.add.new.user',
-'pages/page.calendar',
-'pages/page.events',
-'pages/page.new.users',
-'pages/page.info',
-'pages/page.admin.assistant',
-'pages/page.create.discount',
-'pages/page.discount.list',
-'pages/page.reviewed.users',
-'pages/page.settings',
-'pages/page.referrals',
-'pages/page.sales',
-'pages/page.products',
-'pages/page.products.set.prices',
-'pages/page.payment',
-'pages/page.cms',
-'pages/page.cms.blog',
-'pages/page.cms.blog.list',
-'pages/page.cms.press',
-'pages/page.cms.press.coverage.list',
-'pages/page.cms.faq',
-'pages/page.cms.banner';
 
+@import "pages/page.login";
+@import "pages/page.password.reset";
+@import "pages/page.thanks";
+@import "pages/page.add.new.user";
+@import "pages/page.calendar";
+@import "pages/page.events";
+@import "pages/page.new.users";
+@import "pages/page.info";
+@import "pages/page.admin.assistant";
+@import "pages/page.create.discount";
+@import "pages/page.discount.list";
+@import "pages/page.reviewed.users";
+@import "pages/page.settings";
+@import "pages/page.referrals";
+@import "pages/page.sales";
+@import "pages/page.products";
+@import "pages/page.products.set.prices";
+@import "pages/page.payment";
+@import "pages/page.cms";
+@import "pages/page.cms.blog";
+@import "pages/page.cms.blog.list";
+@import "pages/page.cms.press";
+@import "pages/page.cms.press.coverage.list";
+@import "pages/page.cms.faq";
+@import "pages/page.cms.banner";
+@import "pages/page.sales.cart";
 
 //------TRUMPS
-@import
-'trumps/trumps.clearfix',
-'trumps/trumps.hacks',
-'trumps/trumps.ie',
-'trumps/trumps.print';
+
+@import "trumps/trumps.clearfix";
+@import "trumps/trumps.hacks";
+@import "trumps/trumps.ie";
+@import "trumps/trumps.print";

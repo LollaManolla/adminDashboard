@@ -1,39 +1,38 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Payment - Schedule</title>
-  <meta name="description" content="Payment - Schedule">
-  <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css" />
-  <link rel="stylesheet" href="_common/css/styles.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Payment - Schedule</title>
+    <meta name="description" content="Payment - Schedule">
+    <link rel="stylesheet" href="_common/css/jquery.mCustomScrollbar.css"/>
+    <link href="_common/css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="_common/css/styles.css">
+  </head>
 
-<body class="fullPageScroll">
-  <div class="wrapper-main">
+  <body class="fullPageScroll">
+    <div class="wrapper-main">
 
-    <!--header-->
-    <header class="b-header">
-      <div class="b-header__inner">
-        <h1 class="page-title">Payment</h1>
-        <div class="b-header__user">
-          <div  class="b-header__user-data">
-            <p class="b-header__user-name">Anna Kurnikova</p>
-            <p class="b-header__user-role">Admin</p>
-          </div>
-          <div class="b-header__user-avatar">
-            <div style="background: url('./_common/images/avatar-1.jpg') center center / cover no-repeat;width: 34px; height: 34px;"></div>
+      <!--header-->
+      <header class="b-header">
+        <div class="b-header__inner">
+          <h1 class="page-title">Payment</h1>
+          <div class="b-header__user">
+            <div class="b-header__user-data">
+              <p class="b-header__user-name">Anna Kurnikova</p>
+              <p class="b-header__user-role">Admin</p>
+            </div>
+            <div class="b-header__user-avatar">
+              <div style="background: url('./_common/images/avatar-1.jpg') center center / cover no-repeat;width: 34px; height: 34px;"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <!--main content-->
-    <main class="wrapper-content">
-      <div class="wrapper-content-inner full-width">
-        <div class="page-payment ">
-          <h2 class="page-payment__title">Payment Schedule</h2>
-
-
+      <!--main content-->
+      <main class="wrapper-content">
+        <div class="wrapper-content-inner full-width">
+          <div class="page-payment ">
+            <h2 class="page-payment__title">Payment Schedule</h2>
 
             <table class="b-table b-table--user">
               <thead class="b-table__header">
@@ -47,163 +46,337 @@
                 </tr>
               </thead>
               <tbody class="b-table__body">
-                  <tr>
-                      <td><a href="javascript:void(0)"  class="c-modal-user">88752261</a></td>
-                      <td>100</td>
-                      <td>September 15 - November 25</td>
-                      <td>September 15</td>
-                      <td>Due</td>
-                      <td>Collect</td>
-                  </tr>
-                  <tr>
-                    <td><a href="javascript:void(0)"  class="c-modal-user">88752261</a></td>
-                    <td>125869</td>
-                    <td>May 11 - June 1</td>
-                    <td>September 15</td>
-                    <td>Due</td>
-                    <td>Collect</td>
-                  </tr>
-                  <tr>
-                    <td><a href="javascript:void(0)"  class="c-modal-user">88752261</a></td>
-                    <td>2000</td>
-                    <td>May 11 - June 1</td>
-                    <td>September 15</td>
-                    <td>Due</td>
-                    <td>Collect</td>
-                  </tr>
-                  <tr>
-                    <td><a href="javascript:void(0)"  class="c-modal-user">88752261</a></td>
-                    <td>850</td>
-                    <td>May 11 - June 1</td>
-                    <td>September 15</td>
-                    <td>Due</td>
-                    <td>Collect</td>
-                  </tr>
-                  <tr>
-                    <td><a href="javascript:void(0)"  class="c-modal-user">88752261</a></td>
-                    <td>45</td>
-                    <td>May 11 - June 1</td>
-                    <td>September 15</td>
-                    <td>Due</td>
-                    <td>Collect</td>
-                  </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0)" class="c-modal-user">88752261</a>
+                  </td>
+                  <td>100</td>
+                  <td>May 11 - June 1</td>
+                  <td class="has-calendar">
+                    <div class="form-group">
+                      <label for="from">
+                        <input type="text" class="datepicker" placeholder="Choose date">
+                      </label>
+                    </div>
+                  </td>
+                  <td class="has-drop">
+                    <div class="c-dropdown">
+                      <select>
+                        <option value="1">Due</option>
+                        <option value="2">Payed</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>Collect</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0)" class="c-modal-user">88752261</a>
+                  </td>
+                  <td>125869</td>
+                  <td>May 11 - June 1</td>
+                  <td class="has-calendar">
+                    <div class="form-group">
+                      <label for="from">
+                        <input type="text" class="datepicker" placeholder="Choose date">
+                      </label>
+                    </div>
+                  </td>
+                  <td class="has-drop">
+                    <div class="c-dropdown">
+                      <select>
+                        <option value="1">Due</option>
+                        <option value="2">Payed</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>Collect</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0)" class="c-modal-user">88752261</a>
+                  </td>
+                  <td>2000</td>
+                  <td>May 11 - June 1</td>
+                  <td class="has-calendar">
+                    <div class="form-group">
+                      <label for="from">
+                        <input type="text" class="datepicker" placeholder="Choose date">
+                      </label>
+                    </div>
+                  </td>
+                  <td class="has-drop">
+                    <div class="c-dropdown">
+                      <select>
+                        <option value="1">Due</option>
+                        <option value="2">Payed</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>Collect</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0)" class="c-modal-user">88752261</a>
+                  </td>
+                  <td>850</td>
+                  <td>May 11 - June 1</td>
+                  <td class="has-calendar">
+                    <div class="form-group">
+                      <label for="from">
+                        <input type="text" class="datepicker" placeholder="Choose date">
+                      </label>
+                    </div>
+                  </td>
+                  <td class="has-drop">
+                    <div class="c-dropdown">
+                      <select>
+                        <option value="1">Due</option>
+                        <option value="2">Payed</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>Collect</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0)" class="c-modal-user">88752261</a>
+                  </td>
+                  <td>45</td>
+                  <td>May 11 - June 1</td>
+                  <td class="has-calendar">
+                    <div class="form-group">
+                      <label for="from">
+                        <input type="text" class="datepicker" placeholder="Choose date">
+                      </label>
+                    </div>
+                  </td>
+                  <td class="has-drop">
+                    <div class="c-dropdown">
+                      <select>
+                        <option value="1">Due</option>
+                        <option value="2">Payed</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>Collect</td>
+                </tr>
 
               </tbody>
             </table>
 
+          </div>
+        </div>
+      </main>
+
+      <!--sidebar-->
+      <div class="b-sidebar">
+        <div class="b-sidebar__inner">
+          <div class="b-logo">
+            <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
+          </div>
+          <!--sidebar menu-->
+          <ul class="b-menu">
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i>
+              </a>
+              <ul class="b-menu__submenu">
+                <li>
+                  <a href="javascript:void(0)">Home page</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Galleries</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Events</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Category pages</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Partnerships and Collaborations</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Press</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Blog</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">FAQ</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Banner &amp Tax</a>
+                </li>>
+              </ul>
+            </li>
+            <li >
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification">
+                  <span class="number">7</span>
+                </span>
+                <i class="fontelloIcon right-open-mini">&#xe80e;</i>
+              </a>
+              <ul class="b-menu__submenu">
+                <li>
+                  <a href="javascript:void(0)">Original Art</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Books</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Art Print</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Phone Cases</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">T-Shirts</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Pillows</a>
+                </li>
+                <li>
+                  <a class="active" href="javascript:void(0)">Cards</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Tote Bags</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Mugs</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Other</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Delete requests</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Other requests</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon tag">&#xe80b;</i>Sales</a>
+            </li>
+            <li>
+              <a class="active" href="javascript:void(0)">
+                <i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i>
+              </a>
+              <ul class="b-menu__submenu">
+                <li>
+                  <a class="active" href="javascript:void(0)">Payment Schedule</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Payment Overview</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user">
+                  <span class="number">5</span>
+                </span>
+                <i class="fontelloIcon right-open-mini">&#xe80e;</i>
+              </a>
+              <ul class="b-menu__submenu">
+                <li>
+                  <a href="javascript:void(0)">Add new assistant</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Admin assistants</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">New users</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Reviewed users</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon calendar">&#xe807;</i>Events</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i>
+              </a>
+              <ul class="b-menu__submenu">
+                <li>
+                  <a href="javascript:void(0)">Discount list</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Create new discount</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon cog">&#xe809;</i>Settings</a>
+            </li>
+            <li class="last">
+              <a href="javascript:void(0)">
+                <i class="fontelloIcon power">&#xe80d;</i>Log out</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
+    </div>
 
-    <!--sidebar-->
-    <div class="b-sidebar">
-      <div class="b-sidebar__inner">
-        <div class="b-logo">
-          <img src="./_common/images/logo.png" alt="Logo Admin Dashboard">
+    <div class="c-modal c-modal--user">
+      <div class="c-modal-inner c-modal--user-inner">
+        <span class="c-modal__btn-close">x</span>
+
+        <div class="b-media">
+          <div style="background: url('./_common/images/profile-modal.jpg') center center / cover no-repeat;"></div>
         </div>
-        <!--sidebar menu-->
-        <ul class="b-menu">
-          <li><a href="javascript:void(0)"><i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a></li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a href="javascript:void(0)">Home page</a></li>
-              <li><a href="javascript:void(0)">Galleries</a></li>
-              <li><a href="javascript:void(0)">Events</a></li>
-              <li><a href="javascript:void(0)">Category pages</a></li>
-              <li><a href="javascript:void(0)">Partnerships and Collaborations</a></li>
-              <li><a href="javascript:void(0)">Press</a></li>
-              <li><a href="javascript:void(0)">Blog</a></li>
-              <li><a href="javascript:void(0)">FAQ</a></li>
-              <li><a href="javascript:void(0)">Banner &amp Tax</a></li>>
-            </ul>
-          </li>
-          <li ><a href="javascript:void(0)"><i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification"><span class="number">7</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a href="javascript:void(0)">Original Art</a></li>
-              <li><a href="javascript:void(0)">Books</a></li>
-              <li><a href="javascript:void(0)">Art Print</a></li>
-              <li><a href="javascript:void(0)">Phone Cases</a></li>
-              <li><a href="javascript:void(0)">T-Shirts</a></li>
-              <li><a href="javascript:void(0)">Pillows</a></li>
-              <li><a class="active" href="javascript:void(0)">Cards</a></li>
-              <li><a href="javascript:void(0)">Tote Bags</a></li>
-              <li><a href="javascript:void(0)">Mugs</a></li>
-              <li><a href="javascript:void(0)">Other</a></li>
-              <li><a href="javascript:void(0)">Delete requests</a></li>
-              <li><a href="javascript:void(0)">Other requests</a></li>
-            </ul>
-          </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon tag">&#xe80b;</i>Sales</a></li>
-          <li><a class="active" href="javascript:void(0)"><i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a class="active" href="javascript:void(0)">Payment Schedule</a></li>
-              <li><a href="javascript:void(0)">Payment Overview</a></li>
-            </ul>
-          </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user"><span class="number">5</span></span><i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a href="javascript:void(0)">Add new assistant</a></li>
-              <li><a href="javascript:void(0)">Admin assistants</a></li>
-              <li><a href="javascript:void(0)">New users</a></li>
-              <li><a href="javascript:void(0)">Reviewed users</a></li>
-            </ul>
-          </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon calendar">&#xe807;</i>Events</a></li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i></a>
-            <ul class="b-menu__submenu">
-              <li><a href="javascript:void(0)">Discount list</a></li>
-              <li><a href="javascript:void(0)">Create new discount</a></li>
-            </ul>
-          </li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a></li>
-          <li><a href="javascript:void(0)"><i class="fontelloIcon cog">&#xe809;</i>Settings</a></li>
-          <li class="last"><a href="javascript:void(0)"><i class="fontelloIcon power">&#xe80d;</i>Log out</a></li>
-        </ul>
+
+        <div class="col-data">
+          <h6>Payment ID:</h6>
+          <h6>Name:</h6>
+          <h6>Profession:</h6>
+          <h6>Amount due:</h6>
+          <h6>Payment method:</h6>
+        </div>
+
+        <div class="col-data">
+          <p>88752261</p>
+          <p>
+            <a href="javascript:void(0)">Gabrielle Abraham</a>
+          </p>
+          <p>Artist</p>
+          <p>100</p>
+          <p>Credit card</p>
+        </div>
+
+        <div class="col-data">
+          <h6>Bank details:</h6>
+          <p>Laurent Garnier</p>
+          <p>Banca Intesa</p>
+          <p>Plaza Lesseps S/N, 08023 Barcelona, Spain</p>
+          <p class="uppercase">SWIFT: BGBGDBRS</p>
+          <p class="uppercase">IBAN: SP02865400735913825</p>
+        </div>
+
       </div>
     </div>
-  </div>
 
-  <div class="c-modal c-modal--user">
-    <div class="c-modal-inner c-modal--user-inner">
-      <span class="c-modal__btn-close">x</span>
-
-      <div class="b-media">
-    <div style="background: url('./_common/images/profile-modal.jpg') center center / cover no-repeat;"></div>
-      </div>
-
-      <div class="col-data">
-        <h6>Payment ID:</h6>
-  <h6>Name:</h6>
-  <h6>Profession:</h6>
-<h6>Amount due:</h6>
-<h6>Payment method:</h6>
-</div>
-
-<div class="col-data">
-  <p>88752261</p>
-<p><a href="javascript:void(0)">Gabrielle Abraham</a></p>
-<p>Artist</p>
-<p>100</p>
-<p>Credit card</p>
-</div>
-
-<div class="col-data">
-  <h6>Bank details:</h6>
-<p>Laurent Garnier</p>
-<p>Banca Intesa</p>
-<p>Plaza Lesseps S/N, 08023 Barcelona, Spain</p>
-<p class="uppercase">SWIFT: BGBGDBRS</p>
-<p class="uppercase">IBAN: SP02865400735913825</p>
-</div>
-
-
-
-    </div>
-  </div>
-
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="js/accordionMenu.js"></script>
-  <script src="js/paymentSchedule.js"></script>
-</body>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/accordionMenu.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/paymentSchedule.js"></script>
+  </body>
 </html>

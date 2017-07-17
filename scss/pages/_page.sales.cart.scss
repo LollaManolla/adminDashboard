@@ -272,6 +272,16 @@
       min-width: 100px;
       line-height: 2.1;
     }
+    .btn-sent {
+      display: inline-block;
+      width: 200px;
+      vertical-align: middle;
+      margin-left: 12px;
+      color: $spring;
+      .fontelloIcon {
+        margin-right: 4px;
+      }
+    }
   }
 }
 

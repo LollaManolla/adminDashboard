@@ -7,6 +7,10 @@ $(document).ready(function() {
     theme:"3d-thick"
   });
 
+  //for the forms
+  // change look of the select forms
+  // no need to modify this
+  $('select').niceSelect();
 
     //show modal receipt
     $(".c-modal-user").click(function(e) {
@@ -17,6 +21,15 @@ $(document).ready(function() {
       $('.c-modal.c-modal--user').slideUp();
     });
 
-
+//initiate calendar, clicking on icon
+$(function() {
+  $(".datepicker").datepicker({
+dateFormat: "dd.mm.yy",
+    showOn: "button",
+    buttonImage: "./_common/images/calendar.png",
+    buttonImageOnly: true,
+    buttonText: "Select date"
+  });
+});
 
 });

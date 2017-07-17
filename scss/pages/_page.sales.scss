@@ -11,6 +11,9 @@
     color: $keppel;
     letter-spacing: 0.12rem;
     margin-bottom: 2rem;
+    a {
+      color: $keppel;
+    }
   }
   .form-block-sales {
     @extend .clearfix;
@@ -35,11 +38,11 @@
       &:nth-child(4) {
         margin-right: 0.9rem;
       }
-      &:nth-child(5) {
-        margin-left: 0.7rem;
-        margin-right: 0;
-        width: 182px;
-      }
+      // &:nth-child(5) {
+      //   margin-left: 0.7rem;
+      //   margin-right: 0;
+      //   width: 182px;
+      // }
       input {
         border: solid 1px $matterhorn;
         border-radius: 20px;
@@ -106,5 +109,41 @@
         cursor: pointer;
       }
     }
+  }
+  .form-group.notification {
+    padding-left: 56px;
+    width: auto;
+    margin: 0;
+    top: 11px;
+    position: relative;
+    p {
+      color: #c6c6c6;
+      line-height: 1.2;
+      font-size: 14px;
+    }
+  }
+  .note__sales {
+    &-finished {
+      color: #24FF94;
+      font-size: 20px;
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &-half-finished {
+      color: #FF0040;
+      font-size: 20px;
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .b-table--sales .sales-orders a.visited {
+    color: #24FF94;
+  }
+  .btn.bottom-right {
+    text-align: right;
+    margin-top: 1.8rem;
+    margin-right: 11px;
   }
 }

@@ -24,7 +24,6 @@ $(document).ready(function() {
 //initiate calendar, clicking on icon
 $(function() {
   $(".datepicker").datepicker({
-dateFormat: "dd.mm.yy",
     showOn: "button",
     buttonImage: "./_common/images/calendar.png",
     buttonImageOnly: true,

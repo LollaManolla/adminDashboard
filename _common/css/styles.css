@@ -2389,7 +2389,7 @@ html, body {
     padding-bottom: 1rem;
     padding-top: 1.1rem; }
   .b-table--sales .b-table__body td {
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     color: #D0CFCF;
     line-height: 2.9;
@@ -2408,6 +2408,7 @@ html, body {
       float: none;
       margin-right: 0; }
       .b-table--sales .form .c-dropdown .nice-select {
+        font-size: 14px;
         border: medium none;
         border-radius: 0;
         height: auto;
@@ -4590,15 +4591,16 @@ input.c-btn,
       color: #c6c6c6;
       line-height: 1.2;
       font-size: 14px; }
+      .page-sales .form-group.notification p .note__sales-finished,
+      .page-sales .form-group.notification p .note__sales-half-finished {
+        font-size: 20px; }
   .page-sales .note__sales-finished {
     color: #24FF94;
-    font-size: 20px;
     margin-right: 5px;
     display: inline-block;
     vertical-align: middle; }
   .page-sales .note__sales-half-finished {
     color: #FF0040;
-    font-size: 20px;
     margin-right: 5px;
     display: inline-block;
     vertical-align: middle; }
@@ -5252,6 +5254,10 @@ input.c-btn,
             max-width: none; }
 .page-payment .hide {
   display: none; }
+.page-payment .btn.bottom-right {
+  text-align: right;
+  margin-top: 1.8rem;
+  margin-right: 11px; }
 
 .page-cms__title {
   font-size: 25px;

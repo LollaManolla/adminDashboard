@@ -120,19 +120,21 @@
       color: #c6c6c6;
       line-height: 1.2;
       font-size: 14px;
+      .note__sales-finished,
+      .note__sales-half-finished {
+        font-size: 20px;
+      }
     }
   }
   .note__sales {
     &-finished {
       color: #24FF94;
-      font-size: 20px;
       margin-right: 5px;
       display: inline-block;
       vertical-align: middle;
     }
     &-half-finished {
       color: #FF0040;
-      font-size: 20px;
       margin-right: 5px;
       display: inline-block;
       vertical-align: middle;

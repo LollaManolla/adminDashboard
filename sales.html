@@ -38,21 +38,21 @@
             <div class="form-group">
               <div class="c-dropdown"> <span class="c-dropdown__title">Filter by Status</span> <select>
 
-                    <option value="1">Order Proccesing</option>
+                  <option value="1">Order Proccesing</option>
 
-                    <option value="2">Order Received</option>
+                  <option value="2">Order Received</option>
 
-                    <option value="3">Delivered</option>
+                  <option value="3">Delivered</option>
 
-                    <option value="4">Shipped</option>
+                  <option value="4">Shipped</option>
 
-                  </select> </div>
+                </select> </div>
             </div>
             <div class="form-group"> <label for="from">Search</label> <input class="form-control" type="text" placeholder=""> <button type="submit">
 
-                  <i class="fontelloIcon search">&#xe802;</i>
+                <i class="fontelloIcon search">&#xe802;</i>
 
-                </button> </div>
+              </button> </div>
           </div>
           <table class="b-table b-table--sales">
             <thead class="b-table__header">
@@ -72,14 +72,11 @@
                 <td>43</td>
                 <td class="form received">
                   <div class="c-dropdown"> <select onchange="changeColor(this);">
-
-                        <option value="received">Order Received</option>
-
-                        <option value="processing">Order Processing</option>
-
-                        <option value="delivered">Delivered</option>
-
-                      </select> </div>
+                      <option value="shipped">Shipped</option>
+                      <option value="received">Order Received</option>
+                      <option value="processing">Order Processing</option>
+                      <option value="delivered">Delivered</option>
+                    </select> </div>
                 </td>
               </tr>
               <tr>
@@ -89,14 +86,12 @@
                 <td>94</td>
                 <td class="form processing">
                   <div class="c-dropdown"> <select onchange="changeColor(this);">
+                      <option value="processing">Order Processing</option>
+                      <option value="received">Order Received</option>
+                      <option value="delivered">Delivered</option>
+                      <option value="shipped">Shipped</option>
 
-                        <option value="processing">Order Processing</option>
-
-                        <option value="received">Order Received</option>
-
-                        <option value="delivered">Delivered</option>
-
-                      </select> </div>
+                    </select> </div>
                 </td>
               </tr>
               <tr>
@@ -106,14 +101,11 @@
                 <td>83</td>
                 <td class="form delivered">
                   <div class="c-dropdown"> <select onchange="changeColor(this);">
-
-                        <option value="delivered">Delivered</option>
-
-                        <option value="processing">Order Processing</option>
-
-                        <option value="received">Order Received</option>
-
-                      </select> </div>
+                      <option value="delivered">Delivered</option>
+                      <option value="processing">Order Processing</option>
+                      <option value="shipped">Shipped</option>
+                      <option value="received">Order Received</option>
+                    </select> </div>
                 </td>
               </tr>
               <tr>
@@ -123,14 +115,11 @@
                 <td>128</td>
                 <td class="form delivered">
                   <div class="c-dropdown"> <select onchange="changeColor(this);">
-
-                        <option value="delivered">Delivered</option>
-
-                        <option value="processing">Order Processing</option>
-
-                        <option value="received">Order Received</option>
-
-                      </select> </div>
+                      <option value="delivered">Delivered</option>
+                      <option value="processing">Order Processing</option>
+                      <option value="received">Order Received</option>
+                      <option value="shipped">Shipped</option>
+                    </select> </div>
                 </td>
               </tr>
               <tr>
@@ -140,14 +129,11 @@
                 <td>81</td>
                 <td class="form received">
                   <div class="c-dropdown"> <select onchange="changeColor(this);">
-
-                        <option value="received">Order Received</option>
-
-                        <option value="delivered">Delivered</option>
-
-                        <option value="processing">Order Processing</option>
-
-                      </select> </div>
+                      <option value="received">Order Received</option>
+                      <option value="delivered">Delivered</option>
+                      <option value="processing">Order Processing</option>
+                      <option value="shipped">Shipped</option>
+                    </select> </div>
                 </td>
               </tr>
             </tbody>
@@ -163,7 +149,7 @@
         <ul class="b-menu">
           <li> <a href="javascript:void(0)">
 
-                <i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a> </li>
+              <i class="fontelloIcon gauge">&#xe804;</i>Dashboard</a> </li>
           <li> <a href="javascript:void(0)">
 
                 <i class="fontelloIcon data-science">&#xf016;</i>CMS<i class="fontelloIcon right-open-mini">&#xe80e;</i>
@@ -183,15 +169,15 @@
           </li>
           <li> <a href="javascript:void(0)">
 
-                <i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification">
+              <i class="fontelloIcon basket">&#xe805;</i>Products<span class="notification">
 
-                  <span class="number">7</span>
+                <span class="number">7</span>
 
-                </span>
+              </span>
 
-                <i class="fontelloIcon right-open-mini">&#xe80e;</i>
+              <i class="fontelloIcon right-open-mini">&#xe80e;</i>
 
-              </a>
+            </a>
             <ul class="b-menu__submenu">
               <li> <a href="javascript:void(0)">Original Art</a> </li>
               <li> <a href="javascript:void(0)">Books</a> </li>
@@ -209,12 +195,12 @@
           </li>
           <li> <a class="active" href="javascript:void(0)">
 
-                <i class="fontelloIcon tag">&#xe80b;</i>Sales</a> </li>
+            <i class="fontelloIcon tag">&#xe80b;</i>Sales</a> </li>
           <li> <a href="javascript:void(0)">
 
-                <i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i>
+              <i class="fontelloIcon credit-card">&#xe814;</i>Payment<i class="fontelloIcon right-open-mini">&#xe80e;</i>
 
-              </a>
+            </a>
             <ul class="b-menu__submenu">
               <li> <a href="javascript:void(0)">Payment Schedule</a> </li>
               <li> <a href="javascript:void(0)">Payment Overview</a> </li>
@@ -222,15 +208,15 @@
           </li>
           <li> <a href="javascript:void(0)">
 
-                <i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user">
+            <i class="fontelloIcon user-o">&#xf2c0;</i>Users<span class="notification notification--user">
 
-                  <span class="number">5</span>
+              <span class="number">5</span>
 
-                </span>
+            </span>
 
-                <i class="fontelloIcon right-open-mini">&#xe80e;</i>
+            <i class="fontelloIcon right-open-mini">&#xe80e;</i>
 
-              </a>
+          </a>
             <ul class="b-menu__submenu">
               <li> <a href="javascript:void(0)">Add new assistant</a> </li>
               <li> <a href="javascript:void(0)">Admin assistants</a> </li>
@@ -240,12 +226,12 @@
           </li>
           <li> <a href="javascript:void(0)">
 
-                <i class="fontelloIcon calendar">&#xe807;</i>Events</a> </li>
+          <i class="fontelloIcon calendar">&#xe807;</i>Events</a> </li>
           <li> <a href="javascript:void(0)">
 
-                <i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i>
+            <i class="fontelloIcon bullhorn">&#xe80c;</i>Promotions<i class="fontelloIcon right-open-mini">&#xe80e;</i>
 
-              </a>
+          </a>
             <ul class="b-menu__submenu">
               <li> <a href="javascript:void(0)">Discount list</a> </li>
               <li> <a href="javascript:void(0)">Create new discount</a> </li>
@@ -253,13 +239,13 @@
           </li>
           <li> <a href="javascript:void(0)">
 
-                <i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a> </li>
+          <i class="fontelloIcon thumbs-up">&#xe808;</i>Referrals</a> </li>
           <li> <a href="javascript:void(0)">
 
-                <i class="fontelloIcon cog">&#xe809;</i>Settings</a> </li>
+            <i class="fontelloIcon cog">&#xe809;</i>Settings</a> </li>
           <li class="last"> <a href="javascript:void(0)">
 
-                <i class="fontelloIcon power">&#xe80d;</i>Log out</a> </li>
+              <i class="fontelloIcon power">&#xe80d;</i>Log out</a> </li>
         </ul>
       </div>
     </div>

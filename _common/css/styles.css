@@ -6226,6 +6226,9 @@ input.c-btn,
         .page-sales__cart .b-list .list--c > li .value {
           font-size: 16px;
           font-weight: bold; }
+    .page-sales__cart .b-list.cart--gift .list.list--a > li .object,
+    .page-sales__cart .b-list.cart--gift .list.list--a > li .value {
+      font-size: 14px; }
 
 .page-sales__cart-title {
   font-size: 20px;
@@ -6377,6 +6380,41 @@ input.c-btn,
       color: #24FF94; }
       .b-sales-cart .btn .btn-sent .fontelloIcon {
         margin-right: 4px; }
+  .b-sales-cart.cart--gift {
+    margin-bottom: 2rem; }
+    .b-sales-cart.cart--gift .col-left {
+      float: none;
+      width: 100%;
+      margin-right: 0; }
+    .b-sales-cart.cart--gift .col-left-top .col__item {
+      width: 100%; }
+    .b-sales-cart.cart--gift .col__item-title {
+      margin-bottom: 0.5rem; }
+    .b-sales-cart.cart--gift .col__item-price {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 0;
+      border: none;
+      padding-bottom: 0;
+      color: #5ca395; }
+    .b-sales-cart.cart--gift .col__item-image {
+      border: none;
+      display: inline-block;
+      height: 175px;
+      width: 230px;
+      margin: 0 auto 1rem; }
+      .b-sales-cart.cart--gift .col__item-image a {
+        display: block; }
+        .b-sales-cart.cart--gift .col__item-image a span {
+          height: 175px;
+          padding: 0; }
+          .b-sales-cart.cart--gift .col__item-image a span img {
+            display: block;
+            height: 100%;
+            margin: 0 auto; }
+    .b-sales-cart.cart--gift .btn {
+      border-top: none; }
 
 .clearfix:after, .wrapper-main:after, .b-list-events:after, .b-list-events .event-title:after,
 .b-list-events .event-start:after,

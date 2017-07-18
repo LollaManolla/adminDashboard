@@ -1,0 +1,78 @@
+// //-------------------------
+// //-------------------PAGE add new user
+// //-------------------------
+//
+.page-new-user {
+    &__title {
+        font-size: 25px;
+        font-weight: bold;
+        color: $keppel;
+        letter-spacing: 0.04rem;
+        margin-bottom: 3.7rem;
+    }
+    .form-group {
+        @extend .clearfix;
+        margin-right: -14px;
+        margin-left: -14px;
+        margin-bottom: 2.1rem;
+        .note {
+            font-style: italic;
+            color: $white;
+            display: inline-block;
+            margin-left: 0.25rem;
+            font-weight: normal;
+            letter-spacing: normal;
+            &--smaller {
+                font-size: 14px;
+                color: $hit;
+
+            }
+            &--input {
+                font-style: normal;
+                font-size: 16px;
+                letter-spacing: 0.02rem;
+                color: $silver;
+            }
+        }
+        &-input {
+            width: 60%;
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            .form-control {
+                max-width: 350px;
+                width: 100%;
+                border-radius: 7px;
+                line-height: 2.5;
+                margin-right: 01rem;
+            }
+        }
+        label {
+            font-weight: bold;
+            color: $white;
+            letter-spacing: 0.02rem;
+            padding-top: 0.4rem;
+            margin-bottom: 0;
+            width: 280px;
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            display: inline-block;
+            max-width: 100%;
+        }
+        .control-label {
+            width: auto;
+            margin-bottom: 1rem;
+            input {
+                margin: 0 6px 0 -14px;
+                width: auto;
+                border-radius: 0;
+                line-height: normal;
+            }
+        }
+    }
+}

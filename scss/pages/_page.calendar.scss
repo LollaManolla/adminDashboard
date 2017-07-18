@@ -1,0 +1,39 @@
+//-------------------------
+//-------------------PAGE log in
+//-------------------------
+
+.page-calendar {
+    .w-calendar {
+        float: none;
+        width: auto;
+        min-height: auto;
+        .b-calendar {
+            .simple-event-calendar {
+              background-color: $ron;
+                .calendar-month {
+                    font-size: 30px;
+                    padding: 2rem 4.1rem 1.7rem 4.1rem;
+                }
+                table {
+                    width: 100%;
+                    .week-cell {
+                        font-size: 25px;
+                    }
+                    td .date {
+                        font-size: 25px;
+                        height: 73px;
+                        width: 73px;
+                        border-radius: 50px;
+                        line-height: 2.7;
+                    }
+                    .has-event .date .circle {
+                        top:-1.4rem;
+                    }
+                }
+            }
+        }
+        .events-list {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+//-------------------------
+//------GRADIENT MIXIN
+//-------------------------
+
+// EXAMPLE for linearGradient
+//
+//     @include linearGradient($color1, $color2);
+//
+
+@mixin linearGradient($top, $bottom){
+    background: $top; // Old browsers
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); // FF3.6+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); // Chrome,Safari4+
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); // Chrome10+,Safari5.1+
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); // Opera 11.10+
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); // IE10+
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); // W3C
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); // IE6-9
+}
+
+
+// HORIZONTAL GRADIENT
+
+// EXAMPLE for horizontalGradient
+//
+//    @include horizontalGradient($color1, $color2);
+//
+
+@mixin horizontalGradient($from, $to, $stop: 100%) {
+  background-color: $from;  // fallback/image non-cover color 
+  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+  background: linear-gradient(to right, $from 0%, $to $stop);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}

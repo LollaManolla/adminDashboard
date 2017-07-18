@@ -1,0 +1,167 @@
+//-------------------------
+//-------------------BLOCK LIST PRODUCTS
+//-------------------------
+.b-list-products {
+    @extend .clearfix;
+    position: relative;
+    table-layout: fixed;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+    &__details {
+        display: block;
+        border-bottom: solid 1px #404040;
+        padding: 0.6rem 0 0.6rem 2rem;
+    }
+    &__preview {
+        display: table-row;
+        .col {
+            display: table-cell;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+        .col-1 {
+            width:194px;
+        }
+        .col-2 {
+            width: 282px;
+        }
+        .col-3 {
+            width: 160px;
+        }
+        .col-4 {
+            width: 120px;
+        }
+        .col-5 {
+            width: 113px;
+        }
+        .col-6 {
+            width: 118px;
+        }
+        .product-image__teaser {
+            background-color: $white;
+            display: inline-block;
+            height: 70px;
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+            width: 70px;
+
+            a, span {
+                display: inline-block;
+                height: 70px;
+                margin: 0 auto;
+                position: relative;
+                text-align: center;
+                vertical-align: middle;
+                padding: 0.5rem;
+                img {
+                    display: inline-block;
+                    height: 55px;
+                    margin: 0 auto;
+                    text-align: center;
+                    vertical-align: middle;
+
+                }
+            }
+            .notification__image-sent {
+                color: $keppel;
+                font-size: 20px;
+                display: inline-block;
+                padding: 0.5rem;
+                .fontelloIcon {
+                    vertical-align: middle;
+                }
+            }
+        }
+        .product-author {
+            display: inline-block;
+            font-weight: bold;
+            font-style: italic;
+            a {
+                color: $keppel;
+            }
+        }
+        .product-info {
+            border: 2px solid $lighterg;
+            border-radius: 27px;
+            color: $lighterg;
+            display: inline-block;
+            height: 27px;
+            position: relative;
+            top: -0.1rem;
+            vertical-align: middle;
+            width: 27px;
+            cursor: pointer;
+            a {
+                display: block;
+            }
+            .info {
+                font-size: 12px;
+                font-weight: normal;
+                height: 100%;
+                left: -0.04rem;
+                position: absolute;
+                text-align: center;
+                top: 0.25rem;
+                width: 100%;
+            }
+            &:hover {
+                color: $spring;
+                border-color: $spring;
+            }
+        }
+        .c-modal{
+            &-open {
+                display: inline-block;
+                font-size: 21px;
+            }
+        }
+        .c-btn {
+            line-height: 2.1;
+            min-width: 100px;
+            padding: 0;
+            &-rejected {
+                cursor: default;
+            }
+        }
+    }
+    .b-list-products__full {
+        display: none;
+        border-top: solid 1px #404040;
+        margin-left: -2rem;
+        margin-top: 0.7rem;
+        padding-top: 0.7rem;
+        @extend .clearfix;
+        font-size: 15px;
+    }
+    &__labels {
+        float: left;
+        padding-left: 2rem;
+        color: $silver;
+        text-transform: uppercase;
+        line-height: 1.8;
+        margin-right: 7rem;
+    }
+    &__labels-value {
+        color: $silver;
+        line-height: 1.8;
+        float: left;
+        p:nth-child(1),
+        p:nth-child(2) {
+            color: $white;
+        }
+    }
+    &__link {
+        font-style: italic;
+        color: $keppel;
+        float: right;
+        margin-right: 2.4rem;
+    }
+    //overwrite defaults
+    .mCSB_inside > .mCSB_container {
+        margin-right: 0;
+    }
+}

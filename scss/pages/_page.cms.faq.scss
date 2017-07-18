@@ -1,0 +1,233 @@
+//-------------------------
+//-------------------PAGE cms FAQ
+//-------------------------
+
+.page-faq {
+    h3 {
+        font-size: 18px;
+        color: $white;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+    .select-heading {
+        border-bottom: solid 1px $matterhorn;
+        padding-bottom: 1.75rem;
+        margin-bottom: 1.4rem;
+        width: 99%;
+        .form-group {
+            margin-right: 2.6rem;
+            display: inline-block;
+        }
+        input {
+            margin-right:0.3rem;
+            display: inline-block;
+        }
+        label {
+            font-size: 14px;
+            display: inline-block;
+        }
+    }
+
+    .choose-category {
+        .b-trigger {
+            margin-left: 0;
+            margin-top: 0;
+            a {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: bold;
+            }
+        }
+        .addCategory {
+            display: none;
+            position: relative;
+            margin-top: 1rem;
+            border-bottom: solid 1px $matterhorn;
+            padding-bottom: 1.75rem;
+            // width: 38%;
+            //             .remove {
+            //                 text-align: right;
+            // display: block;
+            // margin-bottom: 1rem;
+            //             }
+            input {
+                border-radius: 15px;
+                min-width: 250px;
+                margin-right: 1.3rem;
+                border-color: $matterhorn;
+            }
+            .c-btn {
+                padding: 0;
+                min-width: 101px;
+                line-height: 2.3;
+                top: 2px;
+                position: relative;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    .btn {
+        clear: both;
+        text-align: right;
+        padding-top: 1.1rem;
+        .c-btn {
+            padding: 0;
+            line-height: 2.2;
+            min-width: 100px;
+            margin-right: 0.5rem;
+        }
+    }
+
+    //-------------------------
+    //-------------------add new article block
+    //-------------------------
+    .add-new-article {
+        // margin-bottom: 3rem;
+        padding-bottom: 3rem;
+        .cms-progress {
+            margin: 2rem 0 2.5rem 0;
+        }
+        h3 {
+            //border-bottom: solid 1px $matterhorn;
+            padding-bottom: 10px;
+        }
+        .form {
+            //padding: 1.5rem 0.2rem;
+            .note {
+                color: $keppel;
+                font-size: 12px;
+                margin: 5px 0;
+                line-height: normal;
+            }
+
+            label, .b-covers h3 {
+                font-size: 16px;
+                color: $white;
+                margin-bottom: 13px;
+                font-weight: bold;
+                line-height: 1;
+                border: none;
+                padding: 0;
+            }
+            //   .b-covers h3 {
+            //     margin-bottom: 1.05rem;
+            //   }
+            .form-group {
+                float: none;
+                width: auto;
+                padding: 0;
+                margin-left: 0;
+                margin-right: 0;
+                &-input {
+                    line-height: 3;
+                }
+            }
+            .form-control {
+                border-color: #505050;
+                border-radius: 20px;
+                line-height: 2.2;
+                padding: 0 1rem;
+                width: 100%;
+            }
+            .col-left {
+                float: left;
+                width: 270px;
+                margin-right: 1.1rem;
+                &.last {
+                    width: 742px;
+                    margin-right: 0;
+                    margin-top: 0.5rem;
+                }
+                .b-titles {
+                    margin-bottom: 6px;
+                }
+
+                .b-covers {
+                    //margin-bottom: 8px;
+                    .form-group-input {
+                        .add-img {
+                            border-style: dashed;
+                            border-width: 1px;
+                            border-color: $matterhorn;
+                            border-radius: 20px;
+                            height: 123px;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        label {
+                            font-style: italic;
+                            color: $hit;
+                            font-weight: normal;
+                            font-size: 18px;
+                            @include centerer;
+                            text-align: center;
+                            margin: 0;
+
+                        }
+                        .add-img-wrapper {
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            top: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 100%;
+                            div {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .hide  {
+                                bottom: 0;
+                                height: 100%;
+                                left: 0;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                width: 100%;
+                                input {
+                                    opacity: 0;
+                                    height: 100%;
+                                    cursor: pointer;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .b-texts {
+                    .form-control {
+                        border-radius: 20px;
+                        width: 100%;
+                        border-color: $matterhorn;
+                        background-color: transparent;
+                        border-style: solid;
+                        border-width: 1px;
+                        line-height: 1.5;
+                        font-size: 14px;
+                        color: $hit;
+                        overflow: hidden;
+                        height: 284px;
+                        padding: 0.5rem 1rem;
+                        overflow: auto;
+                        &:focus {
+                            border-width: 1px;
+                        }
+                    }
+                }
+
+            }
+            .btn {
+                padding: 0;
+                .c-btn {
+                    min-width: 90px;
+                    padding: 0;
+                    vertical-align: middle;
+                }
+            }
+
+        }
+
+    }
+
+}

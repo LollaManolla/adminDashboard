@@ -1,0 +1,38 @@
+//-------------------------
+//-------------------PAGE approved users
+//-------------------------
+
+.page-approved-users {
+    &__title {
+        font-size: 25px;
+        font-weight: bold;
+        color: $keppel;
+        letter-spacing: 0.04rem;
+        margin-bottom: 2.1rem;
+        display: inline-block;
+    }
+    &__filter {
+        float: right;
+    }
+
+
+    .c-dropdown {
+        display: block;
+        float: none;
+        margin-right: 0;
+        &__title {
+            display: block;
+            font-size: 14px;
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.8rem;
+            margin-right: 0;
+        }
+        .nice-select {
+            min-width: 200px;
+            border-color: $zambezi;
+            height: 36px;
+            line-height: 32px;
+        }
+
+    }
+}

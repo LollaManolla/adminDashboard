@@ -1,0 +1,42 @@
+//-------------------------
+//-------------------BLOCK BOARD
+//-------------------------
+.b-board {
+background-color: $night;
+    float: left;
+    height: 1323px;
+    margin-right: 37px;
+    width: 697px;
+
+    &-head {
+      background-color: $charcoal;
+      display: block;
+      font-size: 16px;
+
+  padding: 1.9rem 0 1.6rem 3.1rem;
+      .create-post {
+
+        color: $keppel;
+        letter-spacing: 0.02rem;
+     margin-right: 2.3rem;
+     text-transform: uppercase;
+        img {
+          display: inline-block;
+          margin-right: 0.6rem;
+        }
+
+      }
+      .add-photo {
+          text-transform: uppercase;
+          letter-spacing: 0.02rem;
+        img {
+          display: inline-block;
+       margin-right: 0.6rem;
+       position: relative;
+       top: 2px;
+       width: 20px;
+        }
+
+      }
+    }
+}

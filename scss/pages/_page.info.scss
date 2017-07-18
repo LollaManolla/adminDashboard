@@ -1,0 +1,48 @@
+//-------------------------
+//-------------------PAGE INFO
+//-------------------------
+
+.page-info {
+  min-height: 600px;
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    color: $keppel;
+    letter-spacing: 0.04rem;
+    a {
+      color: $keppel;
+    }
+    .fontelloIcon {
+      font-size: 30px;
+      font-weight: normal;
+      margin-right: 2.4rem;
+    }
+  }
+  &:after {
+     @extend .clearfix;
+  }
+  .block-buttons {
+      clear: both;
+       border-bottom: solid 1px  $grey;
+       padding-bottom: 1.3rem;
+  }
+
+  .block-buttons .c-btn {
+      display: inline-block;
+      margin-right: 0.7rem;
+      padding: 0 1.7rem;
+
+  }
+
+  &--gallery {
+    .b-list-info {
+      width: 610px;
+    }
+    .b-list-info ul li p {
+        min-width: 210px;
+    }
+    .b-list-info ul li span a {
+        color: $keppel;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+//-------------------------
+//-------------------BLOCK TABLE NEW USERS TABLE
+//-------------------------
+
+&--discount-list {
+  white-space: initial;
+  width: auto;
+  min-width: 1062px;
+  a:hover {
+    color: $amaranth;
+  }
+
+  td,
+  th {
+    border: solid 1px $zambezi;
+    text-transform: none;
+    color: $white;
+    vertical-align: middle;
+  }
+
+  th {
+    padding: 1rem;
+  }
+
+  td {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 1rem;
+    text-overflow: initial;
+  }
+
+  .b-table__body td {
+    white-space: initial;
+    overflow: visible;
+  }
+
+  .row-1 {
+    width: 155px;
+  }
+
+  .row-3 {
+    width: 168px;
+  }
+  .b-table__header th {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .delete {
+    position: absolute;
+    top: 2px;
+    font-size: 0.85rem;
+    background-color: $amaranth;
+    color: $white;
+    padding: 0 4px;
+    right: -24px;
+    border-radius: 101px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 0.99;
+    font-family: tahoma;
+    cursor: pointer;
+    border: none;
+    &:hover {
+      &:before {
+        content: "Delete discount";
+        display: block;
+        font-size: 12px;
+        line-height: normal;
+        padding: 6px 10px;
+        position: absolute;
+        right: 19px;
+        top: -5px;
+        z-index: 2;
+        background-color: #000;
+        color: #fff;
+        width: 100px;
+      }
+    }
+  }
+
+  .code-wrapper {
+    position: relative;
+    display: block;
+        color:#c6c6c6;
+
+  }
+
+  .code {
+    display: block;
+    position: relative;
+  }
+}

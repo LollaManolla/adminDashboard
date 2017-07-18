@@ -1,0 +1,29 @@
+//-------------------------
+//-------------------COMPONENT MODAL WINDOW
+//-------------------------
+
+.c-modal {
+  z-index: 1;
+  background-color: $eron;
+  display: none;
+  position: absolute;
+
+  &__btn-close {
+    display: block;
+    font-family: verdana;
+    font-size: 22px;
+    font-weight: 100;
+    position: relative;
+    right: -0.6rem;
+    text-align: right;
+    top: 0.28rem;
+    color: $greyt;
+    cursor: pointer;
+  }
+  @import "component.modal.form";
+  @import "component.modal.book";
+  @import "component.modal.addPrice";
+  // @import "component.modal.receipt";
+  @import "component.modal.user";
+  @import "component.modal.price";
+}

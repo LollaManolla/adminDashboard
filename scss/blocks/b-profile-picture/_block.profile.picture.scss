@@ -1,0 +1,41 @@
+//-------------------------
+//-------------------BLOCK PROFILE
+//-------------------------
+.b-profile-picture {
+  border-bottom: 1px solid $zambezi;
+  display: block;
+  padding-bottom: 2.1rem;
+  vertical-align: middle;
+    margin-bottom: 2.5rem;
+    position: relative;
+
+  &__current {
+    border-radius: 70px;
+    height: 130px;
+    overflow: hidden;
+    width: 130px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2.3rem;
+    div {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  &__change {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    span {
+      font-style: italic;
+      font-size: 14px;
+      color: $hit;
+      display: inline-block;
+      vertical-align: middle;
+      img {
+        margin-right: 0.5rem;
+        width: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+//-------------------------
+//-------------------COMPONENT BUTTONS
+//-------------------------
+
+&-transparent {
+  background-color: $nightrider;
+  border: solid 1px $white;
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+    &--green {
+      border: solid 1px  $hamrock;
+      background-color: $nightrider;
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+      &:focus {
+              border-color:$hamrock;
+            border-width: 1px;
+            outline: none;
+            }
+    }
+    &--red {
+      border: solid 1px  $amaranth;
+      background-color: $nightrider;
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+&:focus {
+        border-color:$amaranth;
+      border-width: 1px;
+      outline: none;
+      }
+
+    }
+
+}

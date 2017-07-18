@@ -1,0 +1,176 @@
+//-------------------------
+//-------------------BLOCK LIST enquiry
+//-------------------------
+
+.b-list-enquiry {
+  @extend .clearfix;
+  position: relative;
+  table-layout: fixed;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+
+  &__details {
+    display: block;
+    border-bottom: solid 1px #404040;
+    padding: 0.6rem 0 0.6rem 2rem;
+  }
+
+  &__preview {
+    display: table-row;
+
+    .col {
+      display: table-cell;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+
+    .col-1 {
+      width: 194px;
+    }
+
+    .col-2 {
+      width: 615px;
+    }
+
+    .col-3 {
+      width: 160px;
+
+      a {
+        display: block;
+        float: right;
+        position: relative;
+
+        &:hover {
+          position: relative;
+
+          &:before {
+            display: block;
+            font-size: 12px;
+            line-height: normal;
+            padding: 6px 14px;
+            position: absolute;
+            right: 2rem;
+            top: 0;
+            z-index: 2;
+            background-color: $black;
+            color: $white;
+          }
+
+          &.enquiry-message:before {
+            display: block;
+          }
+        }
+
+        &.enquiry-message:before {
+          content: "Enquiry message";
+          display: none;
+        }
+      }
+    }
+
+    .product-image__teaser {
+      background-color: $white;
+      display: inline-block;
+      height: 70px;
+      margin: 0 auto;
+      text-align: center;
+      vertical-align: middle;
+      width: 70px;
+
+      a,
+      span {
+        display: inline-block;
+        height: 70px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.5rem;
+
+        img {
+          display: inline-block;
+          height: 55px;
+          margin: 0 auto;
+          text-align: center;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .product-author {
+      display: inline-block;
+      font-weight: bold;
+      font-style: italic;
+
+      a {
+        color: $keppel;
+      }
+    }
+  }
+
+  .b-list-enquiry__full {
+    display: none;
+    margin-top: 0.7rem;
+    background-color: #171717;
+    white-space: normal;
+    margin-left: -2rem;
+
+    .content {
+      padding: 2rem;
+
+      &__head {
+        font-size: 18px;
+        color: $keppel;
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      &__data {
+        font-size: 16px;
+        color: $lightg;
+        display: inline-block;
+        font-weight: normal;
+      }
+
+      li {
+        margin-bottom: 2rem;
+
+        &:nth-child(1) {
+          border-bottom: solid 1px #505050;
+          padding-bottom: 0.8rem;
+          display: inline-block;
+        }
+
+        &:nth-child(3) {
+          .content__data,
+          .content__head {
+            display: block;
+          }
+
+          .content__head {
+            margin-bottom: 0.5rem;
+          }
+
+          .content__data {
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+
+    .bottom-link {
+      padding-bottom: 2.2rem;
+      padding-right: 3.5rem;
+      position: relative;
+      text-align: right;
+
+      a {
+        font-style: italic;
+        color: $keppel;
+      }
+    }
+  }
+}

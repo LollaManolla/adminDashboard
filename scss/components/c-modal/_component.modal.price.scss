@@ -1,0 +1,100 @@
+//-------------------------
+//-------------------COMPONENT MODAL PRICE  with form
+//-------------------------
+
+&--form {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 10;
+  &-inner {
+    width: 450px;
+    height: 411px;
+    margin: 0 auto;
+    top: 25%;
+    position: relative;
+    background-color: $eron;
+    padding: 0rem 1.6rem;
+    .c-btn {
+      margin-top: 0.5rem;
+    }
+  }
+
+}
+p {
+  color: $keppel;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  border-bottom: solid 1px $zambezi;
+  padding-bottom: 1.2rem;
+}
+
+.form {
+  .form-group {
+    margin-bottom: 0.8rem;
+
+    label {
+      color: $keppel;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+    .form-control {
+      border-radius: 50px;
+      font-size: 17px;
+      font-style: italic;
+      line-height: 2;
+      width: 100%;
+      border-color: $zambezi;
+      padding-left: 0.8em;
+    }
+
+    &.modal-price {
+      border-bottom: solid 1px $zambezi;
+      margin-bottom: 0.8rem;
+      text-align: left;
+      label {
+        display: inline-block;
+      }
+      input {
+        display: inline-block;
+        border: none;
+        width: auto;
+
+      }
+
+    }
+    &:nth-child(1) {
+
+      .form-group-input {
+        span {
+          font-size: 20px;
+          color: $greyt;
+        }
+
+        .form-control {
+          display: inline-block;
+          margin-bottom: 1.2em;
+          margin-left: 0.4rem;
+          width: 34%;
+        }
+      }
+
+
+    }
+  }
+  .c-btn {
+    font-size: 1em;
+    line-height: 2;
+    min-width: auto;
+    padding: 0;
+    width: 100px;
+  }
+}

@@ -1,0 +1,80 @@
+//-------------------------
+//-------------------COMPONENT MODAL WINDOW with form
+//-------------------------
+
+&--form {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 10;
+  &-inner {
+      width: 450px;
+      height: 411px;
+      margin: 0 auto;
+      top: 25%;
+      position: relative;
+      background-color: $eron;
+      padding: 0rem 1.6rem;
+      .c-btn {
+          margin-top: 0.5rem;
+      }
+  }
+
+}
+.form {
+  .form-group {
+    margin-bottom: 0.8rem;
+
+    label {
+      color: $keppel;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0.6rem;
+    }
+    .form-control {
+      border-radius: 5px;
+      font-size: 17px;
+      font-style: italic;
+      line-height: 2;
+      width: 100%;
+    }
+
+    textarea {
+      border: solid 1px $greyt;
+      border-radius: 5px;
+      background-color: $eron;
+      width: 100%;
+      min-height: 143px;
+      font-size: 16px;
+      color: $hit;
+      padding: 0.8rem;
+    }
+    &.modal-message-for {
+        border-bottom: solid 1px $greyt;
+        margin-bottom: 0.8rem;
+        text-align: left;
+        label {
+            display: inline-block;
+        }
+        input {
+            display: inline-block;
+            border: none;
+            width: auto;
+        }
+
+    }
+  }
+  .c-btn {
+    float: right;
+  }
+}
+
+.paper-plane.selected .c-modal {
+  display: block;
+}
